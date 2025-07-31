@@ -2,6 +2,7 @@
 """
 Amplitude Dashboard Analyzer
 Fetches data from Amplitude charts and generates executive summary reports.
+Enhanced with optional GA4 integration for comparative analysis.
 """
 
 import os
@@ -11,6 +12,14 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import json
 
+# Import new unified analyzer
+try:
+    from unified_analyzer import UnifiedAnalyzer
+    UNIFIED_AVAILABLE = True
+except ImportError:
+    UNIFIED_AVAILABLE = False
+    print("⚠️ Unified analyzer not available - running in Amplitude-only mode")
+
 load_dotenv()
 
 class AmplitudeAnalyzer:
@@ -19,6 +28,21 @@ class AmplitudeAnalyzer:
         self.secret_key = os.getenv('AMPLITUDE_SECRET_KEY')
         self.slack_webhook_url = os.getenv('SLACK_WEBHOOK_URL')
         self.base_url = "https://amplitude.com/api/2/query"
+        
+        # Initialize unified analyzer if available and GA4 is enabled
+        self.unified_analyzer = None
+        self.use_unified = False
+        
+        if UNIFIED_AVAILABLE and os.getenv('GA4_ENABLED', 'false').lower() == 'true':
+            try:
+                self.unified_analyzer = UnifiedAnalyzer()
+                self.use_unified = True
+                print("✅ Enhanced mode: GA4 comparative analysis enabled")
+            except Exception as e:
+                print(f"⚠️ GA4 integration failed, falling back to Amplitude-only: {e}")
+                self.use_unified = False
+        else:
+            print("ℹ️ Standard mode: Amplitude-only analysis")
         
         # Chart configurations from plan.md
         self.charts = {
@@ -266,6 +290,15 @@ class AmplitudeAnalyzer:
     
     def analyze_weekly_data(self, target_week=None, target_year=None):
         """Analyze data for a specific week and generate summary."""
+        # Use unified analyzer if available (includes GA4 comparison)
+        if self.use_unified and self.unified_analyzer:
+            try:
+                return self.unified_analyzer.analyze_weekly_data_unified(target_week, target_year)
+            except Exception as e:
+                print(f"⚠️ Unified analysis failed, falling back to Amplitude-only: {e}")
+                # Continue with original Amplitude-only analysis
+        
+        # Original Amplitude-only analysis
         if not target_week or not target_year:
             # Default to previous week
             today = datetime.now()
@@ -350,8 +383,18 @@ class AmplitudeAnalyzer:
     
     def generate_executive_summary(self, analysis_data):
         """Generate executive summary text with platform breakdowns."""
-        week_info = analysis_data['week_info']
-        metrics = analysis_data['metrics']
+        # Handle unified data format (with GA4 comparison)
+        if 'amplitude_metrics' in analysis_data:
+            if self.unified_analyzer:
+                return self.unified_analyzer.generate_comparative_summary(analysis_data)
+            else:
+                # Fallback: extract Amplitude data from unified format
+                week_info = analysis_data['week_info']
+                metrics = analysis_data['amplitude_metrics']
+        else:
+            # Traditional Amplitude-only format
+            week_info = analysis_data['week_info']
+            metrics = analysis_data['metrics']
         
         summary = f"Week {week_info['iso_week']} Analysis ({week_info['date_range']}):\n\n"
         
@@ -549,7 +592,12 @@ class AmplitudeAnalyzer:
     def format_for_google_sheets(self, analysis_data):
         """Format key metrics as single-cell business summary for Google Sheets."""
         week_info = analysis_data['week_info']
-        metrics = analysis_data.get('metrics', {})
+        
+        # Handle both old format (metrics) and new unified format (amplitude_metrics)
+        if 'amplitude_metrics' in analysis_data:
+            metrics = analysis_data['amplitude_metrics']
+        else:
+            metrics = analysis_data.get('metrics', {})
         
         if not metrics or all(v is None for v in metrics.values()):
             return None
@@ -660,6 +708,35 @@ class AmplitudeAnalyzer:
         for platform_info in platform_breakdown:
             result_lines.append(platform_info)
         
+        # Add GA4 comparison data if available
+        if analysis_data.get('comparison_enabled') and 'variance_analysis' in analysis_data:
+            variance_analysis = analysis_data['variance_analysis']
+            ga4_comparison = []
+            
+            # Total Sessions comparison
+            if 'combined_sessions' in variance_analysis:
+                combined = variance_analysis['combined_sessions']
+                variance_direction = "↑" if combined['variance_direction'] == 'ga4_higher' else "↓"
+                ga4_comparison.append(f"Total Sessions: Amplitude {int(combined['amplitude']):,} vs GA4 {int(combined['ga4']):,} ({variance_direction}{abs(combined['variance_pct']):.1f}%)")
+            
+            # Web Sessions comparison
+            if 'web_sessions' in variance_analysis:
+                web = variance_analysis['web_sessions']
+                variance_direction = "↑" if web['variance_direction'] == 'ga4_higher' else "↓"
+                ga4_comparison.append(f"Web Sessions: Amplitude {int(web['amplitude']):,} vs GA4 {int(web['ga4']):,} ({variance_direction}{abs(web['variance_pct']):.1f}%)")
+            
+            # App Sessions comparison
+            if 'app_sessions' in variance_analysis:
+                app = variance_analysis['app_sessions']
+                variance_direction = "↑" if app['variance_direction'] == 'ga4_higher' else "↓"
+                ga4_comparison.append(f"App Sessions: Amplitude {int(app['amplitude']):,} vs GA4 {int(app['ga4']):,} ({variance_direction}{abs(app['variance_pct']):.1f}%)")
+            
+            # Add GA4 comparison lines
+            if ga4_comparison:
+                result_lines.append("GA4 vs Amplitude:")
+                for comparison in ga4_comparison:
+                    result_lines.append(comparison)
+        
         return "\n".join(result_lines) if len(result_lines) > 1 else None
 
     def send_to_slack(self, summary, analysis_data):
@@ -670,7 +747,12 @@ class AmplitudeAnalyzer:
         
         # Create enhanced Slack message payload
         week_info = analysis_data['week_info']
-        metrics = analysis_data.get('metrics', {})
+        
+        # Handle both old format (metrics) and new unified format (amplitude_metrics)
+        if 'amplitude_metrics' in analysis_data:
+            metrics = analysis_data['amplitude_metrics']
+        else:
+            metrics = analysis_data.get('metrics', {})
         
         # Handle case where metrics are null due to API errors
         if not metrics or all(v is None for v in metrics.values()):
@@ -903,6 +985,58 @@ class AmplitudeAnalyzer:
                     "fields": platform_fields
                 })
         
+        # GA4 vs Amplitude Session Comparison Section (if comparison enabled)
+        if analysis_data.get('comparison_enabled') and 'variance_analysis' in analysis_data:
+            variance_analysis = analysis_data['variance_analysis']
+            
+            # Create comparison fields
+            comparison_fields = []
+            
+            # Total Sessions Comparison
+            if 'combined_sessions' in variance_analysis:
+                combined = variance_analysis['combined_sessions']
+                variance_emoji = "📈" if combined['variance_direction'] == 'ga4_higher' else "📉"
+                comparison_fields.append({
+                    "type": "mrkdwn",
+                    "text": f"*Total Sessions*\nAmplitude: {int(combined['amplitude']):,}\nGA4: {int(combined['ga4']):,}\n{variance_emoji} {combined['variance_pct']:+.1f}% variance"
+                })
+            
+            # Web Sessions Comparison
+            if 'web_sessions' in variance_analysis:
+                web = variance_analysis['web_sessions']
+                variance_emoji = "📈" if web['variance_direction'] == 'ga4_higher' else "📉"
+                comparison_fields.append({
+                    "type": "mrkdwn",
+                    "text": f"*Web Sessions*\nAmplitude: {int(web['amplitude']):,}\nGA4: {int(web['ga4']):,}\n{variance_emoji} {web['variance_pct']:+.1f}% variance"
+                })
+            
+            # App Sessions Comparison
+            if 'app_sessions' in variance_analysis:
+                app = variance_analysis['app_sessions']
+                variance_emoji = "📈" if app['variance_direction'] == 'ga4_higher' else "📉"
+                comparison_fields.append({
+                    "type": "mrkdwn",
+                    "text": f"*App Sessions*\nAmplitude: {int(app['amplitude']):,}\nGA4: {int(app['ga4']):,}\n{variance_emoji} {app['variance_pct']:+.1f}% variance"
+                })
+            
+            if comparison_fields:
+                blocks.extend([
+                    {
+                        "type": "divider"
+                    },
+                    {
+                        "type": "section",
+                        "text": {
+                            "type": "mrkdwn",
+                            "text": "*🔍 GA4 vs Amplitude Session Comparison*"
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "fields": comparison_fields
+                    }
+                ])
+
         # Google Sheets Export Section
         sheets_data = self.format_for_google_sheets(analysis_data)
         if sheets_data:
@@ -927,6 +1061,17 @@ class AmplitudeAnalyzer:
             ])
         
         # Data Sources Section
+        data_sources_text = "*📊 Amplitude Analytics*\n*Dashboard:* <https://app.amplitude.com/analytics/thortful/dashboard/6pqbsp18|Thortful Analytics Dashboard>\n\n*Charts Used:*\n• <https://app.amplitude.com/analytics/thortful/chart/y0ivh3am|Sessions (Current Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/5vbaz782|Sessions (Previous Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/pc9c0crz|Sessions per User (Current Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/3d400y6n|Sessions per User (Previous Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/42c5gcv4|Session Conversion % (Current Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/3t0wgn4i|Session Conversion % (Previous Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/4j2gp4ph|User Conversion %>"
+        
+        # Add GA4 data sources if comparison is enabled
+        if analysis_data.get('comparison_enabled') and 'ga4_metrics' in analysis_data:
+            # Extract dates for GA4 verification links
+            date_range = week_info['date_range']
+            start_date = date_range.split(' to ')[0].replace('-', '')
+            end_date = date_range.split(' to ')[1].replace('-', '')
+            
+            data_sources_text += f"\n\n*📈 Google Analytics 4*\n*Properties:*\n• Web Property: `330311466` - <https://analytics.google.com/analytics/web/#/p330311466/reports/intelligenthome|GA4 Web Dashboard>\n• App Property: `158472024` - <https://analytics.google.com/analytics/web/#/p158472024/reports/intelligenthome|GA4 App Dashboard>\n\n*Session Data Verification ({date_range}):*\n• <https://analytics.google.com/analytics/web/#/p330311466/reports/reportinghub?params=_u..nav%3Dmaui%26_u.comparisonOption%3Ddisabled%26_u.date00%3D{start_date}%26_u.date01%3D{end_date}%26_r.explorationId%3DAnalyticsDefaultOverview|Web Sessions Report>\n• <https://analytics.google.com/analytics/web/#/p158472024/reports/reportinghub?params=_u..nav%3Dmaui%26_u.comparisonOption%3Ddisabled%26_u.date00%3D{start_date}%26_u.date01%3D{end_date}%26_r.explorationId%3DAnalyticsDefaultOverview|App Sessions Report>"
+        
         blocks.extend([
             {
                 "type": "divider"
@@ -942,7 +1087,7 @@ class AmplitudeAnalyzer:
                 "type": "section",
                 "text": {
                     "type": "mrkdwn",
-                    "text": f"*Dashboard:* <https://app.amplitude.com/analytics/thortful/dashboard/6pqbsp18|Thortful Analytics Dashboard>\n\n*Charts Used:*\n• <https://app.amplitude.com/analytics/thortful/chart/y0ivh3am|Sessions (Current Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/5vbaz782|Sessions (Previous Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/pc9c0crz|Sessions per User (Current Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/3d400y6n|Sessions per User (Previous Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/42c5gcv4|Session Conversion % (Current Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/3t0wgn4i|Session Conversion % (Previous Year)>\n• <https://app.amplitude.com/analytics/thortful/chart/4j2gp4ph|User Conversion %>"
+                    "text": data_sources_text
                 }
             },
             {
