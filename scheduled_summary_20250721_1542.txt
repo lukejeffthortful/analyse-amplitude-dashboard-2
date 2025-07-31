@@ -1,0 +1,12 @@
+Week 29 Analysis (2025-07-14 to 2025-07-20):
+
+Sessions down 92.2% yoy (16,882 vs 215,849), session conversion up 2.6 ppts YoY (20.4% vs 19.9%), and sessions per user down 14.2% YoY (1.26 vs 1.46). 
+
+Platform Analysis:
+Web driving sessions change (76% of volume)
+
+Web: sessions down 92.7% YoY (12,808 vs 174,835), conversion up 7.3 ppts YoY (20.3% vs 18.9%)
+Apps: sessions down 90.1% YoY (4,074 vs 41,014), conversion down 13.8 ppts YoY (20.6% vs 23.9%)
+
+Sessions per user: Web down 15.7% YoY (1.17 vs 1.39)
+User conversion: Web down 8.6 ppts YoY (24.1% vs 26.4%), App down 11.2 ppts YoY (25.4% vs 28.7%)
