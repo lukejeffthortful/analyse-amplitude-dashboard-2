@@ -2,10 +2,7 @@ name: Weekly Amplitude Analysis Report
 
   on:
     schedule:
-      # Run every Monday at 7:00 AM UTC (8:00 AM London time during BST)
       - cron: '0 7 * * 1'
-
-    # Allow manual triggering for testing
     workflow_dispatch:
 
   jobs:
