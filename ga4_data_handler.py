@@ -6,6 +6,7 @@ Handles Google Analytics 4 data extraction and processing with separated logic f
 
 import os
 import time
+import json
 from datetime import datetime, timedelta
 from typing import Dict, Any, Optional
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
@@ -32,18 +33,33 @@ class GA4DataHandler:
             raise ValueError("GA4_WEB_PROPERTY_ID must be set in environment or passed as parameter")
         if not self.app_property_id:
             raise ValueError("GA4_APP_PROPERTY_ID must be set in environment or passed as parameter")
-        if not self.credentials_path:
-            raise ValueError("GA4_SERVICE_ACCOUNT_PATH must be set in environment or passed as parameter")
+        if not self.credentials_path and not os.getenv('GA4_SERVICE_ACCOUNT_JSON'):
+            raise ValueError("Either GA4_SERVICE_ACCOUNT_PATH or GA4_SERVICE_ACCOUNT_JSON must be set in environment")
             
         self._setup_client()
     
     def _setup_client(self):
         """Setup GA4 client with service account authentication"""
         try:
-            credentials = service_account.Credentials.from_service_account_file(
-                self.credentials_path,
-                scopes=['https://www.googleapis.com/auth/analytics.readonly']
-            )
+            # Try to get credentials from environment variable first (for GitHub Actions)
+            service_account_json = os.getenv('GA4_SERVICE_ACCOUNT_JSON')
+            
+            if service_account_json:
+                # Use credentials from environment variable (JSON string)
+                service_account_info = json.loads(service_account_json)
+                credentials = service_account.Credentials.from_service_account_info(
+                    service_account_info,
+                    scopes=['https://www.googleapis.com/auth/analytics.readonly']
+                )
+                print("✅ Using GA4 credentials from environment variable")
+            else:
+                # Fallback to file-based credentials
+                credentials = service_account.Credentials.from_service_account_file(
+                    self.credentials_path,
+                    scopes=['https://www.googleapis.com/auth/analytics.readonly']
+                )
+                print(f"✅ Using GA4 credentials from file: {self.credentials_path}")
+            
             self.client = BetaAnalyticsDataClient(credentials=credentials)
             print(f"✅ GA4 client initialized successfully for properties Web:{self.web_property_id}, App:{self.app_property_id}")
         except Exception as e:
