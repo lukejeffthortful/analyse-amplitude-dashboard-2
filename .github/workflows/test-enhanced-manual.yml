@@ -1,0 +1,42 @@
+name: Enhanced Weekly Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: development-iteration
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        pip install requests python-dotenv google-analytics-data google-auth tenacity playwright
+        playwright install chromium
+    
+    - name: Create GA4 credentials
+      env:
+        GA4_SERVICE_ACCOUNT_JSON: ${{ secrets.GA4_SERVICE_ACCOUNT_JSON }}
+      run: |
+        mkdir -p ga4_service_account
+        echo "$GA4_SERVICE_ACCOUNT_JSON" > ga4_service_account/thortful-9a7a7-04cd279e1017.json
+    
+    - name: Run enhanced analysis
+      env:
+        AMPLITUDE_API_KEY: ${{ secrets.AMPLITUDE_API_KEY }}
+        AMPLITUDE_SECRET_KEY: ${{ secrets.AMPLITUDE_SECRET_KEY }}
+        SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+        GA4_WEB_PROPERTY_ID: ${{ secrets.GA4_WEB_PROPERTY_ID }}
+        GA4_APP_PROPERTY_ID: ${{ secrets.GA4_APP_PROPERTY_ID }}
+        GA4_SERVICE_ACCOUNT_PATH: ga4_service_account/thortful-9a7a7-04cd279e1017.json
+        GA4_ENABLED: true
+        APPSFLYER_USERNAME: ${{ secrets.APPSFLYER_USERNAME }}
+        APPSFLYER_PASSWORD: ${{ secrets.APPSFLYER_PASSWORD }}
+      run: python enhanced_weekly_analyzer.py
