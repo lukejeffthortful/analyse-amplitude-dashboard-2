@@ -63,7 +63,7 @@ jobs:
         python enhanced_weekly_analyzer.py
 
     - name: Upload production artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: production-enhanced-analysis

@@ -205,3 +205,19 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Development and test files
+.env.development
+.env.test
+.env.local
+backups/
+*_backup_*
+test_*.json
+test_*.txt
+
+# GA4 Service Account
+ga4_service_account/
+
+# OS files
+.DS_Store
+Thumbs.db

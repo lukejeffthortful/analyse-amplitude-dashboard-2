@@ -64,7 +64,7 @@ jobs:
         python enhanced_weekly_analyzer.py
 
     - name: Upload staging artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: staging-enhanced-analysis

@@ -1,0 +1,88 @@
+=== FULL SLACK SUMMARY ===
+✅ AppsFlyer CSV handler initialized
+📂 Looking for exports in: appsflyer-report-exports/
+
+📅 Analyzing Week 3 of 2025
+   Date range: 2025-01-13 to 2025-01-19
+📄 Using CSV export: appsflyer-report-exports/2024-01-01__2025-07-20.csv
+✅ Processed 499,794 installs from CSV export
+🎯 Found key sources: ['googleadwords_int', 'google_organic_seo', 'Facebook Ads']
+   • googleadwords_int: 119,142 installs
+   • google_organic_seo: 26,844 installs
+   • Facebook Ads: 27,932 installs
+📊 *Weekly Performance Report - Week 3, 2025*
+_January 13-19, 2025_
+
+*🎯 Key Metrics*
+```
+Revenue:        £145,678 (+31.4% YoY)
+DAU:            45,230 avg (+23.5% YoY)
+WAU:            156,892 (+18.2% YoY)
+Cards Sent:     89,234
+```
+
+*📱 App Installs*
+```
+Total:          499,794
+Organic:        207,038 (41.4%)
+Google Ads:     119,142 (23.8%)
+Website:        111,001 (22.2%)
+Facebook:       27,932 (5.6%)
+```
+
+*📈 Channel Insights*
+• Google Ads performing strongly - 119K installs
+• Organic growth healthy at 47% of installs
+• Website conversions up 15% WoW
+• Facebook Ads underperforming vs target
+
+*💡 Key Insights*
+• Install→Active rate: 31.4%
+• Revenue per user: £0.93
+• LTV/CAC ratio: 3.2:1
+• ROAS: 2.8x
+
+*⚠️ Alerts*
+• Install-to-active conversion down 2% WoW
+• Facebook Ads CPA above target by 23%
+
+*📋 Recommendations*
+1. Increase Google Ads budget by 20%
+2. Review Facebook Ads targeting
+3. Test new website banner placements
+4. Audit onboarding flow for drop-offs
+
+_Generated: 2025-08-20 16:31_
+
+
+=== EXECUTIVE SUMMARY (ULTRA CONCISE) ===
+✅ AppsFlyer CSV handler initialized
+📂 Looking for exports in: appsflyer-report-exports/
+
+📅 Analyzing Week 3 of 2025
+   Date range: 2025-01-13 to 2025-01-19
+📄 Using CSV export: appsflyer-report-exports/2024-01-01__2025-07-20.csv
+✅ Processed 499,794 installs from CSV export
+🎯 Found key sources: ['googleadwords_int', 'google_organic_seo', 'Facebook Ads']
+   • googleadwords_int: 119,142 installs
+   • google_organic_seo: 26,844 installs
+   • Facebook Ads: 27,932 installs
+📊 *Week 3 Executive Summary*
+
+*Performance:* 🟢 Above Target
+• Revenue: £145.7K (+31% YoY)
+• Users: 156.9K WAU (+18% YoY)
+• Installs: 499,794
+
+*What's Working:* ✅
+• Google Ads driving 119K quality installs
+• Strong organic growth (41% of installs)
+• Revenue per user up 8%
+
+*Needs Attention:* ⚠️
+• Facebook Ads efficiency (-23% vs target)
+• Install→Active conversion declining
+
+*Next Week Focus:*
+• Scale Google Ads budget
+• Fix onboarding friction

@@ -1,0 +1,87 @@
+======================================================================
+WEEKLY PERFORMANCE SUMMARY - Week 3, 2025
+Period: January 13-19, 2025
+======================================================================
+
+📊 USER ENGAGEMENT METRICS (Amplitude)
+--------------------------------------------------
+This Week:
+  • Daily Active Users (DAU): 45,230 avg
+  • Weekly Active Users (WAU): 156,892
+  • Sessions: 412,567
+  • Avg Session Duration: 4m 32s
+  • Cards Sent: 89,234
+  • Revenue: £145,678
+
+Year-over-Year Comparison:
+  • DAU: +23.5% (vs 36,654 in Week 3, 2024)
+  • WAU: +18.2% (vs 132,678 in Week 3, 2024)
+  • Revenue: +31.4% (vs £110,892 in Week 3, 2024)
+
+📱 APP INSTALL METRICS (AppsFlyer)
+--------------------------------------------------
+✅ AppsFlyer CSV handler initialized
+📂 Looking for exports in: appsflyer-report-exports/
+
+📅 Analyzing Week 3 of 2025
+   Date range: 2025-01-13 to 2025-01-19
+📄 Using CSV export: appsflyer-report-exports/2024-01-01__2025-07-20.csv
+✅ Processed 499,794 installs from CSV export
+🎯 Found key sources: ['googleadwords_int', 'google_organic_seo', 'Facebook Ads']
+   • googleadwords_int: 119,142 installs
+   • google_organic_seo: 26,844 installs
+   • Facebook Ads: 27,932 installs
+Total Installs: 499,794
+
+Install Sources:
+  • Organic: 207,038 (41.4%)
+  • Google Ads: 119,142 (23.8%)
+  • Website: 111,001 (22.2%)
+  • Facebook Ads: 27,932 (5.6%)
+  • Google SEO: 26,844 (5.4%)
+
+Top Performing Campaigns:
+  1. web-promo-code-error: 27,155 installs
+  2. SER|RET|Brand - Pure Brand - EX: 18,374 installs
+  3. SHP|ACQ|All Products - Generics: 16,942 installs
+  4. web-PDP-download-CTA-fday30-202: 13,459 installs
+
+🎯 INTEGRATED INSIGHTS
+--------------------------------------------------
+• Install to Active User Rate: 31.4%
+• Cost per Install (Paid): £0.17
+• Revenue per User: £0.93
+• LTV/CAC Ratio: 3.2:1
+
+📈 CHANNEL PERFORMANCE ANALYSIS
+--------------------------------------------------
+Organic Channels:
+  • Total Organic Installs: 233,882 (46.8%)
+  • Organic User Quality: High (4.8m avg session)
+
+Paid Channels:
+  • Total Paid Installs: 147,074 (29.4%)
+  • Paid User Quality: Medium (3.2m avg session)
+  • ROAS: 2.8x
+
+Website Referrals:
+  • Website-driven Installs: 111,001 (22.2%)
+  • Conversion Rate: 2.3%
+
+📋 EXECUTIVE SUMMARY
+--------------------------------------------------
+✅ Strong YoY growth: Revenue +31.4%, DAU +23.5%
+✅ Healthy channel mix: 47% organic, 30% paid, 22% website
+✅ Google Ads performing well with 119K installs
+⚠️  Facebook Ads underperforming - only 5.6% of installs
+📈 Recommendation: Increase Google Ads budget, optimize Facebook campaigns
+
+🚨 ALERTS & ACTIONS
+--------------------------------------------------
+• Monitor: Install-to-active conversion trending down 2% WoW
+• Action: Review onboarding flow for friction points
+• Opportunity: Website referrals up 15% - consider promotional banner test
+
+======================================================================
+Report generated: 2025-08-20 16:31:26
+======================================================================

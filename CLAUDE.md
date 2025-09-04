@@ -1,4 +1,6 @@
-# Claude Memory - Amplitude Dashboard Analyzer Project
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Critical: Safe Development Approach
 
@@ -10,54 +12,118 @@
 3. **NEVER push to remote** without explicit user permission
 4. **ALWAYS test locally first** using `test_local.py`
 
-### Quick Reference:
+## Common Development Commands
+
+### Build and Setup
 ```bash
+# Install dependencies
+pip install -r requirements.txt
+
 # Check current branch (should be development-iteration)
 git branch --show-current
 
-# Test changes locally without side effects
-python test_local.py
-
-# Create backups before major changes
+# Create backup before major changes
 cp amplitude_analyzer.py backups/amplitude_analyzer_$(date +%Y%m%d_%H%M%S).py
 ```
 
-### Production Environment:
-- GitHub Actions runs every Monday at 7:00 AM on `main` branch
-- Sends reports to Slack webhook
-- DO NOT break this working automation
+### Running and Testing
+```bash
+# Main execution
+python3 amplitude_analyzer.py
 
-### Testing:
+# Test changes locally without side effects
+python3 test_local.py
+
+# Run specific test files
+python3 test_appsflyer.py
+python3 test_example_dates.py
+python3 test_last_week_data.py
+
+# Validate syntax before committing
+python3 -m py_compile *.py
+```
+
+### Development Testing
 - Use `.env.development` for local testing
 - Set `SLACK_WEBHOOK_URL=''` to prevent notifications
 - Test with old weeks to avoid interfering with current data
 
-**Remember: The remote `main` branch is sacred - it contains proven, working code that runs in production.**
+## High-Level Architecture
 
-## Project Context
+### Core Components and Data Flow
+```
+amplitude_analyzer.py (Main Orchestrator)
+    ├── amplitude_data_handler.py (Amplitude API)
+    │   └── Fetches from 7 configured charts
+    ├── ga4_data_handler.py (Google Analytics 4 API)
+    │   └── Optional comparative analysis
+    ├── appsflyer_data_handler.py (AppsFlyer API)
+    │   └── Partners report for attribution data
+    └── unified_analyzer.py (Cross-platform analysis)
+        └── Generates executive summaries
+```
 
-This is an analytics tool that:
-- Fetches weekly data from Amplitude dashboard charts
-- Calculates Year-over-Year (YoY) comparisons
-- Generates executive summaries for business reporting
-- Optionally integrates GA4 for comparative analysis
-- Runs automatically via GitHub Actions
+### Key Business Logic
+1. **Week Calculations**: ISO weeks (Monday-Sunday), analyzes previous week by default
+2. **YoY Comparisons**: Same ISO week across years, percentage/point changes
+3. **Platform Segmentation**: Apps Only, Web Only, App + Web combined
+4. **Metrics**: Sessions, Sessions per User, Session Conversion %, User Conversion %
 
-See PROJECT_NOTES.md for detailed technical information.
+### Production Environment
+- GitHub Actions runs every Monday at 7:00 AM on `main` branch
+- Workflow: `.github/workflows/weekly-report.yml`
+- Sends reports to Slack webhook
+- Automatically commits analysis results
 
 ## AppsFlyer Integration Notes
 
 ### API Access Limitations
-- **IMPORTANT**: Our account does NOT have access to the master_report API endpoint
-- We must use the aggregated partners report endpoint: `/api/agg-data/export/app/{app_id}/partners_report/v5`
-- This endpoint has a limit of 10 API calls per day
+- **IMPORTANT**: Our account does NOT have access to the Master API
+- We only have Partner API access via: `/api/agg-data/export/app/{app_id}/partners_report/v5`
+- Partner API has a limit of 10 API calls per day
 
-### Current Issues with AppsFlyer Data
-- The aggregated partners report is NOT returning Google Ads data (googleadwords_int)
-- We're successfully getting data for: Organic, website-thortful, Facebook Ads, QR_code, transactional_postmark
-- The expected Google Ads data shown in example files is not appearing in actual API responses
+### Key Difference: UI Export vs API Access
+- **UI CSV Exports**: Shows ALL media sources including Google Ads (googleadwords_int)
+  - Manual exports allowed by media source privacy policies
+  - Can be downloaded from AppsFlyer dashboard
+- **Partner API**: Restricted by media source data-sharing policies
+  - Google Ads, Meta, etc. block programmatic API access
+  - Only returns data for sources allowing third-party API access
+
+### Available Data Sources
+- **Via API**: Organic, website-thortful, Facebook Ads, QR_code, transactional_postmark
+- **Missing from API**: Google Ads (googleadwords_int), potentially other restricted sources
+- **Available via UI Export**: All sources including Google Ads
+
+### Recommended Workflow
+1. Use Partner API for available sources (automated)
+2. Export CSV from UI weekly for complete data (manual)
+3. Process CSV to capture Google Ads and other restricted sources
 
 ### Working Configuration
 - Endpoint: `https://hq1.appsflyer.com/api/agg-data/export/app/{app_id}/partners_report/v5`
 - Authentication: Bearer token in header
 - CSV Column for media source: "Media Source (pid)" (not "Media Source")
+
+## Configuration Reference
+
+### Required Environment Variables
+```
+AMPLITUDE_API_KEY       # Amplitude API authentication
+AMPLITUDE_SECRET_KEY    # Amplitude API authentication
+SLACK_WEBHOOK_URL      # Optional Slack notifications (empty for local testing)
+GA4_ENABLED            # Enable GA4 integration (true/false)
+GA4_WEB_PROPERTY_ID    # GA4 web property (if enabled)
+GA4_APP_PROPERTY_ID    # GA4 app property (if enabled)
+GA4_SERVICE_ACCOUNT_PATH # Path to GA4 service account JSON (if enabled)
+APPSFLYER_API_TOKEN    # AppsFlyer authentication
+APPSFLYER_APP_ID       # AppsFlyer app identifier
+```
+
+### Chart IDs (Configured in amplitude_analyzer.py)
+- Sessions (Current/Previous Year): `y0ivh3am` / `5vbaz782`
+- Sessions per user (Current/Previous Year): `pc9c0crz` / `3d400y6n`
+- Session Conversion % (Current/Previous Year): `42c5gcv4` / `3t0wgn4i`
+- User Conversion %: `4j2gp4ph`
+
+See PROJECT_NOTES.md for detailed technical information.
