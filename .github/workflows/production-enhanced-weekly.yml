@@ -1,0 +1,97 @@
+name: Production - Enhanced Weekly Analysis
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 7 * * 1'  # Monday 7 AM for production
+
+jobs:
+  production-enhanced-analysis:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+    - name: Checkout main branch
+      uses: actions/checkout@v4
+      with:
+        ref: main
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install playwright
+        playwright install chromium
+
+    - name: Create GA4 service account file
+      env:
+        GA4_SERVICE_ACCOUNT_JSON: ${{ secrets.GA4_SERVICE_ACCOUNT_JSON }}
+      run: |
+        mkdir -p ga4_service_account
+        echo "$GA4_SERVICE_ACCOUNT_JSON" > ga4_service_account/thortful-9a7a7-04cd279e1017.json
+
+    - name: Run enhanced weekly analysis (production)
+      env:
+        # Amplitude API credentials
+        AMPLITUDE_API_KEY: ${{ secrets.AMPLITUDE_API_KEY }}
+        AMPLITUDE_SECRET_KEY: ${{ secrets.AMPLITUDE_SECRET_KEY }}
+        
+        # GA4 credentials  
+        GA4_WEB_PROPERTY_ID: ${{ secrets.GA4_WEB_PROPERTY_ID }}
+        GA4_APP_PROPERTY_ID: ${{ secrets.GA4_APP_PROPERTY_ID }}
+        GA4_SERVICE_ACCOUNT_PATH: ga4_service_account/thortful-9a7a7-04cd279e1017.json
+        GA4_ENABLED: true
+        
+        # AppsFlyer credentials
+        APPSFLYER_USERNAME: ${{ secrets.APPSFLYER_USERNAME }}
+        APPSFLYER_PASSWORD: ${{ secrets.APPSFLYER_PASSWORD }}
+        APPSFLYER_API_TOKEN: ${{ secrets.APPSFLYER_API_TOKEN }}
+        APPSFLYER_APP_ID: ${{ secrets.APPSFLYER_APP_ID }}
+        
+        # Production Slack webhook
+        SLACK_WEBHOOK_URL: ${{ vars.PRODUCTION_SLACK_WEBHOOK_URL }}
+      run: |
+        echo "🚀 Running Enhanced Weekly Analysis in PRODUCTION environment"
+        echo "📊 Target: Main branch with enhanced analyzer"
+        echo "📤 Posting to: Production Slack channel"
+        python enhanced_weekly_analyzer.py
+
+    - name: Upload production artifacts
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: production-enhanced-analysis
+        path: |
+          comprehensive_report_*.txt
+          appsflyer_data/*/week_*.csv
+          *.json
+          appsflyer_exports/*.csv
+        retention-days: 30
+
+    - name: Commit production results
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Add all generated files
+        git add comprehensive_report_*.txt || true
+        git add appsflyer_data/ || true
+        git add weekly_analysis.json || true
+        git add weekly_summary.txt || true
+        
+        # Commit if there are changes
+        if ! git diff --staged --quiet; then
+          git commit -m "Automated enhanced weekly analysis - $(date +%Y-%m-%d) 🚀"
+          git push
+          echo "✅ Production results committed and pushed"
+        else
+          echo "ℹ️ No new files to commit"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

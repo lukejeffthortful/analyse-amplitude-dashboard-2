@@ -1,0 +1,104 @@
+name: Staging - Enhanced Weekly Analysis
+
+on:
+  push:
+    branches: [ development-iteration ]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * 1'  # Monday 8 AM for staging test
+
+jobs:
+  staging-enhanced-analysis:
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+    - name: Checkout development branch
+      uses: actions/checkout@v4
+      with:
+        ref: development-iteration
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install playwright
+        playwright install chromium
+
+    - name: Create GA4 service account file
+      env:
+        GA4_SERVICE_ACCOUNT_JSON: ${{ secrets.GA4_SERVICE_ACCOUNT_JSON }}
+      run: |
+        mkdir -p ga4_service_account
+        echo "$GA4_SERVICE_ACCOUNT_JSON" > ga4_service_account/thortful-9a7a7-04cd279e1017.json
+
+    - name: Run enhanced weekly analysis (staging)
+      env:
+        # Amplitude API credentials
+        AMPLITUDE_API_KEY: ${{ secrets.AMPLITUDE_API_KEY }}
+        AMPLITUDE_SECRET_KEY: ${{ secrets.AMPLITUDE_SECRET_KEY }}
+        
+        # GA4 credentials  
+        GA4_WEB_PROPERTY_ID: ${{ secrets.GA4_WEB_PROPERTY_ID }}
+        GA4_APP_PROPERTY_ID: ${{ secrets.GA4_APP_PROPERTY_ID }}
+        GA4_SERVICE_ACCOUNT_PATH: ga4_service_account/thortful-9a7a7-04cd279e1017.json
+        GA4_ENABLED: true
+        
+        # AppsFlyer credentials
+        APPSFLYER_USERNAME: ${{ secrets.APPSFLYER_USERNAME }}
+        APPSFLYER_PASSWORD: ${{ secrets.APPSFLYER_PASSWORD }}
+        APPSFLYER_API_TOKEN: ${{ secrets.APPSFLYER_API_TOKEN }}
+        APPSFLYER_APP_ID: ${{ secrets.APPSFLYER_APP_ID }}
+        
+        # Staging Slack webhook (test channel)
+        SLACK_WEBHOOK_URL: ${{ vars.STAGING_SLACK_WEBHOOK_URL }}
+      run: |
+        echo "🧪 Running Enhanced Weekly Analysis in STAGING environment"
+        echo "📊 Target: Development branch with enhanced analyzer"
+        echo "📤 Posting to: Staging Slack channel"
+        python enhanced_weekly_analyzer.py
+
+    - name: Upload staging artifacts
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: staging-enhanced-analysis
+        path: |
+          comprehensive_report_*.txt
+          appsflyer_data/*/week_*.csv
+          *.json
+          appsflyer_exports/*.csv
+        retention-days: 7
+
+    - name: Commit staging results
+      run: |
+        git config --local user.email "staging@github.com"
+        git config --local user.name "GitHub Staging"
+        
+        # Add all generated files
+        git add comprehensive_report_*.txt || true
+        git add appsflyer_data/ || true
+        git add *.json || true
+        
+        # Commit if there are changes
+        if ! git diff --staged --quiet; then
+          git commit -m "Staging: Enhanced weekly analysis - $(date +%Y-%m-%d_%H-%M) 🧪"
+          echo "✅ Staging results committed"
+        else
+          echo "ℹ️ No new files to commit"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Post staging summary
+      if: always()
+      run: |
+        echo "🧪 Staging deployment complete!"
+        echo "📊 Enhanced weekly analyzer tested"
+        echo "📤 Results posted to staging Slack channel" 
+        echo "📁 Artifacts uploaded for review"
