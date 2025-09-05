@@ -78,6 +78,70 @@ class SlackEnhancedPoster:
             
             blocks.append({"type": "divider"})
         
+        # Amplitude Session Analysis Section
+        if results['amplitude']:
+            amp_data = results['amplitude']
+            
+            amp_text = f"*📈 Amplitude Session Analytics*\n"
+            
+            # Handle both data structures
+            if 'metrics' in amp_data:
+                metrics = amp_data['metrics']
+                
+                # Sessions
+                if 'sessions' in metrics and 'combined' in metrics['sessions']:
+                    sessions = metrics['sessions']['combined']
+                    amp_text += f"• *Sessions:* {sessions['current']:,} (YoY: {sessions['yoy_change']:+.1f}%)\n"
+                
+                # Sessions per user
+                if 'sessions_per_user' in metrics and 'combined' in metrics['sessions_per_user']:
+                    spu = metrics['sessions_per_user']['combined']
+                    if spu['current'] and spu['yoy_change'] is not None:
+                        amp_text += f"• *Sessions per User:* {spu['current']:.2f} (YoY: {spu['yoy_change']:+.1f}%)\n"
+                
+                # Session conversion
+                if 'session_conversion' in metrics and 'combined' in metrics['session_conversion']:
+                    sc = metrics['session_conversion']['combined']
+                    if sc['current'] is not None:
+                        amp_text += f"• *Session Conversion:* {sc['current']:.1%} (YoY: {sc['yoy_change']:+.1f} ppts)\n"
+                
+                # User conversion
+                if 'user_conversion' in metrics and 'combined' in metrics['user_conversion']:
+                    uc = metrics['user_conversion']['combined']
+                    if isinstance(uc, dict) and 'current' in uc:
+                        amp_text += f"• *User Conversion:* {uc['current']:.1%}\n"
+                    elif isinstance(uc, (int, float)):
+                        amp_text += f"• *User Conversion:* {uc:.1%}\n"
+                
+                # Platform breakdown
+                if 'sessions' in metrics:
+                    sessions_metrics = metrics['sessions']
+                    amp_text += f"\n*Platform Breakdown:*\n"
+                    if 'apps' in sessions_metrics:
+                        apps = sessions_metrics['apps']
+                        amp_text += f"• Apps: {apps['current']:,} ({apps['yoy_change']:+.1f}% YoY)\n"
+                    if 'web' in sessions_metrics:
+                        web = sessions_metrics['web']
+                        amp_text += f"• Web: {web['current']:,} ({web['yoy_change']:+.1f}% YoY)\n"
+            
+            elif 'sessions' in amp_data:
+                # Handle alternative structure
+                amp_sessions = amp_data['sessions'].get('combined', {})
+                if 'current' in amp_sessions:
+                    current_sessions = amp_sessions['current'].get('value', 0)
+                    yoy_change = amp_sessions.get('yoy', {}).get('percentage', 0)
+                    amp_text += f"• *Sessions:* {current_sessions:,} ({yoy_change:+.1f}% YoY)\n"
+            
+            blocks.append({
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": amp_text.strip()
+                }
+            })
+            
+            blocks.append({"type": "divider"})
+        
         # AppsFlyer Section
         if results['appsflyer'] and 'error' not in results['appsflyer']:
             af_data = results['appsflyer']['current_year_data']
@@ -231,10 +295,42 @@ async def simulate_production_run():
             'analysis_week': 35
         },
         'amplitude': {
-            'sessions': {
-                'combined': {
-                    'current': {'value': 125000},
-                    'yoy': {'percentage': 8.5}
+            'metrics': {
+                'sessions': {
+                    'combined': {
+                        'current': 203075,
+                        'previous': 215491,
+                        'yoy_change': -5.8
+                    },
+                    'apps': {
+                        'current': 53855,
+                        'previous': 40656,
+                        'yoy_change': 32.5
+                    },
+                    'web': {
+                        'current': 149220,
+                        'previous': 174835,
+                        'yoy_change': -14.7
+                    }
+                },
+                'sessions_per_user': {
+                    'combined': {
+                        'current': 1.55,
+                        'previous': 1.46,
+                        'yoy_change': 5.7
+                    }
+                },
+                'session_conversion': {
+                    'combined': {
+                        'current': 0.189,
+                        'previous': 0.199,
+                        'yoy_change': -1.0
+                    }
+                },
+                'user_conversion': {
+                    'combined': {
+                        'current': 0.287
+                    }
                 }
             }
         },
@@ -307,8 +403,8 @@ async def simulate_production_run():
         'summary': {
             'key_metrics': {
                 'sessions': {
-                    'current': 125000,
-                    'yoy_change': 8.5
+                    'current': 203075,
+                    'yoy_change': -5.8
                 },
                 'installs': {
                     'current': 3125,
@@ -327,9 +423,15 @@ async def simulate_production_run():
         }
     }
     
-    # Test Slack posting
-    poster = SlackEnhancedPoster()
-    success = poster.post_to_slack(mock_results)
+    # Test Slack posting (without actual webhook)
+    poster = SlackEnhancedPoster("http://mock-webhook")
+    
+    # Just format and display the message without posting
+    message = poster.format_slack_message(mock_results)
+    logger.info("📝 Formatted Slack Message:")
+    print(json.dumps(message, indent=2))
+    
+    success = True
     
     if success:
         logger.info("✅ Production simulation successful!")
