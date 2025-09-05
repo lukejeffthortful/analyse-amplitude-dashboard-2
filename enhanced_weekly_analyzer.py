@@ -12,6 +12,7 @@ import logging
 from typing import Dict, Optional, Tuple
 
 from amplitude_analyzer import AmplitudeAnalyzer
+from unified_analyzer import UnifiedAnalyzer
 from appsflyer_weekly_integration import AppsFlyerWeeklyAnalyzer
 from ga4_acquisition_handler import GA4AcquisitionHandler
 from acquisition_reconciliation import AcquisitionReconciler
@@ -25,6 +26,7 @@ class EnhancedWeeklyAnalyzer:
     
     def __init__(self):
         self.amplitude_analyzer = AmplitudeAnalyzer()
+        self.unified_analyzer = UnifiedAnalyzer()  # Use unified analyzer like main branch
         self.appsflyer_analyzer = AppsFlyerWeeklyAnalyzer()
         self.ga4_handler = GA4AcquisitionHandler()
         self.reconciler = AcquisitionReconciler()
@@ -66,13 +68,14 @@ class EnhancedWeeklyAnalyzer:
         }
         
         try:
-            # 1. Get Amplitude session data
+            # 1. Get Amplitude session data using unified analyzer (like main branch)
             logger.info("📊 Fetching Amplitude data...")
-            amplitude_data = self.amplitude_analyzer.analyze_weekly_data(
+            unified_data = self.unified_analyzer.analyze_weekly_data_unified(
                 target_week=week,
                 target_year=year
             )
-            results['amplitude'] = amplitude_data
+            # Extract amplitude_metrics from unified data structure to match main branch format
+            results['amplitude'] = unified_data.get('amplitude_metrics', {})
             
             # 2. Get AppsFlyer install data with YoY comparison
             logger.info("📱 Fetching AppsFlyer data...")
@@ -120,7 +123,7 @@ class EnhancedWeeklyAnalyzer:
             'actions': []
         }
         
-        # Extract key metrics from Amplitude data (direct structure)
+        # Extract key metrics from Amplitude data (unified structure like main branch)
         if results['amplitude'] and 'sessions' in results['amplitude']:
             amp_sessions = results['amplitude']['sessions']
             if 'combined' in amp_sessions and isinstance(amp_sessions['combined'], dict):
@@ -130,21 +133,6 @@ class EnhancedWeeklyAnalyzer:
                         'current': combined_sessions['current'],
                         'yoy_change': combined_sessions['yoy_change']
                     }
-                elif 'current' in combined_sessions:
-                    # Handle case where it's nested under 'value'
-                    current_val = combined_sessions['current']
-                    if isinstance(current_val, dict) and 'value' in current_val:
-                        yoy_data = combined_sessions.get('yoy', {})
-                        yoy_change = yoy_data.get('percentage', 0) if isinstance(yoy_data, dict) else 0
-                        summary['key_metrics']['sessions'] = {
-                            'current': current_val['value'],
-                            'yoy_change': yoy_change
-                        }
-                    else:
-                        summary['key_metrics']['sessions'] = {
-                            'current': current_val,
-                            'yoy_change': 0
-                        }
         
         if results['appsflyer'] and 'error' not in results['appsflyer']:
             af_current = results['appsflyer']['current_year_data']['total_installs']
@@ -236,32 +224,25 @@ class EnhancedWeeklyAnalyzer:
             
             amp_data = results['amplitude']
             
-            # Sessions
-            if 'sessions' in amp_data and 'combined' in amp_data['sessions']:
-                combined_sessions = amp_data['sessions']['combined']
-                if 'current' in combined_sessions and 'yoy_change' in combined_sessions:
-                    lines.append(f"**Sessions:** {combined_sessions['current']:,} (YoY: {combined_sessions['yoy_change']:+.1f}%)")
-                elif 'current' in combined_sessions:
-                    # Handle nested structure
-                    current_val = combined_sessions['current']
-                    if isinstance(current_val, dict) and 'value' in current_val:
-                        yoy_data = combined_sessions.get('yoy', {})
-                        yoy_change = yoy_data.get('percentage', 0) if isinstance(yoy_data, dict) else 0
-                        lines.append(f"**Sessions:** {current_val['value']:,} (YoY: {yoy_change:+.1f}%)")
-                    else:
-                        lines.append(f"**Sessions:** {current_val:,}")
-                
-                # Platform breakdown
-                lines.append("")
-                lines.append("**Platform Breakdown:**")
-                if 'apps' in amp_data['sessions'] and isinstance(amp_data['sessions']['apps'], dict):
-                    apps = amp_data['sessions']['apps']
-                    if 'current' in apps and 'yoy_change' in apps:
-                        lines.append(f"- Apps: {apps['current']:,} ({apps['yoy_change']:+.1f}% YoY)")
-                if 'web' in amp_data['sessions'] and isinstance(amp_data['sessions']['web'], dict):
-                    web = amp_data['sessions']['web']
-                    if 'current' in web and 'yoy_change' in web:
-                        lines.append(f"- Web: {web['current']:,} ({web['yoy_change']:+.1f}% YoY)")
+            # Sessions - handle the unified analyzer structure
+            if 'sessions' in amp_data:
+                sessions = amp_data['sessions']
+                if 'combined' in sessions and isinstance(sessions['combined'], dict):
+                    combined = sessions['combined']
+                    if 'current' in combined and 'yoy_change' in combined:
+                        lines.append(f"**Sessions:** {combined['current']:,} (YoY: {combined['yoy_change']:+.1f}%)")
+                    
+                    # Platform breakdown
+                    lines.append("")
+                    lines.append("**Platform Breakdown:**")
+                    if 'apps' in sessions and isinstance(sessions['apps'], dict):
+                        apps = sessions['apps']
+                        if 'current' in apps and 'yoy_change' in apps:
+                            lines.append(f"- Apps: {apps['current']:,} ({apps['yoy_change']:+.1f}% YoY)")
+                    if 'web' in sessions and isinstance(sessions['web'], dict):
+                        web = sessions['web']
+                        if 'current' in web and 'yoy_change' in web:
+                            lines.append(f"- Web: {web['current']:,} ({web['yoy_change']:+.1f}% YoY)")
             
             # Sessions per user
             if 'sessions_per_user' in amp_data and 'combined' in amp_data['sessions_per_user']:

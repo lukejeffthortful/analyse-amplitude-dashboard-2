@@ -92,15 +92,6 @@ class SlackEnhancedPoster:
                     combined = sessions['combined']
                     if 'current' in combined and 'yoy_change' in combined:
                         amp_text += f"• *Sessions:* {combined['current']:,} (YoY: {combined['yoy_change']:+.1f}%)\n"
-                    elif 'current' in combined:
-                        # Handle nested structure
-                        current_val = combined['current']
-                        if isinstance(current_val, dict) and 'value' in current_val:
-                            yoy_data = combined.get('yoy', {})
-                            yoy_change = yoy_data.get('percentage', 0) if isinstance(yoy_data, dict) else 0
-                            amp_text += f"• *Sessions:* {current_val['value']:,} ({yoy_change:+.1f}% YoY)\n"
-                        else:
-                            amp_text += f"• *Sessions:* {current_val:,}\n"
                 
                 # Platform breakdown
                 amp_text += f"\n*Platform Breakdown:*\n"
