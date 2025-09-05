@@ -121,12 +121,26 @@ class EnhancedWeeklyAnalyzer:
         }
         
         # Extract key metrics
-        if results['amplitude']:
-            amp_sessions = results['amplitude']['sessions']['combined']
-            summary['key_metrics']['sessions'] = {
-                'current': amp_sessions['current']['value'],
-                'yoy_change': amp_sessions['yoy']['percentage']
-            }
+        if results['amplitude'] and 'metrics' in results['amplitude']:
+            # Handle Amplitude data structure
+            amp_metrics = results['amplitude']['metrics']
+            if 'sessions' in amp_metrics and 'combined' in amp_metrics['sessions']:
+                current_sessions = amp_metrics['sessions']['combined']['current']
+                previous_sessions = amp_metrics['sessions']['combined']['previous']
+                yoy_change = amp_metrics['sessions']['combined']['yoy_change']
+                
+                summary['key_metrics']['sessions'] = {
+                    'current': current_sessions,
+                    'yoy_change': yoy_change if yoy_change is not None else 0
+                }
+        elif results['amplitude'] and 'sessions' in results['amplitude']:
+            # Handle alternative structure
+            amp_sessions = results['amplitude']['sessions'].get('combined', {})
+            if 'current' in amp_sessions:
+                summary['key_metrics']['sessions'] = {
+                    'current': amp_sessions['current'].get('value', 0),
+                    'yoy_change': amp_sessions.get('yoy', {}).get('percentage', 0)
+                }
         
         if results['appsflyer'] and 'error' not in results['appsflyer']:
             af_current = results['appsflyer']['current_year_data']['total_installs']
@@ -215,11 +229,36 @@ class EnhancedWeeklyAnalyzer:
         # Amplitude Section
         if results['amplitude']:
             lines.append("## 📈 Amplitude Session Analysis")
-            amp_report = self.amplitude_analyzer.create_weekly_summary_report(results['amplitude'])
-            # Extract just the metrics part
-            for line in amp_report.split('\n')[4:15]:  # Skip header, get metrics
-                if line.strip():
-                    lines.append(line)
+            
+            # Handle Amplitude metrics from the data structure
+            if 'metrics' in results['amplitude']:
+                metrics = results['amplitude']['metrics']
+                
+                # Sessions
+                if 'sessions' in metrics and 'combined' in metrics['sessions']:
+                    sessions = metrics['sessions']['combined']
+                    lines.append(f"**Sessions:** {sessions['current']:,} (YoY: {sessions['yoy_change']:+.1f}%)")
+                
+                # Sessions per user
+                if 'sessions_per_user' in metrics and 'combined' in metrics['sessions_per_user']:
+                    spu = metrics['sessions_per_user']['combined']
+                    if spu['current'] and spu['yoy_change'] is not None:
+                        lines.append(f"**Sessions per User:** {spu['current']:.2f} (YoY: {spu['yoy_change']:+.1f}%)")
+                
+                # Session conversion
+                if 'session_conversion' in metrics and 'combined' in metrics['session_conversion']:
+                    sc = metrics['session_conversion']['combined']
+                    if sc['current'] is not None:
+                        lines.append(f"**Session Conversion:** {sc['current']:.1%} (YoY: {sc['yoy_change']:+.1f} ppts)")
+                
+                # User conversion
+                if 'user_conversion' in metrics and 'combined' in metrics['user_conversion']:
+                    uc = metrics['user_conversion']['combined']
+                    if isinstance(uc, dict) and 'current' in uc:
+                        lines.append(f"**User Conversion:** {uc['current']:.1%}")
+                    elif isinstance(uc, (int, float)):
+                        lines.append(f"**User Conversion:** {uc:.1%}")
+            
             lines.append("")
         
         # AppsFlyer Section
