@@ -5,6 +5,7 @@ Combines Amplitude sessions, AppsFlyer installs, and GA4 acquisition with reconc
 """
 
 import asyncio
+import os
 from datetime import datetime, timedelta
 from pathlib import Path
 import logging
@@ -14,6 +15,7 @@ from amplitude_analyzer import AmplitudeAnalyzer
 from appsflyer_weekly_integration import AppsFlyerWeeklyAnalyzer
 from ga4_acquisition_handler import GA4AcquisitionHandler
 from acquisition_reconciliation import AcquisitionReconciler
+from slack_enhanced_poster import SlackEnhancedPoster
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -66,7 +68,7 @@ class EnhancedWeeklyAnalyzer:
         try:
             # 1. Get Amplitude session data
             logger.info("📊 Fetching Amplitude data...")
-            amplitude_data = self.amplitude_analyzer.analyze_week_yoy(
+            amplitude_data = self.amplitude_analyzer.analyze_weekly_data(
                 target_week=week,
                 target_year=year
             )
@@ -268,6 +270,21 @@ class EnhancedWeeklyAnalyzer:
         output_path.write_text(report)
         
         logger.info(f"📄 Report saved to: {output_path}")
+        
+        # Post to Slack if webhook is configured
+        slack_url = os.getenv('SLACK_WEBHOOK_URL')
+        if slack_url:
+            try:
+                poster = SlackEnhancedPoster(slack_url)
+                if poster.post_to_slack(results):
+                    logger.info("✅ Posted to Slack successfully!")
+                else:
+                    logger.warning("⚠️ Failed to post to Slack")
+            except Exception as e:
+                logger.error(f"❌ Slack posting error: {str(e)}")
+        else:
+            logger.info("ℹ️ No Slack webhook configured")
+        
         return output_path
 
 async def test_enhanced_analyzer():
