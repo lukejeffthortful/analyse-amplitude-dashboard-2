@@ -120,27 +120,31 @@ class EnhancedWeeklyAnalyzer:
             'actions': []
         }
         
-        # Extract key metrics
-        if results['amplitude'] and 'metrics' in results['amplitude']:
-            # Handle Amplitude data structure
-            amp_metrics = results['amplitude']['metrics']
-            if 'sessions' in amp_metrics and 'combined' in amp_metrics['sessions']:
-                current_sessions = amp_metrics['sessions']['combined']['current']
-                previous_sessions = amp_metrics['sessions']['combined']['previous']
-                yoy_change = amp_metrics['sessions']['combined']['yoy_change']
-                
-                summary['key_metrics']['sessions'] = {
-                    'current': current_sessions,
-                    'yoy_change': yoy_change if yoy_change is not None else 0
-                }
-        elif results['amplitude'] and 'sessions' in results['amplitude']:
-            # Handle alternative structure
-            amp_sessions = results['amplitude']['sessions'].get('combined', {})
-            if 'current' in amp_sessions:
-                summary['key_metrics']['sessions'] = {
-                    'current': amp_sessions['current'].get('value', 0),
-                    'yoy_change': amp_sessions.get('yoy', {}).get('percentage', 0)
-                }
+        # Extract key metrics from Amplitude data (direct structure)
+        if results['amplitude'] and 'sessions' in results['amplitude']:
+            amp_sessions = results['amplitude']['sessions']
+            if 'combined' in amp_sessions and isinstance(amp_sessions['combined'], dict):
+                combined_sessions = amp_sessions['combined']
+                if 'current' in combined_sessions and 'yoy_change' in combined_sessions:
+                    summary['key_metrics']['sessions'] = {
+                        'current': combined_sessions['current'],
+                        'yoy_change': combined_sessions['yoy_change']
+                    }
+                elif 'current' in combined_sessions:
+                    # Handle case where it's nested under 'value'
+                    current_val = combined_sessions['current']
+                    if isinstance(current_val, dict) and 'value' in current_val:
+                        yoy_data = combined_sessions.get('yoy', {})
+                        yoy_change = yoy_data.get('percentage', 0) if isinstance(yoy_data, dict) else 0
+                        summary['key_metrics']['sessions'] = {
+                            'current': current_val['value'],
+                            'yoy_change': yoy_change
+                        }
+                    else:
+                        summary['key_metrics']['sessions'] = {
+                            'current': current_val,
+                            'yoy_change': 0
+                        }
         
         if results['appsflyer'] and 'error' not in results['appsflyer']:
             af_current = results['appsflyer']['current_year_data']['total_installs']

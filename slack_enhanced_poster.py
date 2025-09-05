@@ -84,53 +84,62 @@ class SlackEnhancedPoster:
             
             amp_text = f"*📈 Amplitude Session Analytics*\n"
             
-            # Handle both data structures
-            if 'metrics' in amp_data:
-                metrics = amp_data['metrics']
-                
+            # Handle direct Amplitude data structure (sessions, sessions_per_user, etc. at top level)
+            if 'sessions' in amp_data:
                 # Sessions
-                if 'sessions' in metrics and 'combined' in metrics['sessions']:
-                    sessions = metrics['sessions']['combined']
-                    amp_text += f"• *Sessions:* {sessions['current']:,} (YoY: {sessions['yoy_change']:+.1f}%)\n"
-                
-                # Sessions per user
-                if 'sessions_per_user' in metrics and 'combined' in metrics['sessions_per_user']:
-                    spu = metrics['sessions_per_user']['combined']
-                    if spu['current'] and spu['yoy_change'] is not None:
-                        amp_text += f"• *Sessions per User:* {spu['current']:.2f} (YoY: {spu['yoy_change']:+.1f}%)\n"
-                
-                # Session conversion
-                if 'session_conversion' in metrics and 'combined' in metrics['session_conversion']:
-                    sc = metrics['session_conversion']['combined']
-                    if sc['current'] is not None:
-                        amp_text += f"• *Session Conversion:* {sc['current']:.1%} (YoY: {sc['yoy_change']:+.1f} ppts)\n"
-                
-                # User conversion
-                if 'user_conversion' in metrics and 'combined' in metrics['user_conversion']:
-                    uc = metrics['user_conversion']['combined']
-                    if isinstance(uc, dict) and 'current' in uc:
-                        amp_text += f"• *User Conversion:* {uc['current']:.1%}\n"
-                    elif isinstance(uc, (int, float)):
-                        amp_text += f"• *User Conversion:* {uc:.1%}\n"
+                sessions = amp_data['sessions']
+                if 'combined' in sessions and isinstance(sessions['combined'], dict):
+                    combined = sessions['combined']
+                    if 'current' in combined and 'yoy_change' in combined:
+                        amp_text += f"• *Sessions:* {combined['current']:,} (YoY: {combined['yoy_change']:+.1f}%)\n"
+                    elif 'current' in combined:
+                        # Handle nested structure
+                        current_val = combined['current']
+                        if isinstance(current_val, dict) and 'value' in current_val:
+                            yoy_data = combined.get('yoy', {})
+                            yoy_change = yoy_data.get('percentage', 0) if isinstance(yoy_data, dict) else 0
+                            amp_text += f"• *Sessions:* {current_val['value']:,} ({yoy_change:+.1f}% YoY)\n"
+                        else:
+                            amp_text += f"• *Sessions:* {current_val:,}\n"
                 
                 # Platform breakdown
-                if 'sessions' in metrics:
-                    sessions_metrics = metrics['sessions']
-                    amp_text += f"\n*Platform Breakdown:*\n"
-                    if 'apps' in sessions_metrics:
-                        apps = sessions_metrics['apps']
+                amp_text += f"\n*Platform Breakdown:*\n"
+                if 'apps' in sessions and isinstance(sessions['apps'], dict):
+                    apps = sessions['apps']
+                    if 'current' in apps and 'yoy_change' in apps:
                         amp_text += f"• Apps: {apps['current']:,} ({apps['yoy_change']:+.1f}% YoY)\n"
-                    if 'web' in sessions_metrics:
-                        web = sessions_metrics['web']
+                if 'web' in sessions and isinstance(sessions['web'], dict):
+                    web = sessions['web']
+                    if 'current' in web and 'yoy_change' in web:
                         amp_text += f"• Web: {web['current']:,} ({web['yoy_change']:+.1f}% YoY)\n"
             
-            elif 'sessions' in amp_data:
-                # Handle alternative structure
-                amp_sessions = amp_data['sessions'].get('combined', {})
-                if 'current' in amp_sessions:
-                    current_sessions = amp_sessions['current'].get('value', 0)
-                    yoy_change = amp_sessions.get('yoy', {}).get('percentage', 0)
-                    amp_text += f"• *Sessions:* {current_sessions:,} ({yoy_change:+.1f}% YoY)\n"
+            # Sessions per user
+            if 'sessions_per_user' in amp_data:
+                spu = amp_data['sessions_per_user']
+                if 'combined' in spu and isinstance(spu['combined'], dict):
+                    combined_spu = spu['combined']
+                    if 'current' in combined_spu and 'yoy_change' in combined_spu:
+                        if combined_spu['current'] and combined_spu['yoy_change'] is not None:
+                            amp_text += f"• *Sessions per User:* {combined_spu['current']:.2f} (YoY: {combined_spu['yoy_change']:+.1f}%)\n"
+            
+            # Session conversion
+            if 'session_conversion' in amp_data:
+                sc = amp_data['session_conversion']
+                if 'combined' in sc and isinstance(sc['combined'], dict):
+                    combined_sc = sc['combined']
+                    if 'current' in combined_sc and combined_sc['current'] is not None:
+                        yoy_change = combined_sc.get('yoy_change', 0)
+                        amp_text += f"• *Session Conversion:* {combined_sc['current']:.1%} (YoY: {yoy_change:+.1f} ppts)\n"
+            
+            # User conversion
+            if 'user_conversion' in amp_data:
+                uc = amp_data['user_conversion']
+                if 'combined' in uc and isinstance(uc['combined'], dict):
+                    combined_uc = uc['combined']
+                    if 'current' in combined_uc:
+                        amp_text += f"• *User Conversion:* {combined_uc['current']:.1%}\n"
+                elif isinstance(uc, (int, float)):
+                    amp_text += f"• *User Conversion:* {uc:.1%}\n"
             
             blocks.append({
                 "type": "section",
@@ -295,42 +304,40 @@ async def simulate_production_run():
             'analysis_week': 35
         },
         'amplitude': {
-            'metrics': {
-                'sessions': {
-                    'combined': {
-                        'current': 203075,
-                        'previous': 215491,
-                        'yoy_change': -5.8
-                    },
-                    'apps': {
-                        'current': 53855,
-                        'previous': 40656,
-                        'yoy_change': 32.5
-                    },
-                    'web': {
-                        'current': 149220,
-                        'previous': 174835,
-                        'yoy_change': -14.7
-                    }
+            'sessions': {
+                'combined': {
+                    'current': 203075,
+                    'previous': 215491,
+                    'yoy_change': -5.8
                 },
-                'sessions_per_user': {
-                    'combined': {
-                        'current': 1.55,
-                        'previous': 1.46,
-                        'yoy_change': 5.7
-                    }
+                'apps': {
+                    'current': 53855,
+                    'previous': 40656,
+                    'yoy_change': 32.5
                 },
-                'session_conversion': {
-                    'combined': {
-                        'current': 0.189,
-                        'previous': 0.199,
-                        'yoy_change': -1.0
-                    }
-                },
-                'user_conversion': {
-                    'combined': {
-                        'current': 0.287
-                    }
+                'web': {
+                    'current': 149220,
+                    'previous': 174835,
+                    'yoy_change': -14.7
+                }
+            },
+            'sessions_per_user': {
+                'combined': {
+                    'current': 1.55,
+                    'previous': 1.46,
+                    'yoy_change': 5.7
+                }
+            },
+            'session_conversion': {
+                'combined': {
+                    'current': 0.189,
+                    'previous': 0.199,
+                    'yoy_change': -1.0
+                }
+            },
+            'user_conversion': {
+                'combined': {
+                    'current': 0.287
                 }
             }
         },
