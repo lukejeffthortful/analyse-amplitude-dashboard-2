@@ -234,34 +234,57 @@ class EnhancedWeeklyAnalyzer:
         if results['amplitude']:
             lines.append("## 📈 Amplitude Session Analysis")
             
-            # Handle Amplitude metrics from the data structure
-            if 'metrics' in results['amplitude']:
-                metrics = results['amplitude']['metrics']
+            amp_data = results['amplitude']
+            
+            # Sessions
+            if 'sessions' in amp_data and 'combined' in amp_data['sessions']:
+                combined_sessions = amp_data['sessions']['combined']
+                if 'current' in combined_sessions and 'yoy_change' in combined_sessions:
+                    lines.append(f"**Sessions:** {combined_sessions['current']:,} (YoY: {combined_sessions['yoy_change']:+.1f}%)")
+                elif 'current' in combined_sessions:
+                    # Handle nested structure
+                    current_val = combined_sessions['current']
+                    if isinstance(current_val, dict) and 'value' in current_val:
+                        yoy_data = combined_sessions.get('yoy', {})
+                        yoy_change = yoy_data.get('percentage', 0) if isinstance(yoy_data, dict) else 0
+                        lines.append(f"**Sessions:** {current_val['value']:,} (YoY: {yoy_change:+.1f}%)")
+                    else:
+                        lines.append(f"**Sessions:** {current_val:,}")
                 
-                # Sessions
-                if 'sessions' in metrics and 'combined' in metrics['sessions']:
-                    sessions = metrics['sessions']['combined']
-                    lines.append(f"**Sessions:** {sessions['current']:,} (YoY: {sessions['yoy_change']:+.1f}%)")
-                
-                # Sessions per user
-                if 'sessions_per_user' in metrics and 'combined' in metrics['sessions_per_user']:
-                    spu = metrics['sessions_per_user']['combined']
-                    if spu['current'] and spu['yoy_change'] is not None:
-                        lines.append(f"**Sessions per User:** {spu['current']:.2f} (YoY: {spu['yoy_change']:+.1f}%)")
-                
-                # Session conversion
-                if 'session_conversion' in metrics and 'combined' in metrics['session_conversion']:
-                    sc = metrics['session_conversion']['combined']
-                    if sc['current'] is not None:
-                        lines.append(f"**Session Conversion:** {sc['current']:.1%} (YoY: {sc['yoy_change']:+.1f} ppts)")
-                
-                # User conversion
-                if 'user_conversion' in metrics and 'combined' in metrics['user_conversion']:
-                    uc = metrics['user_conversion']['combined']
-                    if isinstance(uc, dict) and 'current' in uc:
-                        lines.append(f"**User Conversion:** {uc['current']:.1%}")
-                    elif isinstance(uc, (int, float)):
-                        lines.append(f"**User Conversion:** {uc:.1%}")
+                # Platform breakdown
+                lines.append("")
+                lines.append("**Platform Breakdown:**")
+                if 'apps' in amp_data['sessions'] and isinstance(amp_data['sessions']['apps'], dict):
+                    apps = amp_data['sessions']['apps']
+                    if 'current' in apps and 'yoy_change' in apps:
+                        lines.append(f"- Apps: {apps['current']:,} ({apps['yoy_change']:+.1f}% YoY)")
+                if 'web' in amp_data['sessions'] and isinstance(amp_data['sessions']['web'], dict):
+                    web = amp_data['sessions']['web']
+                    if 'current' in web and 'yoy_change' in web:
+                        lines.append(f"- Web: {web['current']:,} ({web['yoy_change']:+.1f}% YoY)")
+            
+            # Sessions per user
+            if 'sessions_per_user' in amp_data and 'combined' in amp_data['sessions_per_user']:
+                spu = amp_data['sessions_per_user']['combined']
+                if 'current' in spu and 'yoy_change' in spu and spu['current'] and spu['yoy_change'] is not None:
+                    lines.append(f"**Sessions per User:** {spu['current']:.2f} (YoY: {spu['yoy_change']:+.1f}%)")
+            
+            # Session conversion
+            if 'session_conversion' in amp_data and 'combined' in amp_data['session_conversion']:
+                sc = amp_data['session_conversion']['combined']
+                if 'current' in sc and sc['current'] is not None:
+                    yoy_change = sc.get('yoy_change', 0)
+                    lines.append(f"**Session Conversion:** {sc['current']:.1%} (YoY: {yoy_change:+.1f} ppts)")
+            
+            # User conversion
+            if 'user_conversion' in amp_data:
+                uc = amp_data['user_conversion']
+                if 'combined' in uc and isinstance(uc['combined'], dict):
+                    combined_uc = uc['combined']
+                    if 'current' in combined_uc:
+                        lines.append(f"**User Conversion:** {combined_uc['current']:.1%}")
+                elif isinstance(uc, (int, float)):
+                    lines.append(f"**User Conversion:** {uc:.1%}")
             
             lines.append("")
         
@@ -357,6 +380,41 @@ async def test_enhanced_analyzer():
     except Exception as e:
         logger.error(f"Test failed: {str(e)}")
         return None
+
+async def test_amplitude_formatting():
+    """Test the Amplitude formatting specifically"""
+    
+    # Mock results with realistic Amplitude data structure  
+    mock_results = {
+        'week_info': {'analysis_week': 35, 'analysis_year': 2025},
+        'amplitude': {
+            'sessions': {
+                'combined': {'current': 188923, 'previous': 223299, 'yoy_change': -15.4},
+                'apps': {'current': 51960, 'previous': 42781, 'yoy_change': 21.4},
+                'web': {'current': 136963, 'previous': 180518, 'yoy_change': -24.1}
+            },
+            'sessions_per_user': {
+                'combined': {'current': 1.54, 'previous': 1.50, 'yoy_change': 2.7}
+            },
+            'session_conversion': {
+                'combined': {'current': 0.195, 'previous': 0.205, 'yoy_change': -1.0}
+            },
+            'user_conversion': {
+                'combined': {'current': 0.285}
+            }
+        },
+        'appsflyer': None,
+        'ga4_acquisition': None,
+        'reconciliation': None,
+        'summary': None
+    }
+    
+    analyzer = EnhancedWeeklyAnalyzer()
+    report = analyzer.format_comprehensive_report(mock_results)
+    
+    print("=== AMPLITUDE FORMATTING TEST ===")
+    print(report)
+    print("================================")
 
 if __name__ == "__main__":
     asyncio.run(test_enhanced_analyzer())
