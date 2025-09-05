@@ -1,0 +1,3547 @@
+{
+  "week": 34,
+  "year": 2025,
+  "date_range": {
+    "start": "2025-08-18",
+    "end": "2025-08-24"
+  },
+  "amplitude_data": {},
+  "appsflyer_data": {
+    "date_range": {
+      "start": "2025-08-18",
+      "end": "2025-08-24"
+    },
+    "total_installs": 516146,
+    "by_media_source": {
+      "organic": 214098,
+      "googleadwords_int": 123720,
+      "website-thortful": 113649,
+      "google_organic_seo": 28223,
+      "Facebook Ads": 28049,
+      "bloomreach": 2460,
+      "impactradius_int": 832,
+      "emarsys": 1490,
+      "Apple Search Ads": 815,
+      "transactional_postmark": 501,
+      "print": 432,
+      "QR_code": 363,
+      "duckduckgo_organic_seo": 293,
+      "yahoo_organic_seo": 282,
+      "tiktokglobal_int": 420,
+      "card-back-thortful": 96,
+      "bing_organic_seo": 91,
+      "Social_Influencers": 72,
+      "af_banner": 69,
+      "ecosia_organic_seo": 63,
+      "Twitter": 98,
+      "test": 16,
+      "auto_apply_test": 7,
+      "None": 4,
+      "impact": 3
+    },
+    "by_campaign": {
+      "None": 277504,
+      "web-promo-code-error": 28639,
+      "SER|RET|Brand - Pure Brand - EX": 19857,
+      "SHP|ACQ|All Products - Generics": 17940,
+      "web-PDP-download-CTA-fday30-202": 13716,
+      "web-PDP-MDAY-NEWAPP25": 11836,
+      "web-PDP-download-CTA": 11233,
+      "SER|ACQ|Brand - EX": 11107,
+      "web-footer-download-button": 8578,
+      "APP|ACQ|Downloads - Android": 8017,
+      "web-PLP-download-MODAL-mday25": 4881,
+      "web-PDP-download-MODAL-fday40-2024": 4654,
+      "web-PDP-download-MODAL-fday30-2024": 4129,
+      "web-PLP-download-modal": 3659,
+      "web-PLP-download-BANNER-bday-faceswap": 3520,
+      "web-PLP-download-MODAL-fday40-2024": 3008,
+      "Vday25 - FS android APPINSTALL - Acquisition \u2013 Copy": 2705,
+      "web-PLP-download-MODAL-fday30-2024": 2537,
+      "SHP|ACQ|Zombie": 2490,
+      "web-postpurchase-download-banner-app20": 2195,
+      "Shoptimised | Incremental | Performance Max | All Customers | ACQ": 2027,
+      "SHP|ACQ|Valentine's Day 25": 2006,
+      "web-homepage-download-banne-app20r": 1913,
+      "SER|ACQ|Birthday - MM": 1908,
+      "SHP|ACQ|All Products - Brand": 1806,
+      "SHP|ACQ|Christmas 24": 1787,
+      "web-account-download-banner-app20": 1716,
+      "web-blog-face-swap": 1402,
+      "web-PLP-download-MODAL-bday-faceswap": 1362,
+      "web-postpurchase-download-banner": 1356,
+      "SHP|ACQ|Birthday - Generics": 1202,
+      "BAU": 1186,
+      "Valentines24 - Interests - Acquisition": 1022,
+      "SER|RET|Brand - Long Tail Brand - BR": 975,
+      "SER|ACQ|Generic Cards - MM": 968,
+      "web-blog-download-link": 943,
+      "SER|RET|Birthday - MM": 922,
+      "SHP|ACQ|Father's Day 25": 861,
+      "GET35OFFAPP": 832,
+      "app40_postpurchase": 831,
+      "Valentines24 - Catalogue - Acquisition": 825,
+      "Mothers24 - Demographics - Acquisition": 823,
+      "18861888": 815,
+      "Vday25 - FS android - Acquisition": 804,
+      "Valentines24 - Demographics - Acquisition": 786,
+      "Valentines24 - Dynamic - Acquisition": 763,
+      "Fday24 - Demographics - Acquisition": 701,
+      "Shoptimised | IP | Incremental | Performance Max |ACQ|": 693,
+      "BAU_v_220125_faceswap_bday": 678,
+      "Vday25 - FS android APPINSTALL - retention": 670,
+      "Valentines24 - T2 - acquisition": 661,
+      "SHP|ACQ|Mother's Day 25": 658,
+      "SHP|RET|All Products - Generics": 643,
+      "web-homepage-download-banner": 638,
+      "Mday25 - FS android - Acquisition": 621,
+      "web-PLP-download-MODAL-vday-faceswap": 609,
+      "SHP|ACQ|Father's Day 24": 560,
+      "SHP|ACQ|Valentine's Day 24 (v2)": 548,
+      "SER|ACQ|INT|Send to UK - MM": 529,
+      "web-PLP-download-BANNER-vday-faceswap": 516,
+      "Vday25 - Interests - Retention": 515,
+      "SER|ACQ|Generic Cards - BR": 510,
+      "web-account-download-banner": 505,
+      "Fday24 - Interests - Acquisition": 504,
+      "footer-transactional": 501,
+      "Valentines24 - Interests - Retention": 489,
+      "SER|ACQ|Valentine's - EX": 470,
+      "crm-header-logo": 468,
+      "SHP|ACQ|Anniversary": 463,
+      "Valentines24 - Catalogue - Retention": 443,
+      "BAU_M_050325_MDfaceswap": 430,
+      "Acquisition_FD25_Interests": 409,
+      "Vday25 - Interests - Acquisition": 401,
+      "SHP|RET|Birthday - Generics": 372,
+      "print_App40Flyer2024": 368,
+      "SER|ACQ|Birthday - BR": 367,
+      "Face-swap-flyer-14-Jan": 363,
+      "Valentines24 - Advantage - Acquisition v2 Campaign": 345,
+      "SER|ACQ|Father's Day - EX": 342,
+      "Mothers24 - Catalogue - Acquisition": 334,
+      "SHP|ACQ|Mother's Day 24": 333,
+      "SER|ACQ|Valentine's - BR": 327,
+      "SER|RET|Congratulations - MM": 327,
+      "SHP|RET|Christmas 24": 324,
+      "Valentines24 - Styles - Acquisition": 310,
+      "Mday25 - FS android - Retention": 308,
+      "Valentines24 - Demographics - Retention": 305,
+      "Vday25 - Demographics - Retention": 302,
+      "Vday25 - hero - Retention": 302,
+      "Acquisition_FD25_Demographics": 297,
+      "Summer24 - BAU - Retention": 285,
+      "Vday25 - FS android - Retention": 280,
+      "Valentines24 - Dynamic - Retention": 269,
+      "SER|ACQ|DSA": 267,
+      "SER|ACQ|Anniversaries - MM": 265,
+      "Acquisition_FD25_T2": 259,
+      "SER|RET|Generic Cards - MM": 254,
+      "Mothers24 - Demographics - Retention": 248,
+      "SER|RET|Congratulations - BR": 242,
+      "FDay24 - Styles - Acquisition": 237,
+      "Retention_FD25_T2": 235,
+      "Vday25 - Demographics - Acquisition": 224,
+      "SER|ACQ|Mother's Day - EX": 210,
+      "Valentines24 - T2 - retention": 209,
+      "SER|ACQ|Congratulations - MM": 207,
+      "Vday25 - Catalogue - Retention": 206,
+      "Retention_FD25_Demographics": 203,
+      "Mday25 - Interests - Acquisition": 199,
+      "Valentines24 - ProductRetargeting - Acquisition": 198,
+      "SER|RET|Christmas - BR": 198,
+      "Christmas24 - Interests - Retention": 193,
+      "Christmas24 - Demographics - Retention": 186,
+      "Autumn24 - BAU - Retention": 186,
+      "SER|RET|Anniversaries - BR": 186,
+      "Acquisition_FD25_Hero": 183,
+      "Retention_FD25_FSAndroid": 181,
+      "SER|RET|Generic Cards - BR": 180,
+      "Valentines24 - Styles - Retention": 180,
+      "Mothers24 - Catalogue - Retention": 177,
+      "Fday24 - Demographics - Retention": 174,
+      "Spring24 - Catalogue - Retention": 174,
+      "Vday25 - Catalogue - Acquisition": 171,
+      "Retention_FD25_Interests": 168,
+      "SER|ACQ|Engagements & Weddings - MM": 168,
+      "app180424": 164,
+      "Mothers24 - Styles - Acquisition": 164,
+      "SER|RET|Christmas - EX": 163,
+      "Vday25 - Online thoughtful - Acquisition": 162,
+      "Mothers24 - Dynamic - Acquisition": 160,
+      "Vday25 - T2 - Acquisition": 154,
+      "Fday24 - WkT-3 - Acquisition": 152,
+      "Valentines24 - ProductRetargeting - Retention": 146,
+      "SER|RET|Anniversaries - MM": 144,
+      "Mday25 - Demographics - Acquisition": 142,
+      "Christmas24 - Hero - Retention": 140,
+      "SER|RET|Brand - Long Tail Brand - EX": 139,
+      "Vday25 - Online Overwhelmed - Acquisition": 136,
+      "SER|ACQ|Birthday - MM Google Ads Tag": 135,
+      "Shoptimised | Performance MAX | NoClicks | New Customers Only | Incremental ACQ": 134,
+      "Mday25 - Interests - Retention": 133,
+      "Mday25 - Demographics - Retention": 132,
+      "Mday25 - Hero - Acquisition": 131,
+      "Valentines25 - Hero - Acquisition": 129,
+      "Mothers24 - Interests - Retention": 127,
+      "Vday25 - T2 - Retention": 127,
+      "Mothers24 - Interests - Acquisition": 126,
+      "Mday25 - T2 - Acquisition": 125,
+      "Vday25 - T1 Creative - Retention": 125,
+      "SER|ACQ|Interests - BR": 125,
+      "SER|ACQ|Animals - BR": 124,
+      "SER|ACQ|Father's Day - BR": 123,
+      "Mday25 - Misc - Acquisition": 115,
+      "SER|ACQ|Brand - BR": 113,
+      "FD25 - Acquisition - Tiktok": 111,
+      "SER|ACQ|INT|Send Abroad - BR": 108,
+      "SER|ACQ|Mother's Day - BR": 108,
+      "Newyear24 - Dynamic - Retention": 107,
+      "Mothers24 - A+ - acquisition Campaign": 105,
+      "SHP|RET|All Products - Brand": 104,
+      "Mothers24 - Styles - Retention": 103,
+      "SER|ACQ|Mother's Day - DSA": 103,
+      "NewYear24A - Style - Acquisition": 101,
+      "Retention_FD25_Hero": 101,
+      "SER|ACQ|Thank You - BR": 101,
+      "SER|RET|Birthday - BR": 100,
+      "NewYear24 - Style - Retention": 100,
+      "NewYear24 - Catalogue - retention": 100,
+      "SER|ACQ|Just Because - BR": 100,
+      "SER|ACQ|Christmas - EX": 99,
+      "Fday24 - Interests - Retention": 99,
+      "Retention_FD25_Targeted": 99,
+      "SER|ACQ|Congratulations - BR": 98,
+      "card-back-vday-faceswap": 96,
+      "Mday25 - T1 - Retention": 92,
+      "SER|RET|Father's Day - EX": 91,
+      "SER|RET|INT|Send to UK - EX": 89,
+      "Valentines24 - previousbuyers - retention": 86,
+      "DMG|ACQ|Valentine's Day 25": 86,
+      "SER|RET|Valentine's - BR": 85,
+      "FDay24 - Dynamic - Acquisition": 84,
+      "Valentines24 - Gifting - Retention": 83,
+      "SER|ACQ|Sympathy - EX": 83,
+      "Christmas24 - Styles - Retention": 82,
+      "Retention_FD25_HighPotential": 81,
+      "Q225 - Anniversary - Retention": 79,
+      "MD25 - Carousel - Acquisition": 79,
+      "Shoptimised | Performance MAX | NoClicks | Incremental ACQ": 79,
+      "Acquisition_FD25_FSAndroid": 78,
+      "SER|ACQ|Leaving - BR": 78,
+      "SER|ACQ|Birthday - MM Corvidae Test - Birthday Acq": 77,
+      "Mday25 - Hero - Retention": 75,
+      "Acquisition_FD25_HighPotential": 74,
+      "Shoptimised | Incremental | Performance Max | Thank you & Others | ACQ": 74,
+      "SER|ACQ|Leaving - MM": 74,
+      "Q1FY25 - BAU - Retention": 73,
+      "BAU_F_020625_FDThePerfectCard": 72,
+      "Vday25 - retargeting - Retention": 72,
+      "pr-influencer-face-swap-2025-01-27": 71,
+      "FDay24 - Catalogue - Acquisition": 70,
+      "SER|ACQ|Interests - MM": 70,
+      "SER|ACQ|Good Luck - BR": 69,
+      "fullscreen_homepage_test1": 69,
+      "our-tonys-chocolonely-gifts": 72,
+      "SER|ACQ|Christmas - BR": 68,
+      "Vday25 - Advantage+ - Acquisition Campaign": 68,
+      "Mday25 - Misc - Retention": 67,
+      "Q225 - Birthday - Retention": 67,
+      "Retention_FD25_T1": 66,
+      "Valentines24 - video - retention": 65,
+      "SHP|RET|Father's Day 24": 64,
+      "app_20_flyer": 64,
+      "FDay24 - Styles - Retention": 64,
+      "SER|ACQ|Engagements & Weddings - BR": 64,
+      "SER|ACQ|TV Shows - MM": 64,
+      "Vday25 - T1 Creative - Acquisition": 63,
+      "Retention_FD25_Statics": 63,
+      "SER|RET|Engagements & Weddings - MM": 63,
+      "DMG|ACQ|Mother's Day 25": 62,
+      "SER|RET|Thank You - BR": 62,
+      "Spring24 - Anniversary - Retention": 60,
+      "Mday25 - targeted - Retention": 58,
+      "SER|ACQ|INT|Send to UK - BR": 57,
+      "Retention_Summer25_Anniversary": 57,
+      "SER|ACQ|Birthday - MM Corvidae Test": 56,
+      "SER|ACQ|Anniversaries - BR": 56,
+      "SER|RET|Mother's Day - EX": 56,
+      "DMG|ACQ|Mother's Day 24": 56,
+      "SER|RET|Christmas - EX Corvidae Test - Christmas Returning": 55,
+      "SHP|RET|Father's Day 25": 54,
+      "SER|ACQ|Generic Cards - MM - tROAS Test": 54,
+      "SER|ACQ|Generic Cards - BR Corvidae Test": 54,
+      "Acquisition_FD25_Targeted": 53,
+      "Christmas24 - Demographics - Acquisition": 51,
+      "SER|ACQ|Gifts - BR": 50,
+      "SER|ACQ|INT|Send to UK - EX - tROAS Test": 50,
+      "Mother24 - Bestsellers - Acquisition": 50,
+      "FDay24 - Catalogue - Retention": 49,
+      "Christmas24 - Hero - Acquisition": 49,
+      "SER|ACQ|Get Well Soon - BR": 49,
+      "Fday24 - Trialists - Retention": 48,
+      "SER|ACQ|Generic Cards - EX Corvidae Test - Generic Acq EX": 48,
+      "Mothers24 - Dynamic - Retention": 48,
+      "FDay24 - Dynamic - Retention": 47,
+      "web-PLP-download-BANNER-mday-faceswap": 47,
+      "flower-and-plants": 48,
+      "SER|ACQ|Sorry - MM": 45,
+      "Mothers24 - retargeting - Retention": 44,
+      "SER|ACQ|Generic Cards - BR Corvidae Test - Generic Acq Broad": 43,
+      "SER|RET|Brand - Pure Brand - BR": 43,
+      "SHP|ACQ|Birthday": 43,
+      "SER|ACQ|Generic Cards - EX SER|ACQ|Generic Cards - EX - Corvidae Test": 42,
+      "Fday24 - Retargeting - Retention": 41,
+      "Spring24 - Retargeting - Retention": 41,
+      "Mothers24 - retargeting - Acquisition": 41,
+      "Retention_FD25_FSIOS": 40,
+      "SER|RET|Gifts - BR": 40,
+      "web-PDP-download-MODAL-fday30-paid-2024": 40,
+      "Summer24 - BAU - Acquisition": 39,
+      "Acquisition_FD25_T1": 38,
+      "Christmas24 - Interests - Acquisition": 38,
+      "Autumn24 - BAU - Acquisition": 38,
+      "SHP|RET|Congratulations - Generics": 37,
+      "SER|RET|Good Luck - BR": 37,
+      "SER|ACQ|Sympathy - BR": 36,
+      "SER|ACQ|Christmas - EX Corvidae Test - Christmas Acquisition": 36,
+      "Jan25 - Apptest - Retention": 35,
+      "SER|ACQ|Thank You - MM": 35,
+      "SER|ACQ|Mother's Day - BR Promo Code Test - March 25": 34,
+      "SER|ACQ|Creators - EX": 34,
+      "Valentines24 - Trending - Acquisition": 33,
+      "Valentines25 - Demographics - Acquisition": 32,
+      "Mday25 - targeted - Acquisition": 31,
+      "Q225 - Birthday - Acquisition": 31,
+      "fathers-day-gifts": 38,
+      "BAU_F_210525_Faceswap": 30,
+      "22154270364": 30,
+      "Spring24 - Birthday - Retention": 30,
+      "SER|RET|INT|Send Abroad - BR": 30,
+      "Newyear24A - Dynamic - Acquisition": 30,
+      "SER|ACQ|Animals - MM": 30,
+      "Spring24 - Interests - Retention": 29,
+      "Christmas24 - UGC - Retention": 29,
+      "SER|ACQ|Mother's Day - EX Corvidae Final Test": 29,
+      "SER|ACQ|Get Well Soon - MM": 29,
+      "Retention_Summer25_Cardpacks": 29,
+      "Valentines24 - T1 - Acquisition": 28,
+      "DMG|ACQ|Test- Birthday 24": 28,
+      "Spring24A - Catalogue - Acquisition": 27,
+      "SER|ACQ|Birthday - MM Corvidae LSTM Final Pilot Test": 26,
+      "SER|RET|Just Because - BR": 26,
+      "SER|ACQ|Generic Cards - MM - Google Ads Tag Test": 26,
+      "Vday25 - Advantage+ - Retention Campaign": 25,
+      "Mothers24 - Last Chance - Acquisition": 25,
+      "Jan25 - rebrand - Retention": 25,
+      "Mday25 - discounttest - Retention": 24,
+      "Retention_Summer25_Birthday": 23,
+      "Vday25 - T0 - Retention": 23,
+      "SHP|ACQ|Valentine's Day 25 - Gifts": 23,
+      "Retention_FD25_Promo": 22,
+      "Fday24 - Previous Buyers - Retention": 22,
+      "SHP|ACQ|Christmas 24 - Gifts": 22,
+      "DMG|RET|Christmas 24": 22,
+      "SER|RET|Animals - BR": 22,
+      "SER|ACQ|INT|Send Abroad - MM": 22,
+      "FD25 - Retention - Tiktok": 21,
+      "Valentines24 - Gifting - Retention \u2013 reach": 21,
+      "confectionery": 21,
+      "SER|RET|TV Shows - MM": 21,
+      "Spring24 - Demographics - Retention": 20,
+      "Valentines24 - T1 - Retention": 20,
+      "christmas-card-packs": 20,
+      "SHP|RET|Taylor Swift - Generics": 20,
+      "Christmas24 - Styles - Acquisition": 20,
+      "Q225 - Spring Discount Campaign - Retention": 20,
+      "SER|RET|Engagements & Weddings - BR": 20,
+      "Retention_Summer25_Anniversary_corvidae": 20,
+      "SER|ACQ|Generic Cards - EX Corvidae LSTM": 19,
+      "Valentines25 - Hero - Retention": 19,
+      "SHP|RET|Engagement - Generics": 19,
+      "SER|RET|Interests - BR": 19,
+      "SER|ACQ|Faith - MM": 19,
+      "Valentines Day": 18,
+      "Valentines - staticretargeting - retention": 18,
+      "SER|RET|INT|Send to UK - BR": 18,
+      "SER|RET|Father's Day - BR": 18,
+      "Fday24 - week 1 - Acquisition": 18,
+      "SER|ACQ|Faith - BR": 18,
+      "DMG|RET|Test- Birthday 24": 18,
+      "SER|ACQ|TV Shows - EX": 18,
+      "SER|ACQ|Just Because - MM": 18,
+      "Fday24 - Retargeting - Acquisition": 17,
+      "Valentines24 - Dynamic - Acquisition \u2013 lookalike": 17,
+      "Q225 - Anniversary - Acquisition": 17,
+      "Spring24A - Demographics - Acquisition": 17,
+      "test-kirill": 16,
+      "BAU_G_120525_ThisisThat": 16,
+      "SER|ACQ|Trends - EX": 15,
+      "SHP|ACQ|Father's Day 25 - Gifts": 15,
+      "BAU_G_090425_Photocards": 15,
+      "APP|ACQ|Downloads - iOS": 15,
+      "SER|RET|Leaving - MM": 15,
+      "SER|RET|Interests - MM": 15,
+      "SER|ACQ|Gifts - MM": 15,
+      "Acquisition_Summer25_Anniversary": 15,
+      "SER|RET|Valentine's - EX": 14,
+      "FDay24 - WkT-2 - Acquisition": 14,
+      "web-PLP-download-MODAL-fday30-paid-2024": 14,
+      "BAU_EMAIL_AppBenefits_14_08_25": 14,
+      "SER|RET|INT|Send Abroad - EX": 13,
+      "Performance Max|ACQ|Gifts": 13,
+      "Acquisition_Summer25_Birthday": 13,
+      "DMG|ACQ|Valentine's Day 24": 13,
+      "SHP|RET|Mother's Day 25": 13,
+      "Fday24 - Bestsellers - Acquisition": 13,
+      "alcohol": 14,
+      "SHP|ACQ|Wedding": 13,
+      "Spring24 - Birthday - Acquisition": 12,
+      "Q1FY25 - BAU - Acquisition": 12,
+      "letterbox": 12,
+      "SER|RET|Leaving - BR": 12,
+      "Valentines - staticretargeting - acquisition": 12,
+      "21261282891": 12,
+      "DMG|ACQ|Christmas 24": 12,
+      "SER|ACQ|Sorry - BR": 12,
+      "Fday24 - WkT-3 - Retention": 11,
+      "SER|ACQ|Mother's Day - Core - EX": 11,
+      "22277443825": 11,
+      "22489010622": 11,
+      "Jan25 - rebrand - Acquisition": 11,
+      "DMG|RET|Test- Father's Day 24": 11,
+      "SER|RET|Thank You - MM": 11,
+      "Vday25 - T0 - Acquisition": 10,
+      "Autumn24 - BAUPremium - Acquisition": 10,
+      "Retention_FD25_gifting": 10,
+      "DMG|RET|Birthday 24": 10,
+      "Valentines25 - Interests - Acquisition": 10,
+      "Summer24 - thank you teacher - Retention": 10,
+      "SER|ACQ|Leaving - EX": 10,
+      "beta_test": 10,
+      "Q225 - Easter - Retention": 9,
+      "SHP|ACQ|Father's Day 24|Gifts": 9,
+      "NewYear24A - Catalogue - Acquisition": 9,
+      "SER|ACQ|Faceswap": 9,
+      "Fday24 - Gifting - Retention": 9,
+      "22763518054": 9,
+      "SHP|ACQ|Mother's Day 25 #2": 8,
+      "SER|RET|Mother's Day - BR": 8,
+      "Christmas24 - UGC - Acquisition": 8,
+      "SER|RET|Birthday - MM Corvidae Conversion Goal Test": 8,
+      "BAU_G_020625_ThePerfectCard": 8,
+      "Fday24 - kidstest - Acquisition": 8,
+      "SER|ACQ|Generic Cards - BR Corvidae BROAD (NCD)": 8,
+      "SER|ACQ|Misc - MM": 8,
+      "nio-cocktails": 8,
+      "SHP|ACQ|Birthday Card Packs": 8,
+      "Retention_Summer25_Birthdayvideo": 8,
+      "SHP|ACQ|Mother's Day 25 - Gifts": 7,
+      "SER|ACQ|Animals - EX": 7,
+      "DSC|RET|Remarketing- Birthday 23 (Product Feed)": 7,
+      "21403223475": 7,
+      "Vday25 - retargeting - Acquisition": 7,
+      "Spring24A - Interests - Acquisition": 7,
+      "Spring24A - A+ - Acquisition Campaign": 7,
+      "Acquisition_FD25_FSIOS": 7,
+      "Retention_FD25_catalogue": 7,
+      "Valentines25 - FS IOS - Acquisition": 7,
+      "21189369323": 7,
+      "Mothers24 - gifting - retention": 7,
+      "22858786776": 7,
+      "experiences-40-and-under": 6,
+      "SER|ACQ|Misc - BR": 6,
+      "22644962598": 6,
+      "FY24 - WeekendWinners - Retention": 6,
+      "Fday24 - last chance - Acquisition": 6,
+      "DMG|ACQ|Test- Father's Day 24": 6,
+      "Q225 - Spring Discount Campaign - Acquisition": 6,
+      "mothers-day-gifts": 9,
+      "21351230139": 6,
+      "Vday25 - FS IOS - Acquisition": 6,
+      "SER|ACQ|Just Because - EX": 6,
+      "SHP|ACQ|Valentine's Day - Gifts": 6,
+      "RetentionRestructure - Risk of Churn - Retention": 6,
+      "22176985599": 6,
+      "Valentines25 - Apptestinstall - Acquisition": 6,
+      "our-biscuiteers-range": 6,
+      "Shoptimised | Incremental | Performance Max | Trending | ACQ": 6,
+      "22715090108": 6,
+      "Acquisition_Summer25_Anniversary_corvidae": 6,
+      "Vday25 - FS IOS - Retention": 5,
+      "SER|RET|Get Well Soon - BR": 5,
+      "crm-header-birthday": 5,
+      "Retention_Summer25_ThankyouTeacher": 5,
+      "SER|RET|Trends - MM": 5,
+      "christmas": 6,
+      "Mothers23 - App A+ Catalogue - Retention": 5,
+      "Valentines25 - AppInstall - promotion": 5,
+      "SER|RET|Animals - EX": 5,
+      "SER|ACQ|Good Luck - MM": 5,
+      "SER|RET|Get Well Soon - MM": 5,
+      "SER|RET|Sympathy - MM": 5,
+      "birthday-card-packs": 5,
+      "22773168615": 5,
+      "SHP|RET|Mother's Day 24": 4,
+      "Valentines25 - Demographics - Retention": 4,
+      "our-papier-range": 4,
+      "Valentines Day Flowers": 5,
+      "Fday24 - Copy test - Acquisition": 4,
+      "spring-birthday": 5,
+      "Acquisition_FD25_Templatetest": 4,
+      "SER|RET|Occasions|Photocards": 4,
+      "Fday24 - Prospecting - Acquisition": 4,
+      "bestselling": 4,
+      "SER|RET|INT|Send Abroad - MM": 4,
+      "Retention_Promotion_postage": 3,
+      "SER|ACQ|Birthday|Photocards": 3,
+      "SER|ACQ|Occasions|Photocards": 3,
+      "MD25 - Carousel - Retention": 3,
+      "Acquisition_FD25_catalogue": 3,
+      "web-BR-Banner-faceswap": 3,
+      "Retention_Promotion_30": 3,
+      "SER|RET|Thank You - EX": 3,
+      "Mothers24 - Last Chance - Retention": 3,
+      "Summer24 - thank you teacher - Acquisition": 3,
+      "for-her": 3,
+      "under-15": 4,
+      "mothers-day-all-flowers": 3,
+      "cute-christmas-card-packs": 3,
+      "send-a-smile": 3,
+      "birthday": 3,
+      "fathers-day-drinks": 3,
+      "SER|ACQ|Mother's Day - EX Hub Page - Mother's Day (EX)": 3,
+      "SER|RET|Just Because - EX": 3,
+      "Spring24 - CHTestPlain - Retention": 3,
+      "home-and-pampering": 4,
+      "SER|RET|Animals - MM": 3,
+      "Acquisition_Summer25_Birthdaystatics": 3,
+      "22839563471": 3,
+      "fathers-day-under-20": 2,
+      "for-him": 2,
+      "under-10": 2,
+      "our-experiences-range": 2,
+      "XMASTREAT_FULFILLMENTOFFER_FOLLOWUP_RESEND": 2,
+      "crm-header-anniversary": 2,
+      "SER|RET|Misc - BR": 2,
+      "22604465218": 2,
+      "Vday25 - Reach - Retention": 2,
+      "Acquisition_Summer25_Cardpacks": 2,
+      "SER|RET|Sorry - BR": 2,
+      "SER|ACQ|Good Luck - EX": 2,
+      "22190899329": 2,
+      "Fday24 - Bestsellers - Retention": 2,
+      "SHP|ACQ|All Products - Generics - BACKUP": 2,
+      "SER|ACQ|Congratulations - EX Corvidae Conversion Goal Test - Congratulations": 2,
+      "q225 - Consideration Test Awareness - Retention": 2,
+      "Spring24A - Interests -volume test (B) - Acquisition": 2,
+      "Jan25 - Apptest - Acquisition": 2,
+      "Fday24 - last chance - retention": 2,
+      "RetailMeNot UK Ltd.": 2,
+      "SER|ACQ|Birthday - EX Birthday Hub page": 2,
+      "Valentines24 - Lastchance - Acquisition": 2,
+      "SER|RET|Sympathy - BR": 2,
+      "SER|RET|Good Luck - MM": 2,
+      "Retention_Summer25_Birthdaystatics": 2,
+      "Valentines25 - FS android - Acquisition": 1,
+      "NewYear24 - Catalogue - Acquisition": 1,
+      "DMG|RET|Test- Birthday 23": 1,
+      "DSC|RET|Test- Birthday 23": 1,
+      "20240130_1200_AUTOMATION_G_JAN24_PREPOTENTIALCARDIES_4FOR10": 1,
+      "pr-general-face-swap-2025-01-27": 1,
+      "Valentines25 - FS android - Retention": 1,
+      "20240127_1208_AUTOMATION_G_EVERGREENWINBACK_NEW_APR23_RESEND": 1,
+      "20240129_1209_BAU_V_Contingency_50off_Inactive": 1,
+      "anniversary": 1,
+      "experience-range": 1,
+      "wedding-and-engagement-gifts": 1,
+      "mday-gift-experiences": 1,
+      "christmas gifts-\u00a320-and-under": 1,
+      "valentines-day": 1,
+      "Spring24A - consolidated test - Acquisition": 1,
+      "Christmas-gifts": 1,
+      "Valentines-day-20-and-under": 1,
+      "Summer24 - Gentle Humour - Retention": 1,
+      "Valentines24 - Lastchance - retention": 1,
+      "Fday24 - storytest - Acquisition": 1,
+      "SHP|RET|Father's Day 24|Gifts": 1,
+      "SER|RET|Sorry - MM": 1,
+      "21408403668": 1,
+      "RetentionRestructure - Trialist - Retention": 1,
+      "Shoptimised | Incremental | Performance Max | Valentines | ACQ": 1,
+      "over-30": 1,
+      "Brand_consideration_2305": 1,
+      "fathers-day-foodie": 2,
+      "22394221193": 1,
+      "SER|RET|Faith - EX": 1,
+      "SHP|RET|Valentine's Day 24": 1,
+      "Brand_consideration_23/06": 1,
+      "Spring24A - Interests - costgoal test (B) - Acquisition \u2013 Copy": 1,
+      "Brand25 - coles - INFLUENCER": 1,
+      "SHP|ACQ|Gifts - Spring 24": 1,
+      "NewYear24 - Style - Acquisition": 1,
+      "YieldKit GmbH": 1,
+      "Vday25 - Flowers - Retention": 1,
+      "Mday25 - what women want - BRAND": 1,
+      "SHP|ACQ|Mother's Day - Gifts": 1,
+      "Brand_consideration_0106": 1,
+      "22845856522": 1,
+      "Brand_consideration_29/07": 1,
+      "22807083839": 1
+    },
+    "by_source_and_campaign": {
+      "organic | None": {
+        "media_source": "organic",
+        "campaign": "None",
+        "installs": 214098
+      },
+      "googleadwords_int | None": {
+        "media_source": "googleadwords_int",
+        "campaign": "None",
+        "installs": 34221
+      },
+      "website-thortful | web-promo-code-error": {
+        "media_source": "website-thortful",
+        "campaign": "web-promo-code-error",
+        "installs": 28639
+      },
+      "google_organic_seo | None": {
+        "media_source": "google_organic_seo",
+        "campaign": "None",
+        "installs": 27969
+      },
+      "googleadwords_int | SER|RET|Brand - Pure Brand - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Brand - Pure Brand - EX",
+        "installs": 19857
+      },
+      "googleadwords_int | SHP|ACQ|All Products - Generics": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|All Products - Generics",
+        "installs": 17940
+      },
+      "website-thortful | web-PDP-download-CTA-fday30-202": {
+        "media_source": "website-thortful",
+        "campaign": "web-PDP-download-CTA-fday30-202",
+        "installs": 13716
+      },
+      "website-thortful | web-PDP-MDAY-NEWAPP25": {
+        "media_source": "website-thortful",
+        "campaign": "web-PDP-MDAY-NEWAPP25",
+        "installs": 11836
+      },
+      "website-thortful | web-PDP-download-CTA": {
+        "media_source": "website-thortful",
+        "campaign": "web-PDP-download-CTA",
+        "installs": 11233
+      },
+      "googleadwords_int | SER|ACQ|Brand - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Brand - EX",
+        "installs": 11107
+      },
+      "website-thortful | web-footer-download-button": {
+        "media_source": "website-thortful",
+        "campaign": "web-footer-download-button",
+        "installs": 8578
+      },
+      "googleadwords_int | APP|ACQ|Downloads - Android": {
+        "media_source": "googleadwords_int",
+        "campaign": "APP|ACQ|Downloads - Android",
+        "installs": 8017
+      },
+      "website-thortful | web-PLP-download-MODAL-mday25": {
+        "media_source": "website-thortful",
+        "campaign": "web-PLP-download-MODAL-mday25",
+        "installs": 4881
+      },
+      "website-thortful | web-PDP-download-MODAL-fday40-2024": {
+        "media_source": "website-thortful",
+        "campaign": "web-PDP-download-MODAL-fday40-2024",
+        "installs": 4654
+      },
+      "website-thortful | web-PDP-download-MODAL-fday30-2024": {
+        "media_source": "website-thortful",
+        "campaign": "web-PDP-download-MODAL-fday30-2024",
+        "installs": 4129
+      },
+      "website-thortful | web-PLP-download-modal": {
+        "media_source": "website-thortful",
+        "campaign": "web-PLP-download-modal",
+        "installs": 3659
+      },
+      "website-thortful | web-PLP-download-BANNER-bday-faceswap": {
+        "media_source": "website-thortful",
+        "campaign": "web-PLP-download-BANNER-bday-faceswap",
+        "installs": 3520
+      },
+      "website-thortful | web-PLP-download-MODAL-fday40-2024": {
+        "media_source": "website-thortful",
+        "campaign": "web-PLP-download-MODAL-fday40-2024",
+        "installs": 3008
+      },
+      "Facebook Ads | Vday25 - FS android APPINSTALL - Acquisition \u2013 Copy": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - FS android APPINSTALL - Acquisition \u2013 Copy",
+        "installs": 2705
+      },
+      "website-thortful | web-PLP-download-MODAL-fday30-2024": {
+        "media_source": "website-thortful",
+        "campaign": "web-PLP-download-MODAL-fday30-2024",
+        "installs": 2537
+      },
+      "googleadwords_int | SHP|ACQ|Zombie": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Zombie",
+        "installs": 2490
+      },
+      "website-thortful | web-postpurchase-download-banner-app20": {
+        "media_source": "website-thortful",
+        "campaign": "web-postpurchase-download-banner-app20",
+        "installs": 2195
+      },
+      "googleadwords_int | Shoptimised | Incremental | Performance Max | All Customers | ACQ": {
+        "media_source": "googleadwords_int",
+        "campaign": "Shoptimised | Incremental | Performance Max | All Customers | ACQ",
+        "installs": 2027
+      },
+      "googleadwords_int | SHP|ACQ|Valentine's Day 25": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Valentine's Day 25",
+        "installs": 2006
+      },
+      "website-thortful | web-homepage-download-banne-app20r": {
+        "media_source": "website-thortful",
+        "campaign": "web-homepage-download-banne-app20r",
+        "installs": 1913
+      },
+      "googleadwords_int | SER|ACQ|Birthday - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Birthday - MM",
+        "installs": 1908
+      },
+      "googleadwords_int | SHP|ACQ|All Products - Brand": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|All Products - Brand",
+        "installs": 1806
+      },
+      "googleadwords_int | SHP|ACQ|Christmas 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Christmas 24",
+        "installs": 1787
+      },
+      "website-thortful | web-account-download-banner-app20": {
+        "media_source": "website-thortful",
+        "campaign": "web-account-download-banner-app20",
+        "installs": 1716
+      },
+      "website-thortful | web-blog-face-swap": {
+        "media_source": "website-thortful",
+        "campaign": "web-blog-face-swap",
+        "installs": 1402
+      },
+      "website-thortful | web-PLP-download-MODAL-bday-faceswap": {
+        "media_source": "website-thortful",
+        "campaign": "web-PLP-download-MODAL-bday-faceswap",
+        "installs": 1362
+      },
+      "website-thortful | web-postpurchase-download-banner": {
+        "media_source": "website-thortful",
+        "campaign": "web-postpurchase-download-banner",
+        "installs": 1356
+      },
+      "googleadwords_int | SHP|ACQ|Birthday - Generics": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Birthday - Generics",
+        "installs": 1202
+      },
+      "bloomreach | BAU": {
+        "media_source": "bloomreach",
+        "campaign": "BAU",
+        "installs": 1186
+      },
+      "Facebook Ads | Valentines24 - Interests - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Interests - Acquisition",
+        "installs": 1022
+      },
+      "googleadwords_int | SER|RET|Brand - Long Tail Brand - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Brand - Long Tail Brand - BR",
+        "installs": 975
+      },
+      "googleadwords_int | SER|ACQ|Generic Cards - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Generic Cards - MM",
+        "installs": 968
+      },
+      "website-thortful | web-blog-download-link": {
+        "media_source": "website-thortful",
+        "campaign": "web-blog-download-link",
+        "installs": 943
+      },
+      "googleadwords_int | SER|RET|Birthday - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Birthday - MM",
+        "installs": 922
+      },
+      "googleadwords_int | SHP|ACQ|Father's Day 25": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Father's Day 25",
+        "installs": 861
+      },
+      "impactradius_int | GET35OFFAPP": {
+        "media_source": "impactradius_int",
+        "campaign": "GET35OFFAPP",
+        "installs": 832
+      },
+      "emarsys | app40_postpurchase": {
+        "media_source": "emarsys",
+        "campaign": "app40_postpurchase",
+        "installs": 831
+      },
+      "Facebook Ads | Valentines24 - Catalogue - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Catalogue - Acquisition",
+        "installs": 825
+      },
+      "Facebook Ads | Mothers24 - Demographics - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Demographics - Acquisition",
+        "installs": 823
+      },
+      "Apple Search Ads | 18861888": {
+        "media_source": "Apple Search Ads",
+        "campaign": "18861888",
+        "installs": 815
+      },
+      "Facebook Ads | Vday25 - FS android - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - FS android - Acquisition",
+        "installs": 804
+      },
+      "Facebook Ads | Valentines24 - Demographics - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Demographics - Acquisition",
+        "installs": 786
+      },
+      "Facebook Ads | Valentines24 - Dynamic - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Dynamic - Acquisition",
+        "installs": 763
+      },
+      "Facebook Ads | Fday24 - Demographics - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Demographics - Acquisition",
+        "installs": 701
+      },
+      "googleadwords_int | Shoptimised | IP | Incremental | Performance Max |ACQ|": {
+        "media_source": "googleadwords_int",
+        "campaign": "Shoptimised | IP | Incremental | Performance Max |ACQ|",
+        "installs": 693
+      },
+      "bloomreach | BAU_v_220125_faceswap_bday": {
+        "media_source": "bloomreach",
+        "campaign": "BAU_v_220125_faceswap_bday",
+        "installs": 678
+      },
+      "Facebook Ads | Vday25 - FS android APPINSTALL - retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - FS android APPINSTALL - retention",
+        "installs": 670
+      },
+      "Facebook Ads | Valentines24 - T2 - acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - T2 - acquisition",
+        "installs": 661
+      },
+      "googleadwords_int | SHP|ACQ|Mother's Day 25": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Mother's Day 25",
+        "installs": 658
+      },
+      "googleadwords_int | SHP|RET|All Products - Generics": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|All Products - Generics",
+        "installs": 643
+      },
+      "website-thortful | web-homepage-download-banner": {
+        "media_source": "website-thortful",
+        "campaign": "web-homepage-download-banner",
+        "installs": 638
+      },
+      "Facebook Ads | Mday25 - FS android - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - FS android - Acquisition",
+        "installs": 621
+      },
+      "website-thortful | web-PLP-download-MODAL-vday-faceswap": {
+        "media_source": "website-thortful",
+        "campaign": "web-PLP-download-MODAL-vday-faceswap",
+        "installs": 609
+      },
+      "googleadwords_int | SHP|ACQ|Father's Day 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Father's Day 24",
+        "installs": 560
+      },
+      "googleadwords_int | SHP|ACQ|Valentine's Day 24 (v2)": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Valentine's Day 24 (v2)",
+        "installs": 548
+      },
+      "googleadwords_int | SER|ACQ|INT|Send to UK - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|INT|Send to UK - MM",
+        "installs": 529
+      },
+      "website-thortful | web-PLP-download-BANNER-vday-faceswap": {
+        "media_source": "website-thortful",
+        "campaign": "web-PLP-download-BANNER-vday-faceswap",
+        "installs": 516
+      },
+      "Facebook Ads | Vday25 - Interests - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Interests - Retention",
+        "installs": 515
+      },
+      "googleadwords_int | SER|ACQ|Generic Cards - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Generic Cards - BR",
+        "installs": 510
+      },
+      "website-thortful | web-account-download-banner": {
+        "media_source": "website-thortful",
+        "campaign": "web-account-download-banner",
+        "installs": 505
+      },
+      "Facebook Ads | Fday24 - Interests - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Interests - Acquisition",
+        "installs": 504
+      },
+      "transactional_postmark | footer-transactional": {
+        "media_source": "transactional_postmark",
+        "campaign": "footer-transactional",
+        "installs": 501
+      },
+      "Facebook Ads | Valentines24 - Interests - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Interests - Retention",
+        "installs": 489
+      },
+      "googleadwords_int | SER|ACQ|Valentine's - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Valentine's - EX",
+        "installs": 470
+      },
+      "emarsys | crm-header-logo": {
+        "media_source": "emarsys",
+        "campaign": "crm-header-logo",
+        "installs": 467
+      },
+      "Facebook Ads | None": {
+        "media_source": "Facebook Ads",
+        "campaign": "None",
+        "installs": 466
+      },
+      "googleadwords_int | SHP|ACQ|Anniversary": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Anniversary",
+        "installs": 463
+      },
+      "Facebook Ads | Valentines24 - Catalogue - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Catalogue - Retention",
+        "installs": 443
+      },
+      "bloomreach | BAU_M_050325_MDfaceswap": {
+        "media_source": "bloomreach",
+        "campaign": "BAU_M_050325_MDfaceswap",
+        "installs": 430
+      },
+      "Facebook Ads | Acquisition_FD25_Interests": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_Interests",
+        "installs": 409
+      },
+      "Facebook Ads | Vday25 - Interests - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Interests - Acquisition",
+        "installs": 401
+      },
+      "googleadwords_int | SHP|RET|Birthday - Generics": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Birthday - Generics",
+        "installs": 372
+      },
+      "print | print_App40Flyer2024": {
+        "media_source": "print",
+        "campaign": "print_App40Flyer2024",
+        "installs": 368
+      },
+      "googleadwords_int | SER|ACQ|Birthday - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Birthday - BR",
+        "installs": 367
+      },
+      "QR_code | Face-swap-flyer-14-Jan": {
+        "media_source": "QR_code",
+        "campaign": "Face-swap-flyer-14-Jan",
+        "installs": 363
+      },
+      "Facebook Ads | Valentines24 - Advantage - Acquisition v2 Campaign": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Advantage - Acquisition v2 Campaign",
+        "installs": 345
+      },
+      "googleadwords_int | SER|ACQ|Father's Day - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Father's Day - EX",
+        "installs": 342
+      },
+      "Facebook Ads | Mothers24 - Catalogue - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Catalogue - Acquisition",
+        "installs": 334
+      },
+      "googleadwords_int | SHP|ACQ|Mother's Day 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Mother's Day 24",
+        "installs": 333
+      },
+      "googleadwords_int | SER|ACQ|Valentine's - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Valentine's - BR",
+        "installs": 327
+      },
+      "googleadwords_int | SER|RET|Congratulations - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Congratulations - MM",
+        "installs": 327
+      },
+      "googleadwords_int | SHP|RET|Christmas 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Christmas 24",
+        "installs": 324
+      },
+      "Facebook Ads | Valentines24 - Styles - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Styles - Acquisition",
+        "installs": 310
+      },
+      "Facebook Ads | Mday25 - FS android - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - FS android - Retention",
+        "installs": 308
+      },
+      "Facebook Ads | Valentines24 - Demographics - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Demographics - Retention",
+        "installs": 305
+      },
+      "Facebook Ads | Vday25 - Demographics - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Demographics - Retention",
+        "installs": 302
+      },
+      "Facebook Ads | Vday25 - hero - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - hero - Retention",
+        "installs": 302
+      },
+      "Facebook Ads | Acquisition_FD25_Demographics": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_Demographics",
+        "installs": 297
+      },
+      "duckduckgo_organic_seo | None": {
+        "media_source": "duckduckgo_organic_seo",
+        "campaign": "None",
+        "installs": 293
+      },
+      "Facebook Ads | Summer24 - BAU - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Summer24 - BAU - Retention",
+        "installs": 285
+      },
+      "Facebook Ads | Vday25 - FS android - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - FS android - Retention",
+        "installs": 280
+      },
+      "yahoo_organic_seo | None": {
+        "media_source": "yahoo_organic_seo",
+        "campaign": "None",
+        "installs": 278
+      },
+      "Facebook Ads | Valentines24 - Dynamic - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Dynamic - Retention",
+        "installs": 269
+      },
+      "googleadwords_int | SER|ACQ|DSA": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|DSA",
+        "installs": 267
+      },
+      "googleadwords_int | SER|ACQ|Anniversaries - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Anniversaries - MM",
+        "installs": 265
+      },
+      "Facebook Ads | Acquisition_FD25_T2": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_T2",
+        "installs": 259
+      },
+      "googleadwords_int | SER|RET|Generic Cards - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Generic Cards - MM",
+        "installs": 254
+      },
+      "Facebook Ads | Mothers24 - Demographics - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Demographics - Retention",
+        "installs": 248
+      },
+      "googleadwords_int | SER|RET|Congratulations - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Congratulations - BR",
+        "installs": 242
+      },
+      "Facebook Ads | FDay24 - Styles - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "FDay24 - Styles - Acquisition",
+        "installs": 237
+      },
+      "Facebook Ads | Retention_FD25_T2": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_T2",
+        "installs": 235
+      },
+      "Facebook Ads | Vday25 - Demographics - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Demographics - Acquisition",
+        "installs": 224
+      },
+      "googleadwords_int | SER|ACQ|Mother's Day - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Mother's Day - EX",
+        "installs": 210
+      },
+      "Facebook Ads | Valentines24 - T2 - retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - T2 - retention",
+        "installs": 209
+      },
+      "googleadwords_int | SER|ACQ|Congratulations - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Congratulations - MM",
+        "installs": 207
+      },
+      "Facebook Ads | Vday25 - Catalogue - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Catalogue - Retention",
+        "installs": 206
+      },
+      "Facebook Ads | Retention_FD25_Demographics": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_Demographics",
+        "installs": 203
+      },
+      "Facebook Ads | Mday25 - Interests - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - Interests - Acquisition",
+        "installs": 199
+      },
+      "Facebook Ads | Valentines24 - ProductRetargeting - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - ProductRetargeting - Acquisition",
+        "installs": 198
+      },
+      "googleadwords_int | SER|RET|Christmas - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Christmas - BR",
+        "installs": 198
+      },
+      "Facebook Ads | Christmas24 - Interests - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Christmas24 - Interests - Retention",
+        "installs": 193
+      },
+      "Facebook Ads | Christmas24 - Demographics - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Christmas24 - Demographics - Retention",
+        "installs": 186
+      },
+      "Facebook Ads | Autumn24 - BAU - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Autumn24 - BAU - Retention",
+        "installs": 186
+      },
+      "googleadwords_int | SER|RET|Anniversaries - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Anniversaries - BR",
+        "installs": 186
+      },
+      "Facebook Ads | Acquisition_FD25_Hero": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_Hero",
+        "installs": 183
+      },
+      "Facebook Ads | Retention_FD25_FSAndroid": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_FSAndroid",
+        "installs": 181
+      },
+      "googleadwords_int | SER|RET|Generic Cards - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Generic Cards - BR",
+        "installs": 180
+      },
+      "Facebook Ads | Valentines24 - Styles - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Styles - Retention",
+        "installs": 180
+      },
+      "Facebook Ads | Mothers24 - Catalogue - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Catalogue - Retention",
+        "installs": 177
+      },
+      "Facebook Ads | Fday24 - Demographics - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Demographics - Retention",
+        "installs": 174
+      },
+      "Facebook Ads | Spring24 - Catalogue - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24 - Catalogue - Retention",
+        "installs": 174
+      },
+      "Facebook Ads | Vday25 - Catalogue - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Catalogue - Acquisition",
+        "installs": 171
+      },
+      "Facebook Ads | Retention_FD25_Interests": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_Interests",
+        "installs": 168
+      },
+      "googleadwords_int | SER|ACQ|Engagements & Weddings - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Engagements & Weddings - MM",
+        "installs": 168
+      },
+      "emarsys | app180424": {
+        "media_source": "emarsys",
+        "campaign": "app180424",
+        "installs": 164
+      },
+      "Facebook Ads | Mothers24 - Styles - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Styles - Acquisition",
+        "installs": 164
+      },
+      "googleadwords_int | SER|RET|Christmas - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Christmas - EX",
+        "installs": 163
+      },
+      "Facebook Ads | Vday25 - Online thoughtful - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Online thoughtful - Acquisition",
+        "installs": 162
+      },
+      "Facebook Ads | Mothers24 - Dynamic - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Dynamic - Acquisition",
+        "installs": 160
+      },
+      "Facebook Ads | Vday25 - T2 - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - T2 - Acquisition",
+        "installs": 154
+      },
+      "Facebook Ads | Fday24 - WkT-3 - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - WkT-3 - Acquisition",
+        "installs": 152
+      },
+      "Facebook Ads | Valentines24 - ProductRetargeting - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - ProductRetargeting - Retention",
+        "installs": 146
+      },
+      "googleadwords_int | SER|RET|Anniversaries - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Anniversaries - MM",
+        "installs": 144
+      },
+      "Facebook Ads | Mday25 - Demographics - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - Demographics - Acquisition",
+        "installs": 142
+      },
+      "Facebook Ads | Christmas24 - Hero - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Christmas24 - Hero - Retention",
+        "installs": 140
+      },
+      "googleadwords_int | SER|RET|Brand - Long Tail Brand - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Brand - Long Tail Brand - EX",
+        "installs": 139
+      },
+      "Facebook Ads | Vday25 - Online Overwhelmed - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Online Overwhelmed - Acquisition",
+        "installs": 136
+      },
+      "googleadwords_int | SER|ACQ|Birthday - MM Google Ads Tag": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Birthday - MM Google Ads Tag",
+        "installs": 135
+      },
+      "googleadwords_int | Shoptimised | Performance MAX | NoClicks | New Customers Only | Incremental ACQ": {
+        "media_source": "googleadwords_int",
+        "campaign": "Shoptimised | Performance MAX | NoClicks | New Customers Only | Incremental ACQ",
+        "installs": 134
+      },
+      "Facebook Ads | Mday25 - Interests - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - Interests - Retention",
+        "installs": 133
+      },
+      "Facebook Ads | Mday25 - Demographics - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - Demographics - Retention",
+        "installs": 132
+      },
+      "Facebook Ads | Mday25 - Hero - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - Hero - Acquisition",
+        "installs": 131
+      },
+      "tiktokglobal_int | Valentines25 - Hero - Acquisition": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "Valentines25 - Hero - Acquisition",
+        "installs": 129
+      },
+      "Facebook Ads | Mothers24 - Interests - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Interests - Retention",
+        "installs": 127
+      },
+      "Facebook Ads | Vday25 - T2 - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - T2 - Retention",
+        "installs": 127
+      },
+      "Facebook Ads | Mothers24 - Interests - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Interests - Acquisition",
+        "installs": 126
+      },
+      "Facebook Ads | Mday25 - T2 - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - T2 - Acquisition",
+        "installs": 125
+      },
+      "Facebook Ads | Vday25 - T1 Creative - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - T1 Creative - Retention",
+        "installs": 125
+      },
+      "googleadwords_int | SER|ACQ|Interests - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Interests - BR",
+        "installs": 125
+      },
+      "googleadwords_int | SER|ACQ|Animals - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Animals - BR",
+        "installs": 124
+      },
+      "googleadwords_int | SER|ACQ|Father's Day - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Father's Day - BR",
+        "installs": 123
+      },
+      "Facebook Ads | Mday25 - Misc - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - Misc - Acquisition",
+        "installs": 115
+      },
+      "googleadwords_int | SER|ACQ|Brand - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Brand - BR",
+        "installs": 113
+      },
+      "tiktokglobal_int | FD25 - Acquisition - Tiktok": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "FD25 - Acquisition - Tiktok",
+        "installs": 111
+      },
+      "googleadwords_int | SER|ACQ|INT|Send Abroad - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|INT|Send Abroad - BR",
+        "installs": 108
+      },
+      "googleadwords_int | SER|ACQ|Mother's Day - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Mother's Day - BR",
+        "installs": 108
+      },
+      "Facebook Ads | Newyear24 - Dynamic - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Newyear24 - Dynamic - Retention",
+        "installs": 107
+      },
+      "Facebook Ads | Mothers24 - A+ - acquisition Campaign": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - A+ - acquisition Campaign",
+        "installs": 105
+      },
+      "googleadwords_int | SHP|RET|All Products - Brand": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|All Products - Brand",
+        "installs": 104
+      },
+      "Facebook Ads | Mothers24 - Styles - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Styles - Retention",
+        "installs": 103
+      },
+      "googleadwords_int | SER|ACQ|Mother's Day - DSA": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Mother's Day - DSA",
+        "installs": 103
+      },
+      "Facebook Ads | NewYear24A - Style - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "NewYear24A - Style - Acquisition",
+        "installs": 101
+      },
+      "Facebook Ads | Retention_FD25_Hero": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_Hero",
+        "installs": 101
+      },
+      "googleadwords_int | SER|ACQ|Thank You - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Thank You - BR",
+        "installs": 101
+      },
+      "googleadwords_int | SER|RET|Birthday - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Birthday - BR",
+        "installs": 100
+      },
+      "Facebook Ads | NewYear24 - Style - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "NewYear24 - Style - Retention",
+        "installs": 100
+      },
+      "Facebook Ads | NewYear24 - Catalogue - retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "NewYear24 - Catalogue - retention",
+        "installs": 100
+      },
+      "googleadwords_int | SER|ACQ|Just Because - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Just Because - BR",
+        "installs": 100
+      },
+      "googleadwords_int | SER|ACQ|Christmas - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Christmas - EX",
+        "installs": 99
+      },
+      "Facebook Ads | Fday24 - Interests - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Interests - Retention",
+        "installs": 99
+      },
+      "Facebook Ads | Retention_FD25_Targeted": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_Targeted",
+        "installs": 99
+      },
+      "googleadwords_int | SER|ACQ|Congratulations - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Congratulations - BR",
+        "installs": 98
+      },
+      "card-back-thortful | card-back-vday-faceswap": {
+        "media_source": "card-back-thortful",
+        "campaign": "card-back-vday-faceswap",
+        "installs": 96
+      },
+      "Facebook Ads | Mday25 - T1 - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - T1 - Retention",
+        "installs": 92
+      },
+      "googleadwords_int | SER|RET|Father's Day - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Father's Day - EX",
+        "installs": 91
+      },
+      "bing_organic_seo | None": {
+        "media_source": "bing_organic_seo",
+        "campaign": "None",
+        "installs": 91
+      },
+      "googleadwords_int | SER|RET|INT|Send to UK - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|INT|Send to UK - EX",
+        "installs": 89
+      },
+      "Facebook Ads | Valentines24 - previousbuyers - retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - previousbuyers - retention",
+        "installs": 86
+      },
+      "googleadwords_int | DMG|ACQ|Valentine's Day 25": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|ACQ|Valentine's Day 25",
+        "installs": 86
+      },
+      "googleadwords_int | SER|RET|Valentine's - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Valentine's - BR",
+        "installs": 85
+      },
+      "Facebook Ads | FDay24 - Dynamic - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "FDay24 - Dynamic - Acquisition",
+        "installs": 84
+      },
+      "Facebook Ads | Valentines24 - Gifting - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Gifting - Retention",
+        "installs": 83
+      },
+      "googleadwords_int | SER|ACQ|Sympathy - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Sympathy - EX",
+        "installs": 83
+      },
+      "Facebook Ads | Christmas24 - Styles - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Christmas24 - Styles - Retention",
+        "installs": 82
+      },
+      "Facebook Ads | Retention_FD25_HighPotential": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_HighPotential",
+        "installs": 81
+      },
+      "Facebook Ads | Q225 - Anniversary - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Q225 - Anniversary - Retention",
+        "installs": 79
+      },
+      "tiktokglobal_int | MD25 - Carousel - Acquisition": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "MD25 - Carousel - Acquisition",
+        "installs": 79
+      },
+      "googleadwords_int | Shoptimised | Performance MAX | NoClicks | Incremental ACQ": {
+        "media_source": "googleadwords_int",
+        "campaign": "Shoptimised | Performance MAX | NoClicks | Incremental ACQ",
+        "installs": 79
+      },
+      "Facebook Ads | Acquisition_FD25_FSAndroid": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_FSAndroid",
+        "installs": 78
+      },
+      "googleadwords_int | SER|ACQ|Leaving - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Leaving - BR",
+        "installs": 78
+      },
+      "googleadwords_int | SER|ACQ|Birthday - MM Corvidae Test - Birthday Acq": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Birthday - MM Corvidae Test - Birthday Acq",
+        "installs": 77
+      },
+      "Facebook Ads | Mday25 - Hero - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - Hero - Retention",
+        "installs": 75
+      },
+      "Facebook Ads | Acquisition_FD25_HighPotential": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_HighPotential",
+        "installs": 74
+      },
+      "googleadwords_int | Shoptimised | Incremental | Performance Max | Thank you & Others | ACQ": {
+        "media_source": "googleadwords_int",
+        "campaign": "Shoptimised | Incremental | Performance Max | Thank you & Others | ACQ",
+        "installs": 74
+      },
+      "googleadwords_int | SER|ACQ|Leaving - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Leaving - MM",
+        "installs": 74
+      },
+      "Facebook Ads | Q1FY25 - BAU - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Q1FY25 - BAU - Retention",
+        "installs": 73
+      },
+      "bloomreach | BAU_F_020625_FDThePerfectCard": {
+        "media_source": "bloomreach",
+        "campaign": "BAU_F_020625_FDThePerfectCard",
+        "installs": 72
+      },
+      "Facebook Ads | Vday25 - retargeting - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - retargeting - Retention",
+        "installs": 72
+      },
+      "Social_Influencers | pr-influencer-face-swap-2025-01-27": {
+        "media_source": "Social_Influencers",
+        "campaign": "pr-influencer-face-swap-2025-01-27",
+        "installs": 71
+      },
+      "Facebook Ads | FDay24 - Catalogue - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "FDay24 - Catalogue - Acquisition",
+        "installs": 70
+      },
+      "googleadwords_int | SER|ACQ|Interests - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Interests - MM",
+        "installs": 70
+      },
+      "googleadwords_int | SER|ACQ|Good Luck - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Good Luck - BR",
+        "installs": 69
+      },
+      "af_banner | fullscreen_homepage_test1": {
+        "media_source": "af_banner",
+        "campaign": "fullscreen_homepage_test1",
+        "installs": 69
+      },
+      "google_organic_seo | our-tonys-chocolonely-gifts": {
+        "media_source": "google_organic_seo",
+        "campaign": "our-tonys-chocolonely-gifts",
+        "installs": 69
+      },
+      "googleadwords_int | SER|ACQ|Christmas - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Christmas - BR",
+        "installs": 68
+      },
+      "Facebook Ads | Vday25 - Advantage+ - Acquisition Campaign": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Advantage+ - Acquisition Campaign",
+        "installs": 68
+      },
+      "Facebook Ads | Mday25 - Misc - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - Misc - Retention",
+        "installs": 67
+      },
+      "Facebook Ads | Q225 - Birthday - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Q225 - Birthday - Retention",
+        "installs": 67
+      },
+      "Facebook Ads | Retention_FD25_T1": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_T1",
+        "installs": 66
+      },
+      "Facebook Ads | Valentines24 - video - retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - video - retention",
+        "installs": 65
+      },
+      "googleadwords_int | SHP|RET|Father's Day 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Father's Day 24",
+        "installs": 64
+      },
+      "print | app_20_flyer": {
+        "media_source": "print",
+        "campaign": "app_20_flyer",
+        "installs": 64
+      },
+      "Facebook Ads | FDay24 - Styles - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "FDay24 - Styles - Retention",
+        "installs": 64
+      },
+      "googleadwords_int | SER|ACQ|Engagements & Weddings - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Engagements & Weddings - BR",
+        "installs": 64
+      },
+      "googleadwords_int | SER|ACQ|TV Shows - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|TV Shows - MM",
+        "installs": 64
+      },
+      "Facebook Ads | Vday25 - T1 Creative - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - T1 Creative - Acquisition",
+        "installs": 63
+      },
+      "Facebook Ads | Retention_FD25_Statics": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_Statics",
+        "installs": 63
+      },
+      "googleadwords_int | SER|RET|Engagements & Weddings - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Engagements & Weddings - MM",
+        "installs": 63
+      },
+      "googleadwords_int | DMG|ACQ|Mother's Day 25": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|ACQ|Mother's Day 25",
+        "installs": 62
+      },
+      "googleadwords_int | SER|RET|Thank You - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Thank You - BR",
+        "installs": 62
+      },
+      "ecosia_organic_seo | None": {
+        "media_source": "ecosia_organic_seo",
+        "campaign": "None",
+        "installs": 61
+      },
+      "Facebook Ads | Spring24 - Anniversary - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24 - Anniversary - Retention",
+        "installs": 60
+      },
+      "Facebook Ads | Mday25 - targeted - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - targeted - Retention",
+        "installs": 58
+      },
+      "googleadwords_int | SER|ACQ|INT|Send to UK - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|INT|Send to UK - BR",
+        "installs": 57
+      },
+      "Facebook Ads | Retention_Summer25_Anniversary": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_Summer25_Anniversary",
+        "installs": 57
+      },
+      "googleadwords_int | SER|ACQ|Birthday - MM Corvidae Test": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Birthday - MM Corvidae Test",
+        "installs": 56
+      },
+      "googleadwords_int | SER|ACQ|Anniversaries - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Anniversaries - BR",
+        "installs": 56
+      },
+      "googleadwords_int | SER|RET|Mother's Day - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Mother's Day - EX",
+        "installs": 56
+      },
+      "googleadwords_int | DMG|ACQ|Mother's Day 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|ACQ|Mother's Day 24",
+        "installs": 56
+      },
+      "googleadwords_int | SER|RET|Christmas - EX Corvidae Test - Christmas Returning": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Christmas - EX Corvidae Test - Christmas Returning",
+        "installs": 55
+      },
+      "googleadwords_int | SHP|RET|Father's Day 25": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Father's Day 25",
+        "installs": 54
+      },
+      "googleadwords_int | SER|ACQ|Generic Cards - MM - tROAS Test": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Generic Cards - MM - tROAS Test",
+        "installs": 54
+      },
+      "googleadwords_int | SER|ACQ|Generic Cards - BR Corvidae Test": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Generic Cards - BR Corvidae Test",
+        "installs": 54
+      },
+      "Facebook Ads | Acquisition_FD25_Targeted": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_Targeted",
+        "installs": 53
+      },
+      "Facebook Ads | Christmas24 - Demographics - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Christmas24 - Demographics - Acquisition",
+        "installs": 51
+      },
+      "googleadwords_int | SER|ACQ|Gifts - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Gifts - BR",
+        "installs": 50
+      },
+      "googleadwords_int | SER|ACQ|INT|Send to UK - EX - tROAS Test": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|INT|Send to UK - EX - tROAS Test",
+        "installs": 50
+      },
+      "Twitter | Mother24 - Bestsellers - Acquisition": {
+        "media_source": "Twitter",
+        "campaign": "Mother24 - Bestsellers - Acquisition",
+        "installs": 50
+      },
+      "Facebook Ads | FDay24 - Catalogue - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "FDay24 - Catalogue - Retention",
+        "installs": 49
+      },
+      "Facebook Ads | Christmas24 - Hero - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Christmas24 - Hero - Acquisition",
+        "installs": 49
+      },
+      "googleadwords_int | SER|ACQ|Get Well Soon - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Get Well Soon - BR",
+        "installs": 49
+      },
+      "Facebook Ads | Fday24 - Trialists - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Trialists - Retention",
+        "installs": 48
+      },
+      "googleadwords_int | SER|ACQ|Generic Cards - EX Corvidae Test - Generic Acq EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Generic Cards - EX Corvidae Test - Generic Acq EX",
+        "installs": 48
+      },
+      "Facebook Ads | Mothers24 - Dynamic - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Dynamic - Retention",
+        "installs": 48
+      },
+      "Facebook Ads | FDay24 - Dynamic - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "FDay24 - Dynamic - Retention",
+        "installs": 47
+      },
+      "website-thortful | web-PLP-download-BANNER-mday-faceswap": {
+        "media_source": "website-thortful",
+        "campaign": "web-PLP-download-BANNER-mday-faceswap",
+        "installs": 47
+      },
+      "google_organic_seo | flower-and-plants": {
+        "media_source": "google_organic_seo",
+        "campaign": "flower-and-plants",
+        "installs": 46
+      },
+      "googleadwords_int | SER|ACQ|Sorry - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Sorry - MM",
+        "installs": 45
+      },
+      "Facebook Ads | Mothers24 - retargeting - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - retargeting - Retention",
+        "installs": 44
+      },
+      "googleadwords_int | SER|ACQ|Generic Cards - BR Corvidae Test - Generic Acq Broad": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Generic Cards - BR Corvidae Test - Generic Acq Broad",
+        "installs": 43
+      },
+      "googleadwords_int | SER|RET|Brand - Pure Brand - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Brand - Pure Brand - BR",
+        "installs": 43
+      },
+      "googleadwords_int | SHP|ACQ|Birthday": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Birthday",
+        "installs": 43
+      },
+      "googleadwords_int | SER|ACQ|Generic Cards - EX SER|ACQ|Generic Cards - EX - Corvidae Test": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Generic Cards - EX SER|ACQ|Generic Cards - EX - Corvidae Test",
+        "installs": 42
+      },
+      "Facebook Ads | Fday24 - Retargeting - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Retargeting - Retention",
+        "installs": 41
+      },
+      "Facebook Ads | Spring24 - Retargeting - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24 - Retargeting - Retention",
+        "installs": 41
+      },
+      "Facebook Ads | Mothers24 - retargeting - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - retargeting - Acquisition",
+        "installs": 41
+      },
+      "Facebook Ads | Retention_FD25_FSIOS": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_FSIOS",
+        "installs": 40
+      },
+      "googleadwords_int | SER|RET|Gifts - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Gifts - BR",
+        "installs": 40
+      },
+      "website-thortful | web-PDP-download-MODAL-fday30-paid-2024": {
+        "media_source": "website-thortful",
+        "campaign": "web-PDP-download-MODAL-fday30-paid-2024",
+        "installs": 40
+      },
+      "Facebook Ads | Summer24 - BAU - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Summer24 - BAU - Acquisition",
+        "installs": 39
+      },
+      "Facebook Ads | Acquisition_FD25_T1": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_T1",
+        "installs": 38
+      },
+      "Facebook Ads | Christmas24 - Interests - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Christmas24 - Interests - Acquisition",
+        "installs": 38
+      },
+      "Facebook Ads | Autumn24 - BAU - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Autumn24 - BAU - Acquisition",
+        "installs": 38
+      },
+      "googleadwords_int | SHP|RET|Congratulations - Generics": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Congratulations - Generics",
+        "installs": 37
+      },
+      "googleadwords_int | SER|RET|Good Luck - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Good Luck - BR",
+        "installs": 37
+      },
+      "googleadwords_int | SER|ACQ|Sympathy - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Sympathy - BR",
+        "installs": 36
+      },
+      "googleadwords_int | SER|ACQ|Christmas - EX Corvidae Test - Christmas Acquisition": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Christmas - EX Corvidae Test - Christmas Acquisition",
+        "installs": 36
+      },
+      "Facebook Ads | Jan25 - Apptest - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Jan25 - Apptest - Retention",
+        "installs": 35
+      },
+      "googleadwords_int | SER|ACQ|Thank You - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Thank You - MM",
+        "installs": 35
+      },
+      "googleadwords_int | SER|ACQ|Mother's Day - BR Promo Code Test - March 25": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Mother's Day - BR Promo Code Test - March 25",
+        "installs": 34
+      },
+      "googleadwords_int | SER|ACQ|Creators - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Creators - EX",
+        "installs": 34
+      },
+      "Twitter | Valentines24 - Trending - Acquisition": {
+        "media_source": "Twitter",
+        "campaign": "Valentines24 - Trending - Acquisition",
+        "installs": 33
+      },
+      "tiktokglobal_int | Valentines25 - Demographics - Acquisition": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "Valentines25 - Demographics - Acquisition",
+        "installs": 32
+      },
+      "Facebook Ads | Mday25 - targeted - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - targeted - Acquisition",
+        "installs": 31
+      },
+      "Facebook Ads | Q225 - Birthday - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Q225 - Birthday - Acquisition",
+        "installs": 31
+      },
+      "googleadwords_int | fathers-day-gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "fathers-day-gifts",
+        "installs": 31
+      },
+      "bloomreach | BAU_F_210525_Faceswap": {
+        "media_source": "bloomreach",
+        "campaign": "BAU_F_210525_Faceswap",
+        "installs": 30
+      },
+      "googleadwords_int | 22154270364": {
+        "media_source": "googleadwords_int",
+        "campaign": "22154270364",
+        "installs": 30
+      },
+      "Facebook Ads | Spring24 - Birthday - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24 - Birthday - Retention",
+        "installs": 30
+      },
+      "googleadwords_int | SER|RET|INT|Send Abroad - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|INT|Send Abroad - BR",
+        "installs": 30
+      },
+      "Facebook Ads | Newyear24A - Dynamic - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Newyear24A - Dynamic - Acquisition",
+        "installs": 30
+      },
+      "googleadwords_int | SER|ACQ|Animals - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Animals - MM",
+        "installs": 30
+      },
+      "Facebook Ads | Spring24 - Interests - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24 - Interests - Retention",
+        "installs": 29
+      },
+      "Facebook Ads | Christmas24 - UGC - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Christmas24 - UGC - Retention",
+        "installs": 29
+      },
+      "googleadwords_int | SER|ACQ|Mother's Day - EX Corvidae Final Test": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Mother's Day - EX Corvidae Final Test",
+        "installs": 29
+      },
+      "googleadwords_int | SER|ACQ|Get Well Soon - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Get Well Soon - MM",
+        "installs": 29
+      },
+      "Facebook Ads | Retention_Summer25_Cardpacks": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_Summer25_Cardpacks",
+        "installs": 29
+      },
+      "Facebook Ads | Valentines24 - T1 - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - T1 - Acquisition",
+        "installs": 28
+      },
+      "googleadwords_int | DMG|ACQ|Test- Birthday 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|ACQ|Test- Birthday 24",
+        "installs": 28
+      },
+      "Facebook Ads | Spring24A - Catalogue - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24A - Catalogue - Acquisition",
+        "installs": 27
+      },
+      "googleadwords_int | SER|ACQ|Birthday - MM Corvidae LSTM Final Pilot Test": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Birthday - MM Corvidae LSTM Final Pilot Test",
+        "installs": 26
+      },
+      "googleadwords_int | SER|RET|Just Because - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Just Because - BR",
+        "installs": 26
+      },
+      "googleadwords_int | SER|ACQ|Generic Cards - MM - Google Ads Tag Test": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Generic Cards - MM - Google Ads Tag Test",
+        "installs": 26
+      },
+      "Facebook Ads | Vday25 - Advantage+ - Retention Campaign": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Advantage+ - Retention Campaign",
+        "installs": 25
+      },
+      "Facebook Ads | Mothers24 - Last Chance - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Last Chance - Acquisition",
+        "installs": 25
+      },
+      "Facebook Ads | Jan25 - rebrand - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Jan25 - rebrand - Retention",
+        "installs": 25
+      },
+      "Facebook Ads | Mday25 - discounttest - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - discounttest - Retention",
+        "installs": 24
+      },
+      "Facebook Ads | Retention_Summer25_Birthday": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_Summer25_Birthday",
+        "installs": 23
+      },
+      "Facebook Ads | Vday25 - T0 - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - T0 - Retention",
+        "installs": 23
+      },
+      "googleadwords_int | SHP|ACQ|Valentine's Day 25 - Gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Valentine's Day 25 - Gifts",
+        "installs": 23
+      },
+      "Facebook Ads | Retention_FD25_Promo": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_Promo",
+        "installs": 22
+      },
+      "Facebook Ads | Fday24 - Previous Buyers - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Previous Buyers - Retention",
+        "installs": 22
+      },
+      "googleadwords_int | SHP|ACQ|Christmas 24 - Gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Christmas 24 - Gifts",
+        "installs": 22
+      },
+      "googleadwords_int | DMG|RET|Christmas 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|RET|Christmas 24",
+        "installs": 22
+      },
+      "googleadwords_int | SER|RET|Animals - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Animals - BR",
+        "installs": 22
+      },
+      "googleadwords_int | SER|ACQ|INT|Send Abroad - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|INT|Send Abroad - MM",
+        "installs": 22
+      },
+      "tiktokglobal_int | FD25 - Retention - Tiktok": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "FD25 - Retention - Tiktok",
+        "installs": 21
+      },
+      "Facebook Ads | Valentines24 - Gifting - Retention \u2013 reach": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Gifting - Retention \u2013 reach",
+        "installs": 21
+      },
+      "google_organic_seo | confectionery": {
+        "media_source": "google_organic_seo",
+        "campaign": "confectionery",
+        "installs": 21
+      },
+      "googleadwords_int | SER|RET|TV Shows - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|TV Shows - MM",
+        "installs": 21
+      },
+      "Facebook Ads | Spring24 - Demographics - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24 - Demographics - Retention",
+        "installs": 20
+      },
+      "Facebook Ads | Valentines24 - T1 - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - T1 - Retention",
+        "installs": 20
+      },
+      "google_organic_seo | christmas-card-packs": {
+        "media_source": "google_organic_seo",
+        "campaign": "christmas-card-packs",
+        "installs": 20
+      },
+      "googleadwords_int | SHP|RET|Taylor Swift - Generics": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Taylor Swift - Generics",
+        "installs": 20
+      },
+      "Facebook Ads | Christmas24 - Styles - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Christmas24 - Styles - Acquisition",
+        "installs": 20
+      },
+      "Facebook Ads | Q225 - Spring Discount Campaign - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Q225 - Spring Discount Campaign - Retention",
+        "installs": 20
+      },
+      "googleadwords_int | SER|RET|Engagements & Weddings - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Engagements & Weddings - BR",
+        "installs": 20
+      },
+      "Facebook Ads | Retention_Summer25_Anniversary_corvidae": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_Summer25_Anniversary_corvidae",
+        "installs": 20
+      },
+      "googleadwords_int | SER|ACQ|Generic Cards - EX Corvidae LSTM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Generic Cards - EX Corvidae LSTM",
+        "installs": 19
+      },
+      "tiktokglobal_int | Valentines25 - Hero - Retention": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "Valentines25 - Hero - Retention",
+        "installs": 19
+      },
+      "googleadwords_int | SHP|RET|Engagement - Generics": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Engagement - Generics",
+        "installs": 19
+      },
+      "googleadwords_int | SER|RET|Interests - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Interests - BR",
+        "installs": 19
+      },
+      "googleadwords_int | SER|ACQ|Faith - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Faith - MM",
+        "installs": 19
+      },
+      "googleadwords_int | Valentines Day": {
+        "media_source": "googleadwords_int",
+        "campaign": "Valentines Day",
+        "installs": 18
+      },
+      "Facebook Ads | Valentines - staticretargeting - retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines - staticretargeting - retention",
+        "installs": 18
+      },
+      "googleadwords_int | SER|RET|INT|Send to UK - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|INT|Send to UK - BR",
+        "installs": 18
+      },
+      "googleadwords_int | SER|RET|Father's Day - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Father's Day - BR",
+        "installs": 18
+      },
+      "Facebook Ads | Fday24 - week 1 - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - week 1 - Acquisition",
+        "installs": 18
+      },
+      "googleadwords_int | SER|ACQ|Faith - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Faith - BR",
+        "installs": 18
+      },
+      "googleadwords_int | DMG|RET|Test- Birthday 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|RET|Test- Birthday 24",
+        "installs": 18
+      },
+      "googleadwords_int | SER|ACQ|TV Shows - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|TV Shows - EX",
+        "installs": 18
+      },
+      "googleadwords_int | SER|ACQ|Just Because - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Just Because - MM",
+        "installs": 18
+      },
+      "Facebook Ads | Fday24 - Retargeting - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Retargeting - Acquisition",
+        "installs": 17
+      },
+      "Facebook Ads | Valentines24 - Dynamic - Acquisition \u2013 lookalike": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Dynamic - Acquisition \u2013 lookalike",
+        "installs": 17
+      },
+      "Facebook Ads | Q225 - Anniversary - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Q225 - Anniversary - Acquisition",
+        "installs": 17
+      },
+      "Facebook Ads | Spring24A - Demographics - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24A - Demographics - Acquisition",
+        "installs": 17
+      },
+      "emarsys | None": {
+        "media_source": "emarsys",
+        "campaign": "None",
+        "installs": 16
+      },
+      "test | test-kirill": {
+        "media_source": "test",
+        "campaign": "test-kirill",
+        "installs": 16
+      },
+      "bloomreach | BAU_G_120525_ThisisThat": {
+        "media_source": "bloomreach",
+        "campaign": "BAU_G_120525_ThisisThat",
+        "installs": 16
+      },
+      "googleadwords_int | SER|ACQ|Trends - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Trends - EX",
+        "installs": 15
+      },
+      "googleadwords_int | SHP|ACQ|Father's Day 25 - Gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Father's Day 25 - Gifts",
+        "installs": 15
+      },
+      "bloomreach | BAU_G_090425_Photocards": {
+        "media_source": "bloomreach",
+        "campaign": "BAU_G_090425_Photocards",
+        "installs": 15
+      },
+      "googleadwords_int | APP|ACQ|Downloads - iOS": {
+        "media_source": "googleadwords_int",
+        "campaign": "APP|ACQ|Downloads - iOS",
+        "installs": 15
+      },
+      "googleadwords_int | SER|RET|Leaving - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Leaving - MM",
+        "installs": 15
+      },
+      "googleadwords_int | SER|RET|Interests - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Interests - MM",
+        "installs": 15
+      },
+      "googleadwords_int | SER|ACQ|Gifts - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Gifts - MM",
+        "installs": 15
+      },
+      "Facebook Ads | Acquisition_Summer25_Anniversary": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_Summer25_Anniversary",
+        "installs": 15
+      },
+      "googleadwords_int | SER|RET|Valentine's - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Valentine's - EX",
+        "installs": 14
+      },
+      "Facebook Ads | FDay24 - WkT-2 - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "FDay24 - WkT-2 - Acquisition",
+        "installs": 14
+      },
+      "website-thortful | web-PLP-download-MODAL-fday30-paid-2024": {
+        "media_source": "website-thortful",
+        "campaign": "web-PLP-download-MODAL-fday30-paid-2024",
+        "installs": 14
+      },
+      "bloomreach | BAU_EMAIL_AppBenefits_14_08_25": {
+        "media_source": "bloomreach",
+        "campaign": "BAU_EMAIL_AppBenefits_14_08_25",
+        "installs": 14
+      },
+      "googleadwords_int | SER|RET|INT|Send Abroad - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|INT|Send Abroad - EX",
+        "installs": 13
+      },
+      "googleadwords_int | Performance Max|ACQ|Gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "Performance Max|ACQ|Gifts",
+        "installs": 13
+      },
+      "Facebook Ads | Acquisition_Summer25_Birthday": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_Summer25_Birthday",
+        "installs": 13
+      },
+      "googleadwords_int | DMG|ACQ|Valentine's Day 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|ACQ|Valentine's Day 24",
+        "installs": 13
+      },
+      "googleadwords_int | SHP|RET|Mother's Day 25": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Mother's Day 25",
+        "installs": 13
+      },
+      "Twitter | Fday24 - Bestsellers - Acquisition": {
+        "media_source": "Twitter",
+        "campaign": "Fday24 - Bestsellers - Acquisition",
+        "installs": 13
+      },
+      "google_organic_seo | alcohol": {
+        "media_source": "google_organic_seo",
+        "campaign": "alcohol",
+        "installs": 13
+      },
+      "googleadwords_int | SHP|ACQ|Wedding": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Wedding",
+        "installs": 13
+      },
+      "Facebook Ads | Spring24 - Birthday - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24 - Birthday - Acquisition",
+        "installs": 12
+      },
+      "Facebook Ads | Q1FY25 - BAU - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Q1FY25 - BAU - Acquisition",
+        "installs": 12
+      },
+      "googleadwords_int | letterbox": {
+        "media_source": "googleadwords_int",
+        "campaign": "letterbox",
+        "installs": 12
+      },
+      "googleadwords_int | SER|RET|Leaving - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Leaving - BR",
+        "installs": 12
+      },
+      "Facebook Ads | Valentines - staticretargeting - acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines - staticretargeting - acquisition",
+        "installs": 12
+      },
+      "googleadwords_int | 21261282891": {
+        "media_source": "googleadwords_int",
+        "campaign": "21261282891",
+        "installs": 12
+      },
+      "googleadwords_int | DMG|ACQ|Christmas 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|ACQ|Christmas 24",
+        "installs": 12
+      },
+      "googleadwords_int | SER|ACQ|Sorry - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Sorry - BR",
+        "installs": 12
+      },
+      "Facebook Ads | Fday24 - WkT-3 - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - WkT-3 - Retention",
+        "installs": 11
+      },
+      "googleadwords_int | SER|ACQ|Mother's Day - Core - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Mother's Day - Core - EX",
+        "installs": 11
+      },
+      "googleadwords_int | 22277443825": {
+        "media_source": "googleadwords_int",
+        "campaign": "22277443825",
+        "installs": 11
+      },
+      "googleadwords_int | 22489010622": {
+        "media_source": "googleadwords_int",
+        "campaign": "22489010622",
+        "installs": 11
+      },
+      "Facebook Ads | Jan25 - rebrand - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Jan25 - rebrand - Acquisition",
+        "installs": 11
+      },
+      "googleadwords_int | DMG|RET|Test- Father's Day 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|RET|Test- Father's Day 24",
+        "installs": 11
+      },
+      "googleadwords_int | SER|RET|Thank You - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Thank You - MM",
+        "installs": 11
+      },
+      "Facebook Ads | Vday25 - T0 - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - T0 - Acquisition",
+        "installs": 10
+      },
+      "Facebook Ads | Autumn24 - BAUPremium - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Autumn24 - BAUPremium - Acquisition",
+        "installs": 10
+      },
+      "Facebook Ads | Retention_FD25_gifting": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_gifting",
+        "installs": 10
+      },
+      "googleadwords_int | DMG|RET|Birthday 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|RET|Birthday 24",
+        "installs": 10
+      },
+      "tiktokglobal_int | Valentines25 - Interests - Acquisition": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "Valentines25 - Interests - Acquisition",
+        "installs": 10
+      },
+      "Facebook Ads | Summer24 - thank you teacher - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Summer24 - thank you teacher - Retention",
+        "installs": 10
+      },
+      "googleadwords_int | SER|ACQ|Leaving - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Leaving - EX",
+        "installs": 10
+      },
+      "bloomreach | beta_test": {
+        "media_source": "bloomreach",
+        "campaign": "beta_test",
+        "installs": 10
+      },
+      "Facebook Ads | Q225 - Easter - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Q225 - Easter - Retention",
+        "installs": 9
+      },
+      "googleadwords_int | SHP|ACQ|Father's Day 24|Gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Father's Day 24|Gifts",
+        "installs": 9
+      },
+      "Facebook Ads | NewYear24A - Catalogue - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "NewYear24A - Catalogue - Acquisition",
+        "installs": 9
+      },
+      "googleadwords_int | SER|ACQ|Faceswap": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Faceswap",
+        "installs": 9
+      },
+      "Facebook Ads | Fday24 - Gifting - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Gifting - Retention",
+        "installs": 9
+      },
+      "googleadwords_int | 22763518054": {
+        "media_source": "googleadwords_int",
+        "campaign": "22763518054",
+        "installs": 9
+      },
+      "googleadwords_int | SHP|ACQ|Mother's Day 25 #2": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Mother's Day 25 #2",
+        "installs": 8
+      },
+      "googleadwords_int | SER|RET|Mother's Day - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Mother's Day - BR",
+        "installs": 8
+      },
+      "Facebook Ads | Christmas24 - UGC - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Christmas24 - UGC - Acquisition",
+        "installs": 8
+      },
+      "googleadwords_int | SER|RET|Birthday - MM Corvidae Conversion Goal Test": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Birthday - MM Corvidae Conversion Goal Test",
+        "installs": 8
+      },
+      "bloomreach | BAU_G_020625_ThePerfectCard": {
+        "media_source": "bloomreach",
+        "campaign": "BAU_G_020625_ThePerfectCard",
+        "installs": 8
+      },
+      "Facebook Ads | Fday24 - kidstest - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - kidstest - Acquisition",
+        "installs": 8
+      },
+      "googleadwords_int | SER|ACQ|Generic Cards - BR Corvidae BROAD (NCD)": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Generic Cards - BR Corvidae BROAD (NCD)",
+        "installs": 8
+      },
+      "googleadwords_int | SER|ACQ|Misc - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Misc - MM",
+        "installs": 8
+      },
+      "google_organic_seo | nio-cocktails": {
+        "media_source": "google_organic_seo",
+        "campaign": "nio-cocktails",
+        "installs": 8
+      },
+      "googleadwords_int | SHP|ACQ|Birthday Card Packs": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Birthday Card Packs",
+        "installs": 8
+      },
+      "Facebook Ads | Retention_Summer25_Birthdayvideo": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_Summer25_Birthdayvideo",
+        "installs": 8
+      },
+      "googleadwords_int | SHP|ACQ|Mother's Day 25 - Gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Mother's Day 25 - Gifts",
+        "installs": 7
+      },
+      "googleadwords_int | SER|ACQ|Animals - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Animals - EX",
+        "installs": 7
+      },
+      "googleadwords_int | DSC|RET|Remarketing- Birthday 23 (Product Feed)": {
+        "media_source": "googleadwords_int",
+        "campaign": "DSC|RET|Remarketing- Birthday 23 (Product Feed)",
+        "installs": 7
+      },
+      "googleadwords_int | 21403223475": {
+        "media_source": "googleadwords_int",
+        "campaign": "21403223475",
+        "installs": 7
+      },
+      "Facebook Ads | Vday25 - retargeting - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - retargeting - Acquisition",
+        "installs": 7
+      },
+      "Facebook Ads | Spring24A - Interests - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24A - Interests - Acquisition",
+        "installs": 7
+      },
+      "auto_apply_test | None": {
+        "media_source": "auto_apply_test",
+        "campaign": "None",
+        "installs": 7
+      },
+      "Facebook Ads | Spring24A - A+ - Acquisition Campaign": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24A - A+ - Acquisition Campaign",
+        "installs": 7
+      },
+      "Facebook Ads | Acquisition_FD25_FSIOS": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_FSIOS",
+        "installs": 7
+      },
+      "Facebook Ads | Retention_FD25_catalogue": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_FD25_catalogue",
+        "installs": 7
+      },
+      "tiktokglobal_int | Valentines25 - FS IOS - Acquisition": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "Valentines25 - FS IOS - Acquisition",
+        "installs": 7
+      },
+      "google_organic_seo | fathers-day-gifts": {
+        "media_source": "google_organic_seo",
+        "campaign": "fathers-day-gifts",
+        "installs": 7
+      },
+      "googleadwords_int | 21189369323": {
+        "media_source": "googleadwords_int",
+        "campaign": "21189369323",
+        "installs": 7
+      },
+      "Facebook Ads | Mothers24 - gifting - retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - gifting - retention",
+        "installs": 7
+      },
+      "googleadwords_int | 22858786776": {
+        "media_source": "googleadwords_int",
+        "campaign": "22858786776",
+        "installs": 7
+      },
+      "google_organic_seo | experiences-40-and-under": {
+        "media_source": "google_organic_seo",
+        "campaign": "experiences-40-and-under",
+        "installs": 6
+      },
+      "googleadwords_int | SER|ACQ|Misc - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Misc - BR",
+        "installs": 6
+      },
+      "googleadwords_int | 22644962598": {
+        "media_source": "googleadwords_int",
+        "campaign": "22644962598",
+        "installs": 6
+      },
+      "Facebook Ads | FY24 - WeekendWinners - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "FY24 - WeekendWinners - Retention",
+        "installs": 6
+      },
+      "Facebook Ads | Fday24 - last chance - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - last chance - Acquisition",
+        "installs": 6
+      },
+      "googleadwords_int | DMG|ACQ|Test- Father's Day 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|ACQ|Test- Father's Day 24",
+        "installs": 6
+      },
+      "Facebook Ads | Q225 - Spring Discount Campaign - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Q225 - Spring Discount Campaign - Acquisition",
+        "installs": 6
+      },
+      "googleadwords_int | mothers-day-gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "mothers-day-gifts",
+        "installs": 6
+      },
+      "googleadwords_int | 21351230139": {
+        "media_source": "googleadwords_int",
+        "campaign": "21351230139",
+        "installs": 6
+      },
+      "Facebook Ads | Vday25 - FS IOS - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - FS IOS - Acquisition",
+        "installs": 6
+      },
+      "googleadwords_int | SER|ACQ|Just Because - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Just Because - EX",
+        "installs": 6
+      },
+      "googleadwords_int | SHP|ACQ|Valentine's Day - Gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Valentine's Day - Gifts",
+        "installs": 6
+      },
+      "Facebook Ads | RetentionRestructure - Risk of Churn - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "RetentionRestructure - Risk of Churn - Retention",
+        "installs": 6
+      },
+      "googleadwords_int | 22176985599": {
+        "media_source": "googleadwords_int",
+        "campaign": "22176985599",
+        "installs": 6
+      },
+      "Facebook Ads | Valentines25 - Apptestinstall - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines25 - Apptestinstall - Acquisition",
+        "installs": 6
+      },
+      "google_organic_seo | our-biscuiteers-range": {
+        "media_source": "google_organic_seo",
+        "campaign": "our-biscuiteers-range",
+        "installs": 6
+      },
+      "googleadwords_int | Shoptimised | Incremental | Performance Max | Trending | ACQ": {
+        "media_source": "googleadwords_int",
+        "campaign": "Shoptimised | Incremental | Performance Max | Trending | ACQ",
+        "installs": 6
+      },
+      "googleadwords_int | 22715090108": {
+        "media_source": "googleadwords_int",
+        "campaign": "22715090108",
+        "installs": 6
+      },
+      "Facebook Ads | Acquisition_Summer25_Anniversary_corvidae": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_Summer25_Anniversary_corvidae",
+        "installs": 6
+      },
+      "Facebook Ads | Vday25 - FS IOS - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - FS IOS - Retention",
+        "installs": 5
+      },
+      "googleadwords_int | SER|RET|Get Well Soon - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Get Well Soon - BR",
+        "installs": 5
+      },
+      "emarsys | crm-header-birthday": {
+        "media_source": "emarsys",
+        "campaign": "crm-header-birthday",
+        "installs": 5
+      },
+      "Facebook Ads | Retention_Summer25_ThankyouTeacher": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_Summer25_ThankyouTeacher",
+        "installs": 5
+      },
+      "googleadwords_int | SER|RET|Trends - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Trends - MM",
+        "installs": 5
+      },
+      "googleadwords_int | christmas": {
+        "media_source": "googleadwords_int",
+        "campaign": "christmas",
+        "installs": 5
+      },
+      "Facebook Ads | Mothers23 - App A+ Catalogue - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers23 - App A+ Catalogue - Retention",
+        "installs": 5
+      },
+      "tiktokglobal_int | Valentines25 - AppInstall - promotion": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "Valentines25 - AppInstall - promotion",
+        "installs": 5
+      },
+      "googleadwords_int | SER|RET|Animals - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Animals - EX",
+        "installs": 5
+      },
+      "googleadwords_int | SER|ACQ|Good Luck - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Good Luck - MM",
+        "installs": 5
+      },
+      "googleadwords_int | SER|RET|Get Well Soon - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Get Well Soon - MM",
+        "installs": 5
+      },
+      "googleadwords_int | SER|RET|Sympathy - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Sympathy - MM",
+        "installs": 5
+      },
+      "google_organic_seo | birthday-card-packs": {
+        "media_source": "google_organic_seo",
+        "campaign": "birthday-card-packs",
+        "installs": 5
+      },
+      "googleadwords_int | 22773168615": {
+        "media_source": "googleadwords_int",
+        "campaign": "22773168615",
+        "installs": 5
+      },
+      "None | None": {
+        "media_source": "None",
+        "campaign": "None",
+        "installs": 4
+      },
+      "googleadwords_int | SHP|RET|Mother's Day 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Mother's Day 24",
+        "installs": 4
+      },
+      "tiktokglobal_int | Valentines25 - Demographics - Retention": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "Valentines25 - Demographics - Retention",
+        "installs": 4
+      },
+      "google_organic_seo | our-papier-range": {
+        "media_source": "google_organic_seo",
+        "campaign": "our-papier-range",
+        "installs": 4
+      },
+      "googleadwords_int | Valentines Day Flowers": {
+        "media_source": "googleadwords_int",
+        "campaign": "Valentines Day Flowers",
+        "installs": 4
+      },
+      "Facebook Ads | Fday24 - Copy test - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Copy test - Acquisition",
+        "installs": 4
+      },
+      "googleadwords_int | spring-birthday": {
+        "media_source": "googleadwords_int",
+        "campaign": "spring-birthday",
+        "installs": 4
+      },
+      "Facebook Ads | Acquisition_FD25_Templatetest": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_Templatetest",
+        "installs": 4
+      },
+      "googleadwords_int | SER|RET|Occasions|Photocards": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Occasions|Photocards",
+        "installs": 4
+      },
+      "Facebook Ads | Fday24 - Prospecting - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - Prospecting - Acquisition",
+        "installs": 4
+      },
+      "google_organic_seo | bestselling": {
+        "media_source": "google_organic_seo",
+        "campaign": "bestselling",
+        "installs": 4
+      },
+      "googleadwords_int | SER|RET|INT|Send Abroad - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|INT|Send Abroad - MM",
+        "installs": 4
+      },
+      "Facebook Ads | Retention_Promotion_postage": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_Promotion_postage",
+        "installs": 3
+      },
+      "googleadwords_int | SER|ACQ|Birthday|Photocards": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Birthday|Photocards",
+        "installs": 3
+      },
+      "googleadwords_int | SER|ACQ|Occasions|Photocards": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Occasions|Photocards",
+        "installs": 3
+      },
+      "tiktokglobal_int | MD25 - Carousel - Retention": {
+        "media_source": "tiktokglobal_int",
+        "campaign": "MD25 - Carousel - Retention",
+        "installs": 3
+      },
+      "Facebook Ads | Acquisition_FD25_catalogue": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_FD25_catalogue",
+        "installs": 3
+      },
+      "website-thortful | web-BR-Banner-faceswap": {
+        "media_source": "website-thortful",
+        "campaign": "web-BR-Banner-faceswap",
+        "installs": 3
+      },
+      "Facebook Ads | Retention_Promotion_30": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_Promotion_30",
+        "installs": 3
+      },
+      "googleadwords_int | SER|RET|Thank You - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Thank You - EX",
+        "installs": 3
+      },
+      "Facebook Ads | Mothers24 - Last Chance - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mothers24 - Last Chance - Retention",
+        "installs": 3
+      },
+      "Facebook Ads | Summer24 - thank you teacher - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Summer24 - thank you teacher - Acquisition",
+        "installs": 3
+      },
+      "google_organic_seo | for-her": {
+        "media_source": "google_organic_seo",
+        "campaign": "for-her",
+        "installs": 3
+      },
+      "google_organic_seo | under-15": {
+        "media_source": "google_organic_seo",
+        "campaign": "under-15",
+        "installs": 3
+      },
+      "google_organic_seo | mothers-day-gifts": {
+        "media_source": "google_organic_seo",
+        "campaign": "mothers-day-gifts",
+        "installs": 3
+      },
+      "google_organic_seo | mothers-day-all-flowers": {
+        "media_source": "google_organic_seo",
+        "campaign": "mothers-day-all-flowers",
+        "installs": 3
+      },
+      "google_organic_seo | cute-christmas-card-packs": {
+        "media_source": "google_organic_seo",
+        "campaign": "cute-christmas-card-packs",
+        "installs": 3
+      },
+      "google_organic_seo | send-a-smile": {
+        "media_source": "google_organic_seo",
+        "campaign": "send-a-smile",
+        "installs": 3
+      },
+      "google_organic_seo | birthday": {
+        "media_source": "google_organic_seo",
+        "campaign": "birthday",
+        "installs": 3
+      },
+      "googleadwords_int | fathers-day-drinks": {
+        "media_source": "googleadwords_int",
+        "campaign": "fathers-day-drinks",
+        "installs": 3
+      },
+      "googleadwords_int | SER|ACQ|Mother's Day - EX Hub Page - Mother's Day (EX)": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Mother's Day - EX Hub Page - Mother's Day (EX)",
+        "installs": 3
+      },
+      "googleadwords_int | SER|RET|Just Because - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Just Because - EX",
+        "installs": 3
+      },
+      "Facebook Ads | Spring24 - CHTestPlain - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24 - CHTestPlain - Retention",
+        "installs": 3
+      },
+      "google_organic_seo | home-and-pampering": {
+        "media_source": "google_organic_seo",
+        "campaign": "home-and-pampering",
+        "installs": 3
+      },
+      "googleadwords_int | SER|RET|Animals - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Animals - MM",
+        "installs": 3
+      },
+      "Facebook Ads | Acquisition_Summer25_Birthdaystatics": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_Summer25_Birthdaystatics",
+        "installs": 3
+      },
+      "googleadwords_int | 22839563471": {
+        "media_source": "googleadwords_int",
+        "campaign": "22839563471",
+        "installs": 3
+      },
+      "google_organic_seo | fathers-day-under-20": {
+        "media_source": "google_organic_seo",
+        "campaign": "fathers-day-under-20",
+        "installs": 2
+      },
+      "google_organic_seo | for-him": {
+        "media_source": "google_organic_seo",
+        "campaign": "for-him",
+        "installs": 2
+      },
+      "google_organic_seo | under-10": {
+        "media_source": "google_organic_seo",
+        "campaign": "under-10",
+        "installs": 2
+      },
+      "google_organic_seo | our-experiences-range": {
+        "media_source": "google_organic_seo",
+        "campaign": "our-experiences-range",
+        "installs": 2
+      },
+      "emarsys | XMASTREAT_FULFILLMENTOFFER_FOLLOWUP_RESEND": {
+        "media_source": "emarsys",
+        "campaign": "XMASTREAT_FULFILLMENTOFFER_FOLLOWUP_RESEND",
+        "installs": 2
+      },
+      "emarsys | crm-header-anniversary": {
+        "media_source": "emarsys",
+        "campaign": "crm-header-anniversary",
+        "installs": 2
+      },
+      "googleadwords_int | SER|RET|Misc - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Misc - BR",
+        "installs": 2
+      },
+      "googleadwords_int | 22604465218": {
+        "media_source": "googleadwords_int",
+        "campaign": "22604465218",
+        "installs": 2
+      },
+      "Facebook Ads | Vday25 - Reach - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Reach - Retention",
+        "installs": 2
+      },
+      "Facebook Ads | Acquisition_Summer25_Cardpacks": {
+        "media_source": "Facebook Ads",
+        "campaign": "Acquisition_Summer25_Cardpacks",
+        "installs": 2
+      },
+      "googleadwords_int | SER|RET|Sorry - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Sorry - BR",
+        "installs": 2
+      },
+      "googleadwords_int | SER|ACQ|Good Luck - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Good Luck - EX",
+        "installs": 2
+      },
+      "googleadwords_int | 22190899329": {
+        "media_source": "googleadwords_int",
+        "campaign": "22190899329",
+        "installs": 2
+      },
+      "Twitter | Fday24 - Bestsellers - Retention": {
+        "media_source": "Twitter",
+        "campaign": "Fday24 - Bestsellers - Retention",
+        "installs": 2
+      },
+      "googleadwords_int | SHP|ACQ|All Products - Generics - BACKUP": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|All Products - Generics - BACKUP",
+        "installs": 2
+      },
+      "googleadwords_int | SER|ACQ|Congratulations - EX Corvidae Conversion Goal Test - Congratulations": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Congratulations - EX Corvidae Conversion Goal Test - Congratulations",
+        "installs": 2
+      },
+      "Facebook Ads | q225 - Consideration Test Awareness - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "q225 - Consideration Test Awareness - Retention",
+        "installs": 2
+      },
+      "Facebook Ads | Spring24A - Interests -volume test (B) - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24A - Interests -volume test (B) - Acquisition",
+        "installs": 2
+      },
+      "Facebook Ads | Jan25 - Apptest - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Jan25 - Apptest - Acquisition",
+        "installs": 2
+      },
+      "Facebook Ads | Fday24 - last chance - retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - last chance - retention",
+        "installs": 2
+      },
+      "impact | RetailMeNot UK Ltd.": {
+        "media_source": "impact",
+        "campaign": "RetailMeNot UK Ltd.",
+        "installs": 2
+      },
+      "googleadwords_int | SER|ACQ|Birthday - EX Birthday Hub page": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|ACQ|Birthday - EX Birthday Hub page",
+        "installs": 2
+      },
+      "Facebook Ads | Valentines24 - Lastchance - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Lastchance - Acquisition",
+        "installs": 2
+      },
+      "googleadwords_int | SER|RET|Sympathy - BR": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Sympathy - BR",
+        "installs": 2
+      },
+      "googleadwords_int | SER|RET|Good Luck - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Good Luck - MM",
+        "installs": 2
+      },
+      "Facebook Ads | Retention_Summer25_Birthdaystatics": {
+        "media_source": "Facebook Ads",
+        "campaign": "Retention_Summer25_Birthdaystatics",
+        "installs": 2
+      },
+      "Facebook Ads | Valentines25 - FS android - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines25 - FS android - Acquisition",
+        "installs": 1
+      },
+      "googleadwords_int | home-and-pampering": {
+        "media_source": "googleadwords_int",
+        "campaign": "home-and-pampering",
+        "installs": 1
+      },
+      "Facebook Ads | NewYear24 - Catalogue - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "NewYear24 - Catalogue - Acquisition",
+        "installs": 1
+      },
+      "googleadwords_int | DMG|RET|Test- Birthday 23": {
+        "media_source": "googleadwords_int",
+        "campaign": "DMG|RET|Test- Birthday 23",
+        "installs": 1
+      },
+      "googleadwords_int | DSC|RET|Test- Birthday 23": {
+        "media_source": "googleadwords_int",
+        "campaign": "DSC|RET|Test- Birthday 23",
+        "installs": 1
+      },
+      "emarsys | 20240130_1200_AUTOMATION_G_JAN24_PREPOTENTIALCARDIES_4FOR10": {
+        "media_source": "emarsys",
+        "campaign": "20240130_1200_AUTOMATION_G_JAN24_PREPOTENTIALCARDIES_4FOR10",
+        "installs": 1
+      },
+      "Social_Influencers | pr-general-face-swap-2025-01-27": {
+        "media_source": "Social_Influencers",
+        "campaign": "pr-general-face-swap-2025-01-27",
+        "installs": 1
+      },
+      "yahoo_organic_seo | flower-and-plants": {
+        "media_source": "yahoo_organic_seo",
+        "campaign": "flower-and-plants",
+        "installs": 1
+      },
+      "yahoo_organic_seo | under-15": {
+        "media_source": "yahoo_organic_seo",
+        "campaign": "under-15",
+        "installs": 1
+      },
+      "yahoo_organic_seo | our-tonys-chocolonely-gifts": {
+        "media_source": "yahoo_organic_seo",
+        "campaign": "our-tonys-chocolonely-gifts",
+        "installs": 1
+      },
+      "yahoo_organic_seo | alcohol": {
+        "media_source": "yahoo_organic_seo",
+        "campaign": "alcohol",
+        "installs": 1
+      },
+      "Facebook Ads | Valentines25 - FS android - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines25 - FS android - Retention",
+        "installs": 1
+      },
+      "bloomreach | crm-header-logo": {
+        "media_source": "bloomreach",
+        "campaign": "crm-header-logo",
+        "installs": 1
+      },
+      "emarsys | 20240127_1208_AUTOMATION_G_EVERGREENWINBACK_NEW_APR23_RESEND": {
+        "media_source": "emarsys",
+        "campaign": "20240127_1208_AUTOMATION_G_EVERGREENWINBACK_NEW_APR23_RESEND",
+        "installs": 1
+      },
+      "emarsys | 20240129_1209_BAU_V_Contingency_50off_Inactive": {
+        "media_source": "emarsys",
+        "campaign": "20240129_1209_BAU_V_Contingency_50off_Inactive",
+        "installs": 1
+      },
+      "google_organic_seo | anniversary": {
+        "media_source": "google_organic_seo",
+        "campaign": "anniversary",
+        "installs": 1
+      },
+      "google_organic_seo | experience-range": {
+        "media_source": "google_organic_seo",
+        "campaign": "experience-range",
+        "installs": 1
+      },
+      "google_organic_seo | wedding-and-engagement-gifts": {
+        "media_source": "google_organic_seo",
+        "campaign": "wedding-and-engagement-gifts",
+        "installs": 1
+      },
+      "google_organic_seo | christmas": {
+        "media_source": "google_organic_seo",
+        "campaign": "christmas",
+        "installs": 1
+      },
+      "google_organic_seo | mday-gift-experiences": {
+        "media_source": "google_organic_seo",
+        "campaign": "mday-gift-experiences",
+        "installs": 1
+      },
+      "google_organic_seo | christmas gifts-\u00a320-and-under": {
+        "media_source": "google_organic_seo",
+        "campaign": "christmas gifts-\u00a320-and-under",
+        "installs": 1
+      },
+      "google_organic_seo | valentines-day": {
+        "media_source": "google_organic_seo",
+        "campaign": "valentines-day",
+        "installs": 1
+      },
+      "Facebook Ads | Spring24A - consolidated test - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24A - consolidated test - Acquisition",
+        "installs": 1
+      },
+      "google_organic_seo | Christmas-gifts": {
+        "media_source": "google_organic_seo",
+        "campaign": "Christmas-gifts",
+        "installs": 1
+      },
+      "googleadwords_int | our-tonys-chocolonely-gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "our-tonys-chocolonely-gifts",
+        "installs": 1
+      },
+      "google_organic_seo | Valentines-day-20-and-under": {
+        "media_source": "google_organic_seo",
+        "campaign": "Valentines-day-20-and-under",
+        "installs": 1
+      },
+      "Facebook Ads | Summer24 - Gentle Humour - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Summer24 - Gentle Humour - Retention",
+        "installs": 1
+      },
+      "Facebook Ads | Valentines24 - Lastchance - retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Valentines24 - Lastchance - retention",
+        "installs": 1
+      },
+      "Facebook Ads | Fday24 - storytest - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "Fday24 - storytest - Acquisition",
+        "installs": 1
+      },
+      "google_organic_seo | spring-birthday": {
+        "media_source": "google_organic_seo",
+        "campaign": "spring-birthday",
+        "installs": 1
+      },
+      "ecosia_organic_seo | our-tonys-chocolonely-gifts": {
+        "media_source": "ecosia_organic_seo",
+        "campaign": "our-tonys-chocolonely-gifts",
+        "installs": 1
+      },
+      "googleadwords_int | SHP|RET|Father's Day 24|Gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Father's Day 24|Gifts",
+        "installs": 1
+      },
+      "googleadwords_int | SER|RET|Sorry - MM": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Sorry - MM",
+        "installs": 1
+      },
+      "googleadwords_int | 21408403668": {
+        "media_source": "googleadwords_int",
+        "campaign": "21408403668",
+        "installs": 1
+      },
+      "Facebook Ads | RetentionRestructure - Trialist - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "RetentionRestructure - Trialist - Retention",
+        "installs": 1
+      },
+      "googleadwords_int | Shoptimised | Incremental | Performance Max | Valentines | ACQ": {
+        "media_source": "googleadwords_int",
+        "campaign": "Shoptimised | Incremental | Performance Max | Valentines | ACQ",
+        "installs": 1
+      },
+      "ecosia_organic_seo | flower-and-plants": {
+        "media_source": "ecosia_organic_seo",
+        "campaign": "flower-and-plants",
+        "installs": 1
+      },
+      "google_organic_seo | over-30": {
+        "media_source": "google_organic_seo",
+        "campaign": "over-30",
+        "installs": 1
+      },
+      "Facebook Ads | Brand_consideration_2305": {
+        "media_source": "Facebook Ads",
+        "campaign": "Brand_consideration_2305",
+        "installs": 1
+      },
+      "google_organic_seo | Valentines Day Flowers": {
+        "media_source": "google_organic_seo",
+        "campaign": "Valentines Day Flowers",
+        "installs": 1
+      },
+      "google_organic_seo | fathers-day-foodie": {
+        "media_source": "google_organic_seo",
+        "campaign": "fathers-day-foodie",
+        "installs": 1
+      },
+      "googleadwords_int | 22394221193": {
+        "media_source": "googleadwords_int",
+        "campaign": "22394221193",
+        "installs": 1
+      },
+      "googleadwords_int | SER|RET|Faith - EX": {
+        "media_source": "googleadwords_int",
+        "campaign": "SER|RET|Faith - EX",
+        "installs": 1
+      },
+      "googleadwords_int | SHP|RET|Valentine's Day 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|RET|Valentine's Day 24",
+        "installs": 1
+      },
+      "Facebook Ads | Brand_consideration_23/06": {
+        "media_source": "Facebook Ads",
+        "campaign": "Brand_consideration_23/06",
+        "installs": 1
+      },
+      "googleadwords_int | fathers-day-foodie": {
+        "media_source": "googleadwords_int",
+        "campaign": "fathers-day-foodie",
+        "installs": 1
+      },
+      "Facebook Ads | Spring24A - Interests - costgoal test (B) - Acquisition \u2013 Copy": {
+        "media_source": "Facebook Ads",
+        "campaign": "Spring24A - Interests - costgoal test (B) - Acquisition \u2013 Copy",
+        "installs": 1
+      },
+      "Facebook Ads | Brand25 - coles - INFLUENCER": {
+        "media_source": "Facebook Ads",
+        "campaign": "Brand25 - coles - INFLUENCER",
+        "installs": 1
+      },
+      "googleadwords_int | SHP|ACQ|Gifts - Spring 24": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Gifts - Spring 24",
+        "installs": 1
+      },
+      "Facebook Ads | NewYear24 - Style - Acquisition": {
+        "media_source": "Facebook Ads",
+        "campaign": "NewYear24 - Style - Acquisition",
+        "installs": 1
+      },
+      "impact | YieldKit GmbH": {
+        "media_source": "impact",
+        "campaign": "YieldKit GmbH",
+        "installs": 1
+      },
+      "Facebook Ads | Vday25 - Flowers - Retention": {
+        "media_source": "Facebook Ads",
+        "campaign": "Vday25 - Flowers - Retention",
+        "installs": 1
+      },
+      "Facebook Ads | Mday25 - what women want - BRAND": {
+        "media_source": "Facebook Ads",
+        "campaign": "Mday25 - what women want - BRAND",
+        "installs": 1
+      },
+      "googleadwords_int | SHP|ACQ|Mother's Day - Gifts": {
+        "media_source": "googleadwords_int",
+        "campaign": "SHP|ACQ|Mother's Day - Gifts",
+        "installs": 1
+      },
+      "Facebook Ads | Brand_consideration_0106": {
+        "media_source": "Facebook Ads",
+        "campaign": "Brand_consideration_0106",
+        "installs": 1
+      },
+      "googleadwords_int | 22845856522": {
+        "media_source": "googleadwords_int",
+        "campaign": "22845856522",
+        "installs": 1
+      },
+      "Facebook Ads | Brand_consideration_29/07": {
+        "media_source": "Facebook Ads",
+        "campaign": "Brand_consideration_29/07",
+        "installs": 1
+      },
+      "googleadwords_int | 22807083839": {
+        "media_source": "googleadwords_int",
+        "campaign": "22807083839",
+        "installs": 1
+      }
+    },
+    "top_sources": [
+      {
+        "source": "organic",
+        "installs": 214098
+      },
+      {
+        "source": "googleadwords_int",
+        "installs": 123720
+      },
+      {
+        "source": "website-thortful",
+        "installs": 113649
+      },
+      {
+        "source": "google_organic_seo",
+        "installs": 28223
+      },
+      {
+        "source": "Facebook Ads",
+        "installs": 28049
+      },
+      {
+        "source": "bloomreach",
+        "installs": 2460
+      },
+      {
+        "source": "emarsys",
+        "installs": 1490
+      },
+      {
+        "source": "impactradius_int",
+        "installs": 832
+      },
+      {
+        "source": "Apple Search Ads",
+        "installs": 815
+      },
+      {
+        "source": "transactional_postmark",
+        "installs": 501
+      }
+    ],
+    "top_campaigns": [
+      {
+        "campaign": "None",
+        "installs": 277504
+      },
+      {
+        "campaign": "web-promo-code-error",
+        "installs": 28639
+      },
+      {
+        "campaign": "SER|RET|Brand - Pure Brand - EX",
+        "installs": 19857
+      },
+      {
+        "campaign": "SHP|ACQ|All Products - Generics",
+        "installs": 17940
+      },
+      {
+        "campaign": "web-PDP-download-CTA-fday30-202",
+        "installs": 13716
+      },
+      {
+        "campaign": "web-PDP-MDAY-NEWAPP25",
+        "installs": 11836
+      },
+      {
+        "campaign": "web-PDP-download-CTA",
+        "installs": 11233
+      },
+      {
+        "campaign": "SER|ACQ|Brand - EX",
+        "installs": 11107
+      },
+      {
+        "campaign": "web-footer-download-button",
+        "installs": 8578
+      },
+      {
+        "campaign": "APP|ACQ|Downloads - Android",
+        "installs": 8017
+      }
+    ],
+    "data_source": "manual_csv_export",
+    "csv_file": "appsflyer_merged_data.csv"
+  },
+  "generated_at": "2025-08-21T08:42:10.939530"
+}

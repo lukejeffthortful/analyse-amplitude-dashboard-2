@@ -1,0 +1,83 @@
+{
+  "date_range": {
+    "start": "2025-08-11",
+    "end": "2025-08-17"
+  },
+  "total_installs": 1828,
+  "by_media_source": {
+    "Facebook Ads": 6,
+    "Organic": 1254,
+    "QR_code": 1,
+    "bloomreach": 226,
+    "transactional_postmark": 2,
+    "website-thortful": 339
+  },
+  "by_campaign": {
+    "Unknown": 1828
+  },
+  "by_source_and_campaign": {
+    "Facebook Ads | Unknown": {
+      "media_source": "Facebook Ads",
+      "campaign": "Unknown",
+      "installs": 6
+    },
+    "Organic | Unknown": {
+      "media_source": "Organic",
+      "campaign": "Unknown",
+      "installs": 1254
+    },
+    "QR_code | Unknown": {
+      "media_source": "QR_code",
+      "campaign": "Unknown",
+      "installs": 1
+    },
+    "bloomreach | Unknown": {
+      "media_source": "bloomreach",
+      "campaign": "Unknown",
+      "installs": 226
+    },
+    "transactional_postmark | Unknown": {
+      "media_source": "transactional_postmark",
+      "campaign": "Unknown",
+      "installs": 2
+    },
+    "website-thortful | Unknown": {
+      "media_source": "website-thortful",
+      "campaign": "Unknown",
+      "installs": 339
+    }
+  },
+  "top_sources": [
+    {
+      "source": "Organic",
+      "installs": 1254
+    },
+    {
+      "source": "website-thortful",
+      "installs": 339
+    },
+    {
+      "source": "bloomreach",
+      "installs": 226
+    },
+    {
+      "source": "Facebook Ads",
+      "installs": 6
+    },
+    {
+      "source": "transactional_postmark",
+      "installs": 2
+    },
+    {
+      "source": "QR_code",
+      "installs": 1
+    }
+  ],
+  "top_campaigns": [
+    {
+      "campaign": "Unknown",
+      "installs": 1828
+    }
+  ],
+  "data_type": "aggregated_partners"
+}

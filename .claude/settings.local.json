@@ -39,7 +39,11 @@
       "Bash(source:*)",
       "Bash(playwright install:*)",
       "Bash(gh repo view:*)",
-      "Bash(gh variable set:*)"
+      "Bash(gh variable set:*)",
+      "Bash(gh run watch:*)",
+      "Bash(gh run download:*)",
+      "Bash(gh secret list:*)",
+      "Bash(gh secret set:*)"
     ],
     "deny": []
   }

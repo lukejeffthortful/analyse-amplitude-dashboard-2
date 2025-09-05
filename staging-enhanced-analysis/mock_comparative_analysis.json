@@ -1,0 +1,108 @@
+{
+  "week_info": {
+    "iso_week": 30,
+    "year": 2025,
+    "date_range": "2025-07-21 to 2025-07-27"
+  },
+  "amplitude_metrics": {
+    "sessions": {
+      "apps": {
+        "current": 54054,
+        "previous": 40656,
+        "yoy_change": 33.0
+      },
+      "web": {
+        "current": 149215,
+        "previous": 174835,
+        "yoy_change": -14.7
+      },
+      "combined": {
+        "current": 203269,
+        "previous": 215491,
+        "yoy_change": -5.7
+      }
+    },
+    "session_conversion": {
+      "apps": {
+        "current": 0.1945,
+        "previous": 0.2392,
+        "yoy_change": -4.5
+      },
+      "web": {
+        "current": 0.1866,
+        "previous": 0.1892,
+        "yoy_change": -0.3
+      },
+      "combined": {
+        "current": 0.1887,
+        "previous": 0.1986,
+        "yoy_change": -1.0
+      }
+    },
+    "metadata": {
+      "source": "amplitude"
+    }
+  },
+  "ga4_metrics": {
+    "sessions": {
+      "apps": {
+        "current": 50620,
+        "previous": 40150,
+        "yoy_change": 26.1
+      },
+      "web": {
+        "current": 134800,
+        "previous": 158200,
+        "yoy_change": -14.8
+      },
+      "combined": {
+        "current": 185420,
+        "previous": 198350,
+        "yoy_change": -6.5
+      }
+    },
+    "conversions": {
+      "purchase_events": {
+        "current": 2500,
+        "previous": 2300,
+        "yoy_change": 8.7
+      },
+      "revenue": {
+        "current": 85000,
+        "previous": 78000,
+        "yoy_change": 9.0
+      },
+      "conversion_rate": {
+        "current": 0.0135,
+        "previous": 0.0116,
+        "yoy_change": 1.9
+      }
+    },
+    "metadata": {
+      "source": "ga4"
+    }
+  },
+  "variance_analysis": {
+    "total_sessions": {
+      "amplitude": 203269,
+      "ga4": 185420,
+      "variance_pct": -8.8,
+      "variance_direction": "ga4_lower"
+    },
+    "web_sessions": {
+      "amplitude": 149215,
+      "ga4": 134800,
+      "variance_pct": -9.7
+    },
+    "app_sessions": {
+      "amplitude": 54054,
+      "ga4": 50620,
+      "variance_pct": -6.4
+    },
+    "insights": {
+      "consistent_variance": true,
+      "typical_range": "6-10% lower for GA4",
+      "growth_trend_alignment": "similar_yoy_patterns"
+    }
+  }
+}

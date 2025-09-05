@@ -1,0 +1,73 @@
+{
+  "date_range": {
+    "start": "2025-07-14",
+    "end": "2025-07-20"
+  },
+  "total_installs": 2082,
+  "by_media_source": {
+    "Facebook Ads": 2,
+    "Organic": 1268,
+    "QR_code": 2,
+    "transactional_postmark": 3,
+    "website-thortful": 807
+  },
+  "by_campaign": {
+    "Unknown": 2082
+  },
+  "by_source_and_campaign": {
+    "Facebook Ads | Unknown": {
+      "media_source": "Facebook Ads",
+      "campaign": "Unknown",
+      "installs": 2
+    },
+    "Organic | Unknown": {
+      "media_source": "Organic",
+      "campaign": "Unknown",
+      "installs": 1268
+    },
+    "QR_code | Unknown": {
+      "media_source": "QR_code",
+      "campaign": "Unknown",
+      "installs": 2
+    },
+    "transactional_postmark | Unknown": {
+      "media_source": "transactional_postmark",
+      "campaign": "Unknown",
+      "installs": 3
+    },
+    "website-thortful | Unknown": {
+      "media_source": "website-thortful",
+      "campaign": "Unknown",
+      "installs": 807
+    }
+  },
+  "top_sources": [
+    {
+      "source": "Organic",
+      "installs": 1268
+    },
+    {
+      "source": "website-thortful",
+      "installs": 807
+    },
+    {
+      "source": "transactional_postmark",
+      "installs": 3
+    },
+    {
+      "source": "Facebook Ads",
+      "installs": 2
+    },
+    {
+      "source": "QR_code",
+      "installs": 2
+    }
+  ],
+  "top_campaigns": [
+    {
+      "campaign": "Unknown",
+      "installs": 2082
+    }
+  ],
+  "data_type": "aggregated_partners"
+}
