@@ -381,40 +381,6 @@ async def test_enhanced_analyzer():
         logger.error(f"Test failed: {str(e)}")
         return None
 
-async def test_amplitude_formatting():
-    """Test the Amplitude formatting specifically"""
-    
-    # Mock results with realistic Amplitude data structure  
-    mock_results = {
-        'week_info': {'analysis_week': 35, 'analysis_year': 2025},
-        'amplitude': {
-            'sessions': {
-                'combined': {'current': 188923, 'previous': 223299, 'yoy_change': -15.4},
-                'apps': {'current': 51960, 'previous': 42781, 'yoy_change': 21.4},
-                'web': {'current': 136963, 'previous': 180518, 'yoy_change': -24.1}
-            },
-            'sessions_per_user': {
-                'combined': {'current': 1.54, 'previous': 1.50, 'yoy_change': 2.7}
-            },
-            'session_conversion': {
-                'combined': {'current': 0.195, 'previous': 0.205, 'yoy_change': -1.0}
-            },
-            'user_conversion': {
-                'combined': {'current': 0.285}
-            }
-        },
-        'appsflyer': None,
-        'ga4_acquisition': None,
-        'reconciliation': None,
-        'summary': None
-    }
-    
-    analyzer = EnhancedWeeklyAnalyzer()
-    report = analyzer.format_comprehensive_report(mock_results)
-    
-    print("=== AMPLITUDE FORMATTING TEST ===")
-    print(report)
-    print("================================")
 
 if __name__ == "__main__":
     asyncio.run(test_enhanced_analyzer())
