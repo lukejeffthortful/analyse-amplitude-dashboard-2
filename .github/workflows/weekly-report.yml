@@ -37,7 +37,7 @@ jobs:
       env:
         AMPLITUDE_API_KEY: ${{ secrets.AMPLITUDE_API_KEY }}
         AMPLITUDE_SECRET_KEY: ${{ secrets.AMPLITUDE_SECRET_KEY }}
-        SLACK_WEBHOOK_URL: ${{ secrets.PRODUCTION_SLACK_WEBHOOK_URL }}
+        SLACK_WEBHOOK_URL: ${{ vars.PRODUCTION_SLACK_WEBHOOK_URL }}
         GA4_WEB_PROPERTY_ID: ${{ secrets.GA4_WEB_PROPERTY_ID }}
         GA4_APP_PROPERTY_ID: ${{ secrets.GA4_APP_PROPERTY_ID }}
         GA4_SERVICE_ACCOUNT_PATH: ga4_service_account/thortful-9a7a7-04cd279e1017.json
