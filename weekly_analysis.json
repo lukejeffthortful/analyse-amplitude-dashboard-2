@@ -88,14 +88,14 @@
         "yoy_change": -28.4
       },
       "web": {
-        "current": 151479,
+        "current": 154297,
         "previous": 206243,
-        "yoy_change": -26.6
+        "yoy_change": -25.2
       },
       "combined": {
-        "current": 178948,
+        "current": 181766,
         "previous": 244630,
-        "yoy_change": -26.8
+        "yoy_change": -25.7
       }
     },
     "metadata": {
@@ -114,14 +114,14 @@
     },
     "web_sessions": {
       "amplitude": 141935.0,
-      "ga4": 151479,
-      "variance_pct": 6.7,
+      "ga4": 154297,
+      "variance_pct": 8.7,
       "variance_direction": "ga4_higher"
     },
     "combined_sessions": {
       "amplitude": 194941.0,
-      "ga4": 178948,
-      "variance_pct": -8.2,
+      "ga4": 181766,
+      "variance_pct": -6.8,
       "variance_direction": "ga4_lower"
     },
     "insights": {

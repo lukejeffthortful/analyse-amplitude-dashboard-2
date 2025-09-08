@@ -12,6 +12,6 @@ Sessions per user: Web up 0.3% YoY (1.42 vs 1.41), App up 15.4% YoY (2.08 vs 1.8
 User conversion: Web up 0.5 ppts YoY (27.0% vs 26.5%), App down 1.1 ppts YoY (41.3% vs 42.5%)
 
 GA4 vs Amplitude Session Comparison:
-Total Sessions: Amplitude 194,941, GA4 178,948 (-8.2% variance)
-Web Sessions: Amplitude 141,935, GA4 151,479 (+6.7% variance)
+Total Sessions: Amplitude 194,941, GA4 181,766 (-6.8% variance)
+Web Sessions: Amplitude 141,935, GA4 154,297 (+8.7% variance)
 App Sessions: Amplitude 53,006, GA4 27,469 (-48.2% variance)
