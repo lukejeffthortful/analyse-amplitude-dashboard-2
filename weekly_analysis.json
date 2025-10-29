@@ -7,70 +7,70 @@
   "amplitude_metrics": {
     "sessions": {
       "apps": {
-        "current": 45251.0,
+        "current": 45026.0,
         "previous": 35936.0,
-        "yoy_change": 25.9
+        "yoy_change": 25.3
       },
       "web": {
-        "current": 138415.0,
+        "current": 138429.0,
         "previous": 157331.0,
         "yoy_change": -12.0
       },
       "combined": {
-        "current": 183666.0,
+        "current": 183455.0,
         "previous": 193267.0,
-        "yoy_change": -5.0
+        "yoy_change": -5.1
       }
     },
     "sessions_per_user": {
       "apps": {
-        "current": 2.0238382754148216,
+        "current": 2.01675176923766,
         "previous": 1.7908900627927837,
-        "yoy_change": 13.0
+        "yoy_change": 12.6
       },
       "web": {
-        "current": 1.3507460501790716,
+        "current": 1.3510540698809292,
         "previous": 1.4588216749499294,
         "yoy_change": -7.4
       },
       "combined": {
-        "current": 1.4811535297817777,
+        "current": 1.480072609923356,
         "previous": 1.5256074264694275,
-        "yoy_change": -2.9
+        "yoy_change": -3.0
       }
     },
     "session_conversion": {
       "apps": {
-        "current": 0.19170847053103798,
+        "current": 0.19208901523564162,
         "previous": 0.2080086821015138,
         "yoy_change": -1.6
       },
       "web": {
-        "current": 0.1514070006863418,
+        "current": 0.1513989120776716,
         "previous": 0.17733313841518836,
         "yoy_change": -2.6
       },
       "combined": {
-        "current": 0.16133633878888853,
+        "current": 0.16138562590280994,
         "previous": 0.18303693853580796,
         "yoy_change": -2.2
       }
     },
     "user_conversion": {
       "apps": {
-        "current": 0.3769911504424779,
+        "current": 0.3793316558513221,
         "previous": 0.39419394150417825,
-        "yoy_change": -1.7
+        "yoy_change": -1.5
       },
       "web": {
-        "current": 0.20359100395966215,
+        "current": 0.20490436105773452,
         "previous": 0.25939097577239384,
-        "yoy_change": -5.6
+        "yoy_change": -5.4
       },
       "combined": {
-        "current": 0.23248410203638645,
+        "current": 0.2340620479022665,
         "previous": 0.2803313715356788,
-        "yoy_change": -4.8
+        "yoy_change": -4.6
       }
     },
     "metadata": {
@@ -83,19 +83,19 @@
   "ga4_metrics": {
     "sessions": {
       "apps": {
-        "current": 23401,
+        "current": 23502,
         "previous": 31632,
-        "yoy_change": -26.0
+        "yoy_change": -25.7
       },
       "web": {
-        "current": 136814,
+        "current": 139509,
         "previous": 168424,
-        "yoy_change": -18.8
+        "yoy_change": -17.2
       },
       "combined": {
-        "current": 160215,
+        "current": 163011,
         "previous": 200056,
-        "yoy_change": -19.9
+        "yoy_change": -18.5
       }
     },
     "metadata": {
@@ -107,21 +107,21 @@
   },
   "variance_analysis": {
     "app_sessions": {
-      "amplitude": 45251.0,
-      "ga4": 23401,
-      "variance_pct": -48.3,
+      "amplitude": 45026.0,
+      "ga4": 23502,
+      "variance_pct": -47.8,
       "variance_direction": "ga4_lower"
     },
     "web_sessions": {
-      "amplitude": 138415.0,
-      "ga4": 136814,
-      "variance_pct": -1.2,
-      "variance_direction": "ga4_lower"
+      "amplitude": 138429.0,
+      "ga4": 139509,
+      "variance_pct": 0.8,
+      "variance_direction": "ga4_higher"
     },
     "combined_sessions": {
-      "amplitude": 183666.0,
-      "ga4": 160215,
-      "variance_pct": -12.8,
+      "amplitude": 183455.0,
+      "ga4": 163011,
+      "variance_pct": -11.1,
       "variance_direction": "ga4_lower"
     },
     "insights": {
