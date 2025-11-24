@@ -1,17 +1,17 @@
-Week 46 Analysis (2025-11-10 to 2025-11-16):
+Week 47 Analysis (2025-11-17 to 2025-11-23):
 
-Sessions down 28.3% YoY (179,322 vs 250,031), session conversion up 2.3 ppts YoY (17.5% vs 15.2%), sessions per user up 3.2% YoY (1.53 vs 1.49), and user conversion up 3.8 ppts YoY (25.9% vs 22.2%). 
+Sessions down 39.5% YoY (172,815 vs 285,658), session conversion up 2.8 ppts YoY (17.9% vs 15.2%), sessions per user up 4.6% YoY (1.56 vs 1.49), and user conversion up 4.8 ppts YoY (27.1% vs 22.3%). 
 
 Platform Analysis:
 Web 73%, App 27% of sessions
 
-Web: sessions down 35.9% YoY (131,679 vs 205,514), conversion up 3.0 ppts YoY (17.1% vs 14.1%)
-Apps: sessions up 7.0% YoY (47,643 vs 44,517), conversion down 1.6 ppts YoY (18.6% vs 20.1%)
+Web: sessions down 47.1% YoY (125,424 vs 237,149), conversion up 3.2 ppts YoY (17.6% vs 14.3%)
+Apps: sessions down 2.3% YoY (47,391 vs 48,509), conversion down 0.3 ppts YoY (18.9% vs 19.1%)
 
-Sessions per user: Web down 0.3% YoY (1.39 vs 1.40), App up 4.1% YoY (2.06 vs 1.98)
-User conversion: Web up 3.8 ppts YoY (23.5% vs 19.7%), App down 2.3 ppts YoY (36.9% vs 39.2%)
+Sessions per user: Web up 1.0% YoY (1.42 vs 1.41), App up 2.3% YoY (2.04 vs 2.00)
+User conversion: Web up 4.5 ppts YoY (24.7% vs 20.2%), App down 1.0 ppts YoY (37.1% vs 38.1%)
 
 GA4 vs Amplitude Session Comparison:
-Total Sessions: Amplitude 179,322, GA4 154,707 (-13.7% variance)
-Web Sessions: Amplitude 131,679, GA4 129,292 (-1.8% variance)
-App Sessions: Amplitude 47,643, GA4 25,415 (-46.7% variance)
+Total Sessions: Amplitude 172,815, GA4 153,767 (-11.0% variance)
+Web Sessions: Amplitude 125,424, GA4 129,311 (+3.1% variance)
+App Sessions: Amplitude 47,391, GA4 24,456 (-48.4% variance)
