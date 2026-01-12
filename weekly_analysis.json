@@ -1,127 +1,127 @@
 {
   "week_info": {
-    "iso_week": 1,
+    "iso_week": 2,
     "year": 2026,
-    "date_range": "2025-12-29 to 2026-01-04"
+    "date_range": "2026-01-05 to 2026-01-11"
   },
   "amplitude_metrics": {
     "sessions": {
       "apps": {
-        "current": 359.0,
-        "previous": 46281.0,
+        "current": 477.0,
+        "previous": 59794.0,
         "yoy_change": -99.2
       },
       "web": {
-        "current": 1118.0,
-        "previous": 164576.0,
-        "yoy_change": -99.3
+        "current": 1290.0,
+        "previous": 246092.0,
+        "yoy_change": -99.5
       },
       "combined": {
-        "current": 1477.0,
-        "previous": 210857.0,
-        "yoy_change": -99.3
+        "current": 1767.0,
+        "previous": 305886.0,
+        "yoy_change": -99.4
       }
     },
     "sessions_per_user": {
       "apps": {
-        "current": 1.5676855895196506,
-        "previous": 2.0254266958424507,
-        "yoy_change": -22.6
+        "current": 1.4367469879518073,
+        "previous": 2.0867592657220633,
+        "yoy_change": -31.1
       },
       "web": {
-        "current": 1.0832526621490803,
-        "previous": 1.4462244171638972,
-        "yoy_change": -25.1
+        "current": 1.0634789777411378,
+        "previous": 1.4424665162216816,
+        "yoy_change": -26.3
       },
       "combined": {
-        "current": 1.1748807631160572,
-        "previous": 1.5583829126787627,
-        "yoy_change": -24.6
+        "current": 1.1488946684005201,
+        "previous": 1.5479277364505846,
+        "yoy_change": -25.8
       }
     },
     "session_conversion": {
       "apps": {
-        "current": 0.17827298050139276,
-        "previous": 0.20083835699315053,
-        "yoy_change": -2.3
+        "current": 0.15723270440251572,
+        "previous": 0.16324380372612637,
+        "yoy_change": -0.6
       },
       "web": {
-        "current": 0.12153708668453976,
-        "previous": 0.17325734007388682,
-        "yoy_change": -5.2
+        "current": 0.11395348837209303,
+        "previous": 0.13746891406465875,
+        "yoy_change": -2.4
       },
       "combined": {
-        "current": 0.13531799729364005,
-        "previous": 0.17931109709423923,
-        "yoy_change": -4.4
+        "current": 0.12563667232597622,
+        "previous": 0.14250733933556947,
+        "yoy_change": -1.7
       }
     },
     "user_conversion": {
       "apps": {
-        "current": 0.3859443794237307,
-        "previous": 0.40915842852020695,
-        "yoy_change": -2.3
+        "current": 0.39245868635181613,
+        "previous": 0.39941455964703887,
+        "yoy_change": -0.7
       },
       "web": {
-        "current": 0.26422104767387095,
-        "previous": 0.25778320204149563,
-        "yoy_change": 0.6
+        "current": 0.24899199116266224,
+        "previous": 0.25085617942008115,
+        "yoy_change": -0.2
       },
       "combined": {
-        "current": 0.29098091730833614,
-        "previous": 0.282188199118018,
-        "yoy_change": 0.9
+        "current": 0.2763620967955333,
+        "previous": 0.27361898328977124,
+        "yoy_change": 0.3
       }
     },
     "metadata": {
       "source": "amplitude",
-      "iso_week": 1,
+      "iso_week": 2,
       "year": 2026,
-      "date_range": "2025-12-29 to 2026-01-04"
+      "date_range": "2026-01-05 to 2026-01-11"
     }
   },
   "ga4_metrics": {
     "sessions": {
       "apps": {
-        "current": 18450,
-        "previous": 27090,
-        "yoy_change": -31.9
+        "current": 24368,
+        "previous": 33393,
+        "yoy_change": -27.0
       },
       "web": {
-        "current": 85187,
-        "previous": 133068,
-        "yoy_change": -36.0
+        "current": 133445,
+        "previous": 173507,
+        "yoy_change": -23.1
       },
       "combined": {
-        "current": 103637,
-        "previous": 160158,
-        "yoy_change": -35.3
+        "current": 157813,
+        "previous": 206900,
+        "yoy_change": -23.7
       }
     },
     "metadata": {
       "source": "ga4",
-      "iso_week": 1,
+      "iso_week": 2,
       "year": 2026,
-      "date_range": "2025-12-29 to 2026-01-04"
+      "date_range": "2026-01-05 to 2026-01-11"
     }
   },
   "variance_analysis": {
     "app_sessions": {
-      "amplitude": 359.0,
-      "ga4": 18450,
-      "variance_pct": 5039.3,
+      "amplitude": 477.0,
+      "ga4": 24368,
+      "variance_pct": 5008.6,
       "variance_direction": "ga4_higher"
     },
     "web_sessions": {
-      "amplitude": 1118.0,
-      "ga4": 85187,
-      "variance_pct": 7519.6,
+      "amplitude": 1290.0,
+      "ga4": 133445,
+      "variance_pct": 10244.6,
       "variance_direction": "ga4_higher"
     },
     "combined_sessions": {
-      "amplitude": 1477.0,
-      "ga4": 103637,
-      "variance_pct": 6916.7,
+      "amplitude": 1767.0,
+      "ga4": 157813,
+      "variance_pct": 8831.1,
       "variance_direction": "ga4_higher"
     },
     "insights": {
